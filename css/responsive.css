@@ -67,14 +67,18 @@ HEADER
   }
   
   h2{
-  
   font-size:0.825em;
-    margin-bottom:20px;
+  margin-bottom:20px;
   }
   header{
   border-bottom:5px solid #ff1d8e;
-    margin-bottom:60px;
+  margin-bottom:60px;
   }
+}
+
+.headerhome{
+  border-bottom:5px solid #ff1d8e;
+
 }
 
 div.cf{

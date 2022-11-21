@@ -8,35 +8,168 @@
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="css/responsive.css">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+<style>
+
+.column {
+  float: left;
+  width: 50%;
+  object-fit: cover;
+
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin-bottom: 8%;
+}
+</style>
   </head>
   <body>
-    <header>
-      <a href="index.html" id="logo">
-        <h1>Sheyla Perez</h1>
-        <h2>Designer</h2>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Portfolio</a></li>
-           <!--<li><a href="activities.html">Activities</a></li>-->
-          <li><a href="about.html" class="selected">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-    <section>
-      <img src="img/sheyla.jpg" alt="Photograph of Sheyla Perez" class="profile-photo">
-      <h3>About</h3>
-<p>Hi, I'm Sheyla Perez! This is my design portfolio where I share all of my favorite work.When I'm not designing things, I enjoy coding, playing video games, doing chores, and more </p>    
- <p>If you'd like to follow me on Twitter, my username is <a href="http://twitter.com/sheylap">@sheylap</a>.</p>
-      </section>
+    <div class = "headerhome">
+        <a href="home.html" id="logo">
+          <h1>Sheyla Perez</h1>
+          <h2>Designer</h2>
+        </a>
+        <nav>
+          <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html" class="selected">About Me</a></li>
+              <div class="dropdown" style="font-family:'Open Sans', sans-serif;">
+                <a class="dropbtn" class="selected" style="font-family:'Open Sans', sans-serif;">Portfolio</a>
+                <div class="dropdown-content">
+                <a href="index.html">Photoshop</a>
+                <a href="#">UX Design</a>
+                </div>
+              </div>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="contact.html">Contact</a></li>  
+          </ul>
+        </nav>
+      </div>
+   
+
+   
+
+<div class="row" style="margin-top: 8%;">
+  <div class="column" >
+   <div style="background-color: #A9BE7E;
+   width:110%;
+   height: 500px;
+   padding:10px;">
+     <div style="padding-left:80%; color: white;font-size: 30px;">   Hi there!</div>
+     <div style="color: white;margin:50px 50px" ><h1>Hi! Im Sheyla</h1></div>
+     <div style="font-size: 30px;color: white;margin:50px 50px;">
+      I am a proud Latina and a first generation studying at Queens College. 
+      I am the second oldest sister out of 6 siblings.
+       I love STEM and exposing STEM to others.</div>
+   </div>
+  </div>
+
+  <div class="column" style="margin-bottom: 8%;">
+    <img src="img/sheyla-about.jpeg"  style="width: 800px; height: 500px; object-fit: cover;" alt="Sheyla-flowers">
+  </div>
+
+</div>
+
+ 
+
+
+<div class="row">
+  <div class="column" style=" width: 60%;margin-bottom: 8%;">
+      <img src="img/monkey.jpeg"  style="width: 2000px; height: 500px; object-fit: cover;" alt="Sheyla-flowers">
+    </div>
+
+
+    <div style="background-color: #D8B88D;
+    width:500px;
+    height: 400px;
+    float: right;"
+    
+>
+      <div style="color: white;margin:50px 50px; text-align: center;" ><h1>Education</h1></div>
+          <div style="font-size: 25px;color: white;margin:50px 50px;">
+            College: Queens College, City University of New York <br>
+            <br>
+            Major: Mathematics <br>
+            <br>
+            Minor: Computer Science<br>
+            <br>
+          </div>
+    </div>
+  
+  </div>
+
+
+
+
+
+  <!-- <div class="row">
+    <div class="column" style=" width: 60%;margin-bottom: 8%;">
+          <div style="background-color: #D8B88D;
+          width:400px;
+          height: 400px;
+          "
+          >
+      
+               <div style="color: white;margin:50px 50px; text-align: center;" ><h1>Education</h1></div>
+              <div style="font-size: 25px;color: white;margin:50px 50px;">
+                College: Queens College, City University of New York <br>
+                <br>
+                Major: Mathematics <br>
+                <br>
+                Minor: Computer Science<br>
+                <br>
+              </div>
+            </div>
+      </div>
+    
+      <div class="column" style=" width: 60%;  margin-left: 500px;">
+        <img src="img/monkey.jpeg"  style="width: 2000px; height: 500px; object-fit: cover;" alt="Sheyla-flowers">
+      </div>
+
+
+    </div>
+   -->
+
+
+
+   <div class="row" style= "margin-left: 30px;">
+   
+  
+      <div style="background-color: #B08577;
+      width:500px;
+      height: 500px;
+      margin-left: 10px;"
+      
+  >
+        <div style="color: white;margin:50px 50px; text-align: center;" ><h1>Fun Fact</h1></div>
+            <div style="font-size: 25px;color: white;margin:40px 40px;">
+              1. Placed 2nd for Martial Arts <br>
+              2. Attended to Disney World for free because of Grace Hopper Conference<br>
+              3. Won 10K for a pitch competition<br>
+              4. Teach kids how to code in HTML, CSS, JS, Scratch<br>
+            </div>
+      </div>
+    
+      <div class="column" style=" width: 60%;margin-bottom: 8%; margin-left: 65px">
+        <img src="img/egg.jpeg"  style="width: 4000px; height: 500px; object-fit: cover;" alt="Sheyla-flowers">
+      </div>
+  
+
+    </div>
+
+
+
+
     <footer>
       <a href="http://twitter.com/nickrp"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
       <a href="http://facebook.com/nickpettit"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
       <p>&copy; 2018 Sheyla Perez.</p>
     </footer>
-      </div>
+     
   </body>
 </html>
