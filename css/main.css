@@ -60,7 +60,7 @@ float:left;
   bottom: 8px;
   left: 16px;
 }
-.container {
+.container1 {
   position: relative;
   text-align: center;
   color: white;
@@ -80,11 +80,18 @@ font-family:'Changa One', sans-serif;
  line-height: 0.8em;
 }
 
+.heading1{
+  color: black;
+  font-weight:normal;
+}
+
 h2 {
 font-size:0.75em;
 margin: -5px 0 0;
 font-weight:normal;
 }
+
+
 
 /***************************
 NAVIGATION
@@ -300,3 +307,10 @@ nav a.selected, nav a:hover {
 }
 
 
+
+
+.titleUXDesign{
+  color: black;
+  margin-left: 17%;
+  margin-bottom: 3%;
+}
