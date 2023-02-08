@@ -8,7 +8,7 @@ TWO COLUMN LAYOUT
   }
   #secondary{
   width:40%;
-    float:right;
+  float:right;
   }
   /***************************
 3*5=15
@@ -80,6 +80,10 @@ HEADER
   border-bottom:5px solid #ff1d8e;
 
 }
+.headerresume{
+  border-bottom:5px solid #ff1d8e;
+
+}
 
 div.cf{
 
@@ -89,3 +93,18 @@ div.cf{
 div.cf-two{
   margin: 0;
 }
+
+
+.text-block {
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+  background-color: black;
+  opacity: 0.7;
+  color: white;
+  padding: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+  
+}
+

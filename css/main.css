@@ -7,16 +7,19 @@ font-family:'Open Sans', sans-serif;
 
 
 #wrapper{
- max-width: 940px;
-  margin: 0 auto;
+  max-width: 940px;
+  margin: 2% auto;
   padding: 0 5%;
+  font-size: large;
+
+
  
 }
 #wrapper-act{
 max-width: 1140px;
   margin: 0 auto;
   padding: 0 5%;
- 
+
 
 }
 a{
@@ -53,6 +56,17 @@ float:left;
   margin:0 0 0px 0;
   padding:5px 0 0 0;
   width:100%;
+
+
+
+}
+.headerresume{
+  float:left;
+  margin:0 0 0px 0;
+  padding:5px 0 0 0;
+  width:100%;
+  margin-bottom: 3%;
+
 
 }
 .bottom-left {
@@ -114,7 +128,7 @@ nav li{
 
 nav a {
 font-weight:800;
- padding: 15px 10px;
+padding: 15px 10px;
 
 }
 
@@ -130,6 +144,7 @@ padding-top:50px;
 padding-bottom: 10px;
 color:rgb(255, 255, 255);
 background-color: #ff87c3;
+
 }
 
 .social-icon{
@@ -206,8 +221,14 @@ background-image:url('../img/mail.png');
 
 .contact-info li.twitter a {
 background-image:url('../img/twitter.png');
+
 }
 
+.contact-info li.linkedin a {
+  background-image:url('../img/linkedin.svg');
+  
+
+  }
 
 
 /***************************
@@ -222,12 +243,17 @@ background-color:#fff;
 /*green header*/
 header{
 background:#ff87c3;
- border-color:#ff1d8e;
+border-color:#ff1d8e;
 }
 
 .headerhome{
 background:#ff87c3;
  border-color:#ff1d8e;
+}
+
+.headerresume{
+  background:#ff87c3;
+  border-color:#ff1d8e;
 }
 
 /*nav background on mobile*/
@@ -263,10 +289,10 @@ nav a.selected, nav a:hover {
 .dropbtn {
   background-color: #ff87c3;
   padding: 16px;
-  font-size: 16px;
+  color: rgb(255, 255, 255);
   border: none;
   cursor: pointer;
-  font-family:'Open Sans', sans-serif;
+  
 }
 
 .dropdown {
@@ -286,7 +312,7 @@ nav a.selected, nav a:hover {
 }
 
 .dropdown-content a {
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -313,4 +339,18 @@ nav a.selected, nav a:hover {
   color: black;
   margin-left: 17%;
   margin-bottom: 3%;
+}
+
+
+.resume-header{
+  background-color: pink;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+.smaller-font{
+  color:white;   
+  height: 50%;
+  font-size: 100%;
+  text-align: center;
 }

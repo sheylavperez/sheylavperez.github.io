@@ -1,0 +1,31 @@
+.section-title{
+    background-color:pink ;
+    padding-bottom:5%; 
+    max-width: 960px;
+    margin-bottom: 5%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+  .summary{
+    text-align: center;
+    color: white;
+  }
+
+
+ .experiences-section{
+    background-color:pink;
+    padding-bottom: 5%; 
+    padding: 25px;
+    max-width: 960px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+ 
+  }
+
+
+  .main-wrapper .experiences-section .item {
+    margin-bottom: 30px;
+  }
+
