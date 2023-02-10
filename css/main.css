@@ -336,9 +336,13 @@ nav a.selected, nav a:hover {
 
 
 .titleUXDesign{
-  color: black;
-  margin-left: 17%;
-  margin-bottom: 3%;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  background-color: #f9deec;
+  padding: 50px 20px;
+
 }
 
 
@@ -354,3 +358,4 @@ nav a.selected, nav a:hover {
   font-size: 100%;
   text-align: center;
 }
+
