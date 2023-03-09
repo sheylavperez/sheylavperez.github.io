@@ -12,11 +12,11 @@
 <style>
     
 .dropdown{
-        color: white;
-        font-family:'Open Sans', sans-serif;
+  color: white;
+  font-family:'Open Sans', sans-serif;
       }
 
-  .container {
+.container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -26,89 +26,18 @@
   padding: 20px;
 }
 
-img {
+.image-larger {
   width: 1000%;
   height: auto;
   display: block;
   object-fit: cover;
+  border-radius: 4%;
 }
 
 @media (max-width: 10000px) {
   .image-container {
     width: 100%;
   }
-}
-
-.box-container {
-    font-size: 150%;
-    color: white;        
-    width: 300px;
-    height: 270px;
-    background-color:#FFBBEE;
-    text-align: center;
-    padding: 5%;
-    
-  }
-
-  .box-container-darkpink {
-    font-size: 150%;
-    color: white;        
-    width: 300px;
-    height: 270px;
-    background-color:#FF3377;
-    text-align: center;
-    padding: 5%;
-   
-    
-  }
-
-
-
-  /* box2 */
-  .container1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  
-}
-
-.image1 {
-  flex: 1;
-  margin-right: 20px;
-  max-width: 100%;
-}
-
-.image1 img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.box1 {
-  flex: 1;
-  width: 300px;
-  height: 270px;
-  padding: 20px;
-  background-color:#FF3377;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  
-}
-
-.box1 h2 {
-  font-size: 24px;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.box1 p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-}
-.img-fluid {
-  max-width: 100%;
-  height: auto;
 }
 
 .box-container-ps{
@@ -174,49 +103,6 @@ img {
 </div>
 
 
-
-<!-- <div class="container overflow-hidden" style="margin-top: 8%;">
-    <div class="row gx-6">
-      <div class="col-4">
-       <div class="p-5 "
-            style="  
-                background-color: #FF3377;
-                margin: 20px;color:white;
-                height: 60%;
-                font-size: 150%;
-                text-align: center;
-                
-                "
-            >
-            Photoshop Skills <br>
-            <p style = "font-size: 20px">  Click the link below to check out my amazing work! </p> 
-            <div class="card-text" style="font-size: 85%"><a href="index.html"> Click me</a></div>
-          </div>
-      </div>
-      <div class="col">
-        <div class="p-5 border danger" style="background-color: #FF6883"><img src = "img/photoshop_image.gif"></div>
-      </div>
-    </div>
-  </div> -->
-<!-- 
-  <div class="container overflow-hidden" style="margin-top: 8%; margin-bottom: 8%;">
-    <div class="row">
-       <div class="col-md-6">
-        <div class="image-container square">
-                <div class="box-container-darkpink">
-                  <h2> Photoshop Skills</h2>
-                  <p> Click the link below to check out my amazing work! </p></p>
-                  <a href="ux-design.html"> Click me</a>
-                </div>
-        </div>
-           <div class = "col-md-12">
-            <img src = "img/photoshop_image.gif"  class="img-fluid float-md-end">
-              </div>
-        </div>
-      </div>
-    </div> -->
-
-
     <div class="container" style="margin-top: 5%;">
       <div class="row gx-6" >
         <div class="col-md-6">
@@ -228,7 +114,7 @@ img {
           </div>
         </div>
         <div class="col-sm-6 col-md-8" style="margin-left: 5%;">
-          <img src="img/photoshop_image.gif" class="img-fluid float-end" alt="Image on the right" style="border-radius: 4%">
+          <img class = "image-larger"src="img/photoshop_image.gif" class="img-fluid float-end" alt="Image on the right">
         </div>
       </div>
     </div>
@@ -250,19 +136,8 @@ img {
       </div>
       </div>
       </div>
-
-
-     
-
-
-
-
-  </div>
+    </div>
    
-
-
-
-
 
     <footer>
       <a href="http://twitter.com/nickrp"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
