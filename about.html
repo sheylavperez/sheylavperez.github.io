@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sheyla Perez | Designer</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/orbit.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/5.1.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">  
+<style>
+
+.column {
+  float: left;
+  width: 50%;
+  object-fit: cover;
+
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin-bottom: 8%;
+}
+.dropdown{
+  color: white;
+  font-family:'Open Sans', sans-serif;
+}
+
+.text-box {
+  padding: 20px;
+  background-color: #A9BE7E;
+  width:100%;
+  height: 500px;
+  padding:10px;
+}
+
+@media (max-width: 1000px) {
+  .text-box {
+    margin-bottom: 0;
+  }
+}
+
+.full-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.text-header{
+  font-size: 30px;
+  color: white;
+  margin:50px 50px;
+}
+
+.h1-header{
+  padding-left:7%;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 3%;
+}
+
+.box-container-ps{
+  flex: 1;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  background-color: #D8B88D;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.box-text{
+  font-size: 20px;
+  padding: 5px;
+  margin: 5%;
+}
+
+.box-container-fun-fact{
+  background-color: #B08577;
+  flex: 1;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  margin-right: 20px;
+}
+</style>
+  </head>
+  <body>
+    <div class = "headerhome">
+        <a href="home.html" id="logo">
+          <h1>Sheyla Perez</h1>
+          <h2>Designer</h2>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+              <li><a href="about.html" class="selected">About Me</a></li>
+              <div class="dropdown" style="font-family:'Open Sans', sans-serif;">
+                <a class="dropbtn" class="selected" style="font-family:'Open Sans', sans-serif;">Portfolio</a>
+                <div class="dropdown-content">
+                <a href="photoshop.html">Photoshop</a>
+                <a href="ux-design.html">UX Design</a>
+                </div>
+              </div>
+              <li><a href="Perez_Sheyla_Resume.pdf"  download>Resume</a> </li>
+              <li><a href="contact.html">Contact</a></li>  
+          </ul>
+        </nav>
+      </div>
+   
+
+
+        <div class="row ">
+          <div class="col-lg-6"  style="padding: 0;">
+            <div class="text-box" style="margin: 0 !important;">
+              <div class="h1-header">Hi! Im Sheyla</div>
+              <div class="text-header">
+                I am a proud Latina and a first-generation college student currently studying at Queens College. I am the second oldest sister out of six siblings. One of my passions is STEM, and I enjoy sharing it with others..</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="img/sheyla-about.jpeg"  style="width: 800px; height: 500px; object-fit: cover;" alt="Sheyla-flowers" class="full-image">
+          </div>
+        </div>
+   
+
+
+
+        <div class="row" style="margin-top: 5%;">
+          <div class="col-lg-7">
+            <img src="img/monkey.jpeg" class="img-fluid" alt="Image">
+          </div>
+          <div class="col-md-3">
+            <div class="box-container-ps">
+              <h1 style="text-align: center;">Education</h1>
+              <p class="box-text"> 
+                College: Queens College, City University of New York <br>
+                <br>
+                Major: Mathematics <br>
+                <br>
+                Minor: Computer Science<br>
+              </p>
+               
+            </div>
+          </div>
+        </div>
+ 
+
+      
+
+          <div class="row" style="margin-top: 5%; margin-bottom: 5%;">
+            <div class="col-lg-6 order-md-1" >
+              <div class="box-container-fun-fact" style="margin-left: 20%;">
+                <h1 style="text-align: center;">Fun Fact</h1>
+                <p class="box-text" > 
+                  1. Placed 2nd for Martial Arts <br>
+                  2. Attended to Disney World for free because of Grace Hopper Conference<br>
+                  3. Won 10K for a <a href="https://cunystartups.com/cuny-clash-2022-event-results/" style="color:#FFC0CB;">pitch competition</a><br>
+                  4. Teach kids how to code in HTML, CSS, JS, Scratch<br></p>
+              </div>
+            </div>
+            <div class="col-md-6 order-md-2" >
+              <img src="img/egg.jpeg"  style="width: 4000px; height: 500px; object-fit: cover;" alt="Sheyla-flowers">
+            </div>
+          </div>
+        </div>
+
+
+
+    <footer>
+      <a href="http://twitter.com/nickrp"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+      <a href="http://facebook.com/nickpettit"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+      <p>&copy; 2018 Sheyla Perez.</p>
+    </footer>
+     
+  </body>
+</html>
