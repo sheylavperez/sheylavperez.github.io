@@ -1,149 +1,786 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Sheyla Perez | Designer</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="css/responsive.css">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<style>
-    
-.dropdown{
-  color: white;
-  font-family:'Open Sans', sans-serif;
-      }
+<html lang="en">
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-.image-container {
-  width: 2000%;
-  padding: 20px;
-}
+  <title>Sheyla Perez - UX Designer and Web Developer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-.image-larger {
-  width: 1000%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  border-radius: 4%;
-}
+  <!-- Favicons -->
+  <link href="assets/img/" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-@media (max-width: 10000px) {
-  .image-container {
-    width: 100%;
-  }
-}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&subset=cyrillic" rel="stylesheet">
 
-.box-container-ps{
-  flex: 1;
-  width: 300px;
-  height: 270px;
-  padding: 20px;
-  background-color:#FF3377;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  color: white;
-}
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-.box-container-ux{
-  flex: 1;
-  width: 300px;
-  height: 270px;
-  padding: 20px;
-  background-color:#FFBBEE;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  color: white;
-}
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
+ 
 
-</style>
+<body>
 
-  </head>
-  <body>
-  
- <div class = "headerhome">
-      <a href="home.html" id="logo">
-        <h1>Sheyla Perez</h1>
-        <h2>Designer</h2>
-      </a>
-      <nav>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
+    <h1>Hi, I'm Sheyla!</h1>
+    <h2>I am a graphic designer</h2>
+    <a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down"></i></a>
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">Sheyla Perez</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
         <ul>
-            <li><a href="index.html" class="selected">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <div class="dropdown" style="font-family:'Open Sans', sans-serif;">
-              <a class="dropbtn" class="selected" style="font-family:'Open Sans', sans-serif;">Portfolio</a>
-              <div class="dropdown-content">
-              <a href="photoshop.html">Photoshop</a>
-              <a href="ux-design.html">UX Design</a>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>About Me:</h3>
+              <p>
+                As a proud Latina and a first-generation college graduate from Queens College, I am delighted to have completed my studies. I am the second oldest sister among six siblings. STEM has always been one of my passions, and I take great pleasure in sharing my enthusiasm with others.
+              </p>
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-brush"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Graphic Design:</strong> I've designed several artworks using Illustrator, Photoshop, and InDesign </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-laptop"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Projects:</strong> I've created 12 projects, including UX designs, personal websites, and video games.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Years of experience:</strong> I have gained two years of valuable personal experience through self-learning and working directly with clients</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-award"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Awards:</strong> Won $15,000 in prize money through entrepreneurship competitions such as CUNYCLASH, Blackstone LaunchPad, and Future Founder, with my pitch idea called CareerDay</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>With a strong foundation in web development and design, I excel in crafting visually appealing and user-friendly digital experiences. My proficiency in HTML, CSS, and JavaScript allows me to create dynamic and responsive websites, while my expertise in design tools such as Figma, Adobe Photoshop, Illustrator, and InDesign enables me to bring creative concepts to life. I am passionate about continuous learning and strive to stay updated with the latest trends and technologies in the field. Aspiring to contribute my skills and creativity to innovative projects that make a meaningful impact.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
-            <li><a href="Perez_Sheyla_Resume.pdf" download>Resume</a> </li>
-           
-            <li><a href="contact.html">Contact</a></li>  
-        </ul>
-      </nav>
-    </div>
-   
-   
-    <div class="card bg-dark text-white">
-     <img src="img/cute-pic-header.png" alt="computer">
-     <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.3)">
-        <div style="margin-top:45%; margin-left: 5%;">
-        <h5 class="card-title" style="font-size: 250%;">Sheyla Perez</h5>
-        <p class="card-text"  style="font-size: 150%">Product Designer</p>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Figma <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Adobe Photoshop <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Adobe Illustrator <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Adobe InDesign<i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+
+          </div>
+
         </div>
-    </div>
-</div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Sheyla Perez</h4>
+              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <p>
+              <ul>
+                <li>New York, NY</li>
+                <li>(347) 841-5413</li>
+                <li>sheylavperez@gmail.com</li>
+              </ul>
+              </p>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+           
+            <div class="resume-item">
+              <h4>Bachelor of of Mathematics &amp; Minor in Computer Science</h4>
+              <h5>2018 - 2023</h5>
+              <p><em>Queens College, City University of New York</em></p>
+              
+            </div>
+            <div class="resume-item">
+              <h4>Self Learning in Design </h4>
+              <h5>2023 - 2024</h5>
+              <p><em>Google UX Design Certificate</em></p>
+              <p><em>Graphic Design Course in Udemy</em></p>
+              
+              
+            </div>
+
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+
+            <div class="resume-item">
+              <h4>Technical Program Manager Intern </h4>
+              <h5>May – August 2022</h5>
+              <p><em>Lyft, New York</em></p>
+              <p>
+              <ul>
+                <li>Identifying pain points with drivers and improved poor ride experiences in the navigation system</li>
+                <li>Analyzed over 100+ data-set in SQL and discussed with the data science team to create baseline metrics to help quantify negative and positive experiences</li>
+                <li>Communicated with cross-functional teams, such as engineering, UX design, and stakeholders, to translate issues into concrete actions and guarantee higher product quality</li>
+               
+              </ul>
+              </p>
+            </div>
 
 
-    <div class="container" style="margin-top: 5%;">
-      <div class="row gx-6" >
-        <div class="col-md-6">
-            <div class="box-container-ps">
-            <h2> Photoshop Skills</h2>
-                  <p> Click the link below to check out my amazing work! </p></p>
-                 <Bold><a href="ux-design.html" style="color:#FFBBEE" font-weight: 900;> Photoshops Projects</a></Bold> 
+            <div class="resume-item">
+              <h4>Product Engineer Intern</h4>
+              <h5>June – August 2021</h5>
+              <p><em>Discord, New York </em></p>
+              <p>
+              <ul>
+                <li>Collaborated with the UX design team to developed a iOS app feature, allowing users to choose their language during sign-up for an improved experience</li>
+                <li>Implemented easily configurable experimentation of A/B tests with YAML and React Native; Increased 5% user activation by gathering data in Chartio, monitoring experiment status, and analyzing results </li>
+                
+              </ul>
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>User Interface Engineer Intern</h4>
+              <h5>January 2020</h5>
+              <p><em>LinkedIn, New York </em></p>
+              <p>
+              <ul>
+                <li>Developed a user-friendly route to identify 300+ LinkedIn video web app comments using Ember JS</li>
+                <li>Used HTML/CSS to implement and overlaid the API highchart graph on a sample video</li>
+               
+              </ul>
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-8" style="margin-left: 5%;">
-          <img class = "image-larger"src="img/photoshop.jpg" class="img-fluid float-end" alt="Image on the right">
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-brush"></i></div>
+              <h4 class="title"><a href="">Logo Design</a></h4>
+              <p class="description">I specialize in crafting unique and creative logos tailored to your brand, utilizing Adobe Illustrator for precision and quality.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-laptop"></i></div>
+              <h4 class="title"><a href="">Website Development</a></h4>
+              <p class="description">I build responsive and user-friendly websites from scratch, ensuring your online presence effectively showcases your business using Bootstrap, HTML, CSS, and JavaScript.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-journal-richtext"></i></div>
+              <h4 class="title"><a href="">Posters</a></h4>
+              <p class="description">I create eye-catching posters for your events, promotions, or campaigns, capturing attention and conveying your message effectively</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-pencil"></i></div>
+              <h4 class="title"><a href="">Sketching</a></h4>
+              <p class="description">I offer sketching services for illustrations, concepts, or prototypes, providing visual representations to bring your ideas to life.</p>
+            </div>
+          </div>
+
+        
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p> Showcasing examples of UX design, graphic design, logos, and sketches</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter=".filter-active" class="filter-active">All</li>
+              <li data-filter=".filter-design">Graphic Design</li>
+              <li data-filter=".filter-sketch">Sketch</li>
+              <li data-filter=".filter-uxdesign">UX Design</li>
+              <li data-filter=".filter-coding">Coding</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-uxdesign">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/mastercard-header.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>UX Design</h4>
+                <p> Empowering Vendors in the Digital Era</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/mastercard-header.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=" Mastercard QR Payments - Empowering Vendors in the Digital Era"><i class="bx bx-plus"></i></a>
+                <a href="mastercard.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-coding">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/techforher-header.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Website</h4>
+                <p>Tech for Her - Inspiring girls to learn coding </p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/techforher-header.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Tech for Her - Inspiring girls to learn coding"><i class="bx bx-plus"></i></a>
+                <a href="tech-for-her.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item  filter-active filter-uxdesign">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/careerday-header.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>UX Design</h4>
+                <p> CareerDay - Help students find their dream career!</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/careerday-header.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CareerDay - Help students find their dream career!"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-design">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cd-logo1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Design</h4>
+                <p>Career Day Logo</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/cd-logo1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Career Day Logo"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-uxdesign">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/chewy-header.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>UX Design</h4>
+                <p> Enhancing Chewy Customer Experience</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/chewy-header.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Pet Health Connect - Enhancing Chewy Customer Experience"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-design">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/flag-rep.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>UX Design</h4>
+                <p>Redesigning the flags of each borough in New York City</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/flag-rep.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Redesigning the flags of each borough in New York City"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-uxdesign">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/garden.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>UX Design</h4>
+                <p>GreenThumb - Cultivating a Gardening Community</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/garden.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="GreenThumb - Cultivating a Gardening Community"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-design">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/grid-theroy100.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Design</h4>
+                <p>Grid Theory - lines and structures defining </p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/grid-theroy100.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Grid Theory - lines and structures defining"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-coding">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/Resturant-Search.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Coding</h4>
+                <p>Created a search function</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/Resturant-Search.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Creating a search function"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-coding">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/devil_game.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Coding</h4>
+                <p>Created a shooting mini game</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/devil_game.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Created a shooting mini game"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-design">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/taco_truck.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Design</h4>
+                <p>Design the logo of Sazon Villa</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/taco_truck.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Design the logo of Sazon Villa"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-coding">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/food-truck.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Coding</h4>
+                <p>Creating the website through WIX</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/food-truck.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Creating the website through WIX"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-sketch">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/sketch-women.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sketch</h4>
+                <p>Sketch a women dancing</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/sketch-women.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sketch a women dancing"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-design">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/livetrace.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Live Trace</h4>
+                <p>Design a pixal profolio</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/livetrace.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Design a pixal profolio"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-sketch">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/sketch-man.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sketch</h4>
+                <p>Sketch a man during the 80s </p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/sketch-man.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sketch a man during the 80s "><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-sketch">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/sketch-fork.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sketch</h4>
+                <p>Create a sketch depicting a fork with dimension, accentuated by a shadow</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/sketch-fork.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Create a sketch depicting a fork with dimension, accentuated by a shadow"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-design">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/animals.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Design</h4>
+                <p> Develop a theoretical framework related to stuffed animals</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/animals.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Develop a theoretical framework related to stuffed animals"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-design">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/grid-pink.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Design</h4>
+                <p>Grid Theory - lines and structures defining</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/grid-pink.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Grid Theory - lines and structures defining"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-design">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/dog.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Design</h4>
+                <p>Ultizile the shape tool in Illustrator/p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/dog.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ultizile the shape tool in Illustrator"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-design">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/type.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Design</h4>
+                <p>Describe an image using words</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/type.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Describe an image using words"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-design">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/skull.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Design</h4>
+                <p>
+                  Create a depiction of the traditional Mexican celebration</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/skull.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="
+                Create a depiction of the traditional Mexican celebration known as the Day of the Dead"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-sketch">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/sketch-jelllyfish.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sketch</h4>
+                <p>
+                  Create a paper shadowing artwork</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/sketch-jelllyfish.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="
+                Create a paper shadowing artwork"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          
+
+
+
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>I am always currently looking for new design work and I am available for speaking gigs and similar engagements. If you have any questions, please don't hesitate to contact me!
+
+            Please only use phone contact for urgent inquiries. Otherwise, email are the best way to reach me.
+            
+             </p>
+        </div>
+
+      
+
+       <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="info">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-geo-alt"></i>
+              <p>New York, NY 535022</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="info">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-envelope"></i>
+              <p>sheylavperez@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="info">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-phone"></i>
+              <p>+1 347 841 5413</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="info">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-instagram"></i>
+              <a href="https://www.instagram.com/lovable_lines/" class="instagram">loveable_lines</a> 
+            </div>
+          </div>
+        </div>
+      
+        <!-- Add the new item here -->
+        <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="info">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-linkedin"></i>
+              <a href="https://www.linkedin.com/in/sheylavperez/" class="linkedin">sheylavperez</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-
-
-  <div class="container overflow-hidden" style="margin-top: 8%; margin-bottom: 8%;">
-    <div class="row gx-6">
-      <div class=" col-sm-6 col-md-8">
-        <div class="p-3 "><img src = "img/ux-design.jpg" style="border-radius: 4%;"></div>
-      </div>
-      <div class="col-4">
-        <div class="image-container square">
-          <div class="box-container-ux">
-            <h2> UX Design</h2>
-            <p> Want to see what kind of websites I design to help solve customer issues? </p></p>
-         <a href="ux-design.html" style="color: #FF3377;"> UX Design Project</a>
-         </div>
-      </div>
-      </div>
-      </div>
-    </div>
-   
-
-    <footer>
-      <a href="http://twitter.com/nickrp"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
-      <a href="http://facebook.com/nickpettit"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
-      <p>&copy; 2023 Sheyla Perez.</p>
-    </footer>
       
-  </body>
+             
+
+      
+            
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+      
+      </div>
+     
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
