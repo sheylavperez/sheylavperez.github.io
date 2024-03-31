@@ -1210,3 +1210,21 @@ video {
   display: block;
   margin: 0 auto;
 }
+
+#role {
+  max-width: 100%; /* Set maximum width */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid orange; /* Typing cursor */
+  animation: typing forwards, blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: auto; } /* Change width to auto at the end of animation */
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+}

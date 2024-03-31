@@ -266,3 +266,49 @@
   new PureCounter();
 
 })()
+
+const roles = ["Graphic Designer", "UX Designer",  "Web Developer"]; // Define the roles in the desired order
+let roleIndex = 0;
+let isDeleting = false;
+let delay = 2000; // Time delay before deleting the text
+const roleElement = document.getElementById('role-text');
+
+function changeRole() {
+  const currentRole = roles[roleIndex];
+  if (!isDeleting) {
+    animateTyping(currentRole);
+  } else {
+    animateDeleting(currentRole);
+  }
+}
+
+function animateTyping(text) {
+  let i = 0;
+  const typingInterval = setInterval(() => {
+    if (i < text.length) {
+      roleElement.textContent += text.charAt(i);
+      i++;
+    } else {
+      clearInterval(typingInterval); // Stop typing animation when reaching the end of the sentence
+      isDeleting = true;
+      setTimeout(changeRole, delay); // Delay before deleting the text
+    }
+  }, 100); // Typing speed (adjust as needed)
+}
+
+function animateDeleting(text) {
+  let i = text.length;
+  const deletingInterval = setInterval(() => {
+    if (i >= 0) {
+      roleElement.textContent = text.substring(0, i);
+      i--;
+    } else {
+      clearInterval(deletingInterval); // Stop deleting animation when reaching the beginning of the sentence
+      isDeleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+      setTimeout(changeRole, delay); // Delay before typing the next role
+    }
+  }, 50); // Deleting speed (adjust as needed)
+}
+
+changeRole(); // Start the animation immediately
