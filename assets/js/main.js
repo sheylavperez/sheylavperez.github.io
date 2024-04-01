@@ -270,7 +270,7 @@
 const roles = ["Graphic Designer", "UX Designer",  "Web Developer"]; // Define the roles in the desired order
 let roleIndex = 0;
 let isDeleting = false;
-let delay = 2000; // Time delay before deleting the text
+let delay = 1000; // Time delay before deleting the text
 const roleElement = document.getElementById('role-text');
 
 function changeRole() {
