@@ -1228,3 +1228,45 @@ video {
   from, to { border-color: transparent; }
   50% { border-color: orange; }
 }
+
+
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  padding: 20px 0;
+  overflow: hidden;
+}
+.line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  z-index: 1;
+}
+.event {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+.event:nth-child(odd) {
+  float: left;
+  clear: both;
+  margin-right: 50%;
+}
+.event:nth-child(even) {
+  float: right;
+  clear: both;
+  margin-left: 50%;
+}
+.event .date {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
