@@ -1,0 +1,133 @@
+/* About Me Section Styles */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the spacing between images */
+}
+.gallery-item {
+    width: 45%;
+    position: relative;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.about-me-section {
+    background-color: #ffeaed;
+    padding: 20px;
+    border-radius: 20px;
+}
+.about-me-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.about-me-text strong {
+    font-weight: bold;
+}
+
+
+
+.experience-section {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.experience-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #d43076;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+.timeline-item::after {
+    content: ' ';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #d43076;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.timeline-item.left {
+    left: 0;
+}
+.timeline-item.right {
+    left: 50%;
+}
+.timeline-item.left::after {
+    left: -16px;
+}
+.timeline-item.right::after {
+    left: -16px;
+}
+.timeline-item-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+.timeline-item-content h4 {
+    margin-top: 0;
+    color: #d43076;
+}
+
+
+.photo-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.text-section {
+    padding: 20px;
+}
+.text-section h3 {
+    margin-bottom: 20px;
+}
+.text-section ol {
+    margin-left: 20px;
+}
+.text-section ol li {
+    margin-bottom: 10px;
+}
+
+
+
+
+.cropped-image {
+    width: 100%; /* Ensures the image fills the container width */
+    height: 100%; /* Ensures the image fills the container height */
+    object-fit: cover; /* Crops the image while preserving aspect ratio */
+}
