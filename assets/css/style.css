@@ -1,10 +1,3 @@
-/**
-* Template Name: Lonely
-* Updated: Jan 29 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -862,128 +855,130 @@ section {
 .pink-button-about:hover {
   background-color: #ff1493; /* Darker pink on hover */
 }
-
-/* 
-.portfolio .portfolio-item {
+/* Portfolio Section */
+.portfolio-section .portfolio-item {
   margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.portfolio-section .portfolio-filters {
   padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
-  border-radius: 50px;
-  padding: 2px 15px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
+  background: #f9f9f9;
+  border-radius: 30px;
+  padding: 5px 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio #portfolio-flters li {
+.portfolio-section .portfolio-filters li {
   cursor: pointer;
   display: inline-block;
-  padding: 10px 15px 8px 15px;
+  padding: 12px 20px;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
+  font-weight: bold;
+  line-height: 1.2;
   text-transform: uppercase;
-  color: #5a656e;
+  color: #3d4852;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  color: #d43076;
+.portfolio-section .portfolio-filters li:hover,
+.portfolio-section .portfolio-filters li.filter-active {
+  color: #ff4081;
+  background: #f2f2f2;
+  border-radius: 20px;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.portfolio-section .portfolio-filters li:last-child {
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
-  transition: 0.3s;
+.portfolio-section .portfolio-card {
   position: relative;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 1;
 }
 
-.portfolio .portfolio-wrap::before {
+.portfolio-section .portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-section .portfolio-card::before {
   content: "";
-  background: rgba(44, 73, 100, 0.6);
+  background: rgba(34, 49, 63, 0.7);
   position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  transition: all ease-in-out 0.3s;
+  inset: 15px;
+  transition: all 0.3s ease-in-out;
   z-index: 2;
   opacity: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-info {
+.portfolio-section .portfolio-info {
   opacity: 0;
   position: absolute;
-  top: 10%;
-  left: 0;
-  right: 0;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   z-index: 3;
-  transition: all ease-in-out 0.3s;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+.portfolio-section .portfolio-info h4 {
+  font-size: 18px;
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
-.portfolio .portfolio-wrap .portfolio-info p {
+.portfolio-section .portfolio-info p {
   color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
+  margin: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.portfolio-section .portfolio-links {
+  display: flex;
+  justify-content: center;
   opacity: 0;
-  left: 0;
-  right: 0;
-  bottom: 10%;
-  text-align: center;
-  z-index: 3;
   position: absolute;
-  transition: all ease-in-out 0.3s;
+  bottom: 20%;
+  width: 100%;
+  z-index: 3;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
+.portfolio-section .portfolio-links a {
   color: #fff;
-  margin: 0 2px;
-  font-size: 28px;
+  margin: 0 10px;
+  font-size: 24px;
   display: inline-block;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #e684ae;
+.portfolio-section .portfolio-links a:hover {
+  color: #ffaec9;
 }
 
-.portfolio .portfolio-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.portfolio-section .portfolio-card:hover::before {
+  inset: 0;
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
+.portfolio-section .portfolio-card:hover .portfolio-info {
   opacity: 1;
-  top: calc(50% - 48px);
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-links {
+.portfolio-section .portfolio-card:hover .portfolio-links {
   opacity: 1;
-  bottom: calc(50% - 50px);
-} */
+}
 
 /*--------------------------------------------------------------
 # Portfolio Details
@@ -1419,3 +1414,6 @@ video {
   padding: 20px;
   text-align: center;
 }
+
+
+

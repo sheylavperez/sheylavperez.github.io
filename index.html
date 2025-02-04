@@ -27,7 +27,39 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
  
+<style>
 
+ /* Remove the default styles of the <a> tag to prevent it from affecting the layout */
+.icon-box a {
+  display: block; /* Ensures the entire box is clickable */
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Keep the default color of the text */
+  background: transparent; /* Ensure no background color changes */
+}
+
+/* Prevent any hover effect from changing the box */
+.icon-box a:hover {
+  background: transparent; /* No background change on hover */
+  color: inherit; /* No color change on hover */
+}
+
+/* If you want hover effects only for the icon, title, or description */
+.icon-box .icon, .icon-box .title, .icon-box .description {
+  transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.icon-box a:hover .icon,
+.icon-box a:hover .title,
+.icon-box a:hover .description {
+  color: #333; /* Change color on hover for specific elements if needed */
+}
+
+/* Optional: Hover effect on the entire box */
+.icon-box:hover {
+  cursor: pointer; /* Indicate that it's clickable */
+}
+
+</style>
 <body>
 
   <!-- ======= Hero Section ======= -->
@@ -51,16 +83,17 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="about-me.html">About</a></li>
+          <li> <a class="nav-link" href="#portfolio"> UX Portfolio</a></li>
           <li class="dropdown">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
+           <a class="nav-link scrollto" href="#services">More Projects</a>
             <ul class="dropdown-content">
-              <li><a href="#portfolio">UX Design</a></li>
-              <li><a href="Graphic-Design.html">Graphic</a></li>
+            
+              <li><a href="graphic.html">Graphic</a></li>
               <li><a href="Coding.html">Coding</a></li>
+              <li><a href="artwork.html">Sketch</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -121,11 +154,15 @@
   <!-- Add more events as needed -->
 <!-- </div> -->
 
+
+
+
+
 <!-- ======= Portfolio Section ======= -->
 <section id="portfolio" class="portfolio section-bg">
   <div class="container">
     <div class="section-title">
-      <h2>Portfolio</h2>
+      <h2> UX Design Portfolio</h2>
       <p>Design is problem-solving with elegance and innovation. It's about understanding human needs and emotions, crafting resonant experiences. It lets me make a tangible impact on people's lives, blending creativity with meaningful change.</p>
     </div>
 
@@ -188,416 +225,50 @@
 </section>
 
 
+<!-- ======= Services Section ======= -->
+<!-- ======= Services Section ======= -->
+<section id="services" class="services section-bg">
+  <div class="container">
 
+    <div class="section-title">
+      <h2>The Full Collection</h2>
+    </div>
 
-    <!-- ======= Portfolio Section ======= -->
-    <!-- <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>  
-            Design is problem-solving with elegance and innovation. It's about understanding human needs and emotions, crafting resonant experiences. It lets me make a tangible impact on people's lives, blending creativity with meaningful change. </p>
-       
-
-         
+    <div class="row">
+      <!-- Second Service -->
+      <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+        <a href="coding.html"> <div class="icon-box">
+          <div class="icon"><i class="bi bi-laptop"></i></div>
+          <h4 class="title">Coding</h4>
+          <p class="description">I build responsive and user-friendly websites from scratch, ensuring your online presence effectively showcases your business using Bootstrap, HTML, CSS, and JavaScript.</p>
+        </a>
         </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter=".filter-active" class="filter-active">All</li>
-              <li data-filter=".filter-uxdesign">UX Design</li>
-              <li data-filter=".filter-design">Graphic Design</li> -->
-              <!-- <li data-filter=".filter-sketch">Sketch</li> -->
-              <!-- <li data-filter=".filter-coding">Coding</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-          <a href="tech-for-her.html" title="More Details">
-            <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-coding">
-              <div class="portfolio-box">
-                <div class="portfolio-wrap">
-                  <a href="tech-for-her.html" title="More Details"> Wrap the image with an anchor tag -->
-                    <!-- <img src="assets/img/portfolio/techforher-header.png" class="img-fluid" alt="">
-                  </a>
-                  <div class="portfolio-info">
-                    <h4><a href="tech-for-her.html" title="More Details">Website</a></h4>
-                    <p>Tech for Her - Inspiring girls to learn coding </p>
-                  </div>
-                  <div class="portfolio-links">
-                    <a href="assets/img/portfolio/techforher-header.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Tech for Her - Inspiring girls to learn coding"><i class="bx bx-plus"></i></a>
-                    <a href="tech-for-her.html" title="More Details"><i class="bx bx-link"></i></a>
-                  </div>
-                </div>
-                <div class="box-content">
-                  <h2 class="box-title">Your Title Here</h2>
-                  <h3 class="box-subtitle">Your Subtitle Here</h3>
-                </div>
-              </div>
-            </div>
-          </a> -->
-          
-<!--           
-          <div class="col-lg-4 col-md-6 portfolio-item  filter-active filter-uxdesign">
-            <div class="portfolio-box">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/careerday-header.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>UX Design</h4>
-                <p> CareerDay - Help students find their dream career!</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/careerday-header.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CareerDay - Help students find their dream career!"><i class="bx bx-plus"></i></a>
-                <a href="careerday.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div class="box-content">
-                <h2 class="box-title">Your Title Here</h2>
-                <h3 class="box-subtitle">Your Subtitle Here</h3>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-          <!-- <div class="row portfolio-container">
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-uxdesign">
-              <div class="portfolio-box">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/mastercard-header.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>UX Design</h4>
-                  <p> Empowering Vendors in the Digital Era</p>
-                </div>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/mastercard-header.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=" Mastercard QR Payments - Empowering Vendors in the Digital Era"><i class="bx bx-plus"></i></a>
-                  <a href="mastercard.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-                <div class="box-content">
-                  <h2 class="box-title">Your Title Here</h2>
-                  <h3 class="box-subtitle">Your Subtitle Here</h3>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-design">
-            <div class="portfolio-box">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/cd-logo1.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Design</h4>
-                <p>Career Day Logo</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/cd-logo1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Career Day Logo"><i class="bx bx-plus"></i></a>
-                <a href="careerday-logo.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div class="box-content">
-                <h2 class="box-title">Your Title Here</h2>
-                <h3 class="box-subtitle">Your Subtitle Here</h3>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-uxdesign">
-            <div class="portfolio-box">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/chewy-header.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>UX Design</h4>
-                <p> Enhancing Chewy Customer Experience</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/chewy-header.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Pet Health Connect - Enhancing Chewy Customer Experience"><i class="bx bx-plus"></i></a>
-                <a href="chewy.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div class="box-content">
-                <h2 class="box-title">Your Title Here</h2>
-                <h3 class="box-subtitle">Your Subtitle Here</h3>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-design">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/flag-rep.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>UX Design</h4>
-                <p>Redesigning the flags of each borough in New York City</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/flag-rep.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Redesigning the flags of each borough in New York City"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div> -->
-
-         
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-design">
-            <div class="portfolio-box">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/grid-theroy100.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Design</h4>
-                <p>Grid Theory - lines and structures defining </p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/grid-theroy100.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Grid Theory - lines and structures defining"><i class="bx bx-plus"></i></a>
-                <a href="grid-theory.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div class="box-content">
-                <h2 class="box-title">Your Title Here</h2>
-                <h3 class="box-subtitle">Your Subtitle Here</h3>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-coding">
-            <div class="portfolio-box">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/Resturant-Search.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Coding</h4>
-                <p>Created a search function</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/Resturant-Search.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Creating a search function"><i class="bx bx-plus"></i></a>
-                <a href="search-query.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div class="box-content">
-                <h2 class="box-title">Your Title Here</h2>
-                <h3 class="box-subtitle">Your Subtitle Here</h3>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-coding">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/devil_game.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Coding</h4>
-                <p>Created a shooting mini game</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/devil_game.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Created a shooting mini game"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-design">
-            <div class="portfolio-box">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/taco_truck.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Design</h4>
-                <p>Design the logo of Sazon Villa</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/taco_truck.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Design the logo of Sazon Villa"><i class="bx bx-plus"></i></a>
-                <a href="logo-sazon.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div class="box-content">
-                <h2 class="box-title">Your Title Here</h2>
-                <h3 class="box-subtitle">Your Subtitle Here</h3>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-coding">
-            <div class="portfolio-box">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/food-truck.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Coding</h4>
-                <p>Creating the website through WIX</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/food-truck.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Creating the website through WIX"><i class="bx bx-plus"></i></a>
-                <a href="wix.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div class="box-content">
-                <h2 class="box-title">Your Title Here</h2>
-                <h3 class="box-subtitle">Your Subtitle Here</h3>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-sketch">
-            <div class="portfolio-box">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/sketch-fork.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Sketch</h4>
-                <p>Create a sketch depicting a fork with dimension, accentuated by a shadow</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/sketch-fork.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sketch a women dancing"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              <!-- </div>
-              <div class="box-content">
-                <h2 class="box-title">Your Title Here</h2>
-                <h3 class="box-subtitle">Your Subtitle Here</h3>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-<!--    
-          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-sketch">
-            <div class="portfolio-box">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/sketch-man.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Sketch</h4>
-                <p>Sketch a man during the 80s </p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/sketch-man.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sketch a man during the 80s "><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              <!-- </div>
-              <div class="box-content">
-                <h2 class="box-title">Your Title Here</h2>
-                <h3 class="box-subtitle">Your Subtitle Here</h3>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-sketch">
-            <div class="portfolio-box">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/sketch-women.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Sketch</h4>
-                <p>Sketch a women dancing</p>
-              
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/sketch-women.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Create a sketch depicting a fork with dimension, accentuated by a shadow"><i class="bx bx-plus"></i></a> -->
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              <!-- </div>
-              <div class="box-content">
-                <h2 class="box-title">Your Title Here</h2>
-                <h3 class="box-subtitle">Your Subtitle Here</h3>
-              </div>
-            </div>
-          </div>
-        </div> -->
-<!-- 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-design">
-            <div class="portfolio-box">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/animals.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Design</h4>
-                <p> Develop a theoretical framework related to stuffed animals</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/animals.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Develop a theoretical framework related to stuffed animals"><i class="bx bx-plus"></i></a>
-                <a href="stuff-animals.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div class="box-content">
-                <h2 class="box-title">Your Title Here</h2>
-                <h3 class="box-subtitle">Your Subtitle Here</h3>
-              </div>
-            </div>
-          </div>
-        </div> -->
-<!-- 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-design">
-          <div class="portfolio-box">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/livetrace.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Live Trace</h4>
-              <p>Design a pixal profolio</p>
-            </div>
-            <div class="portfolio-links">
-              <a href="assets/img/portfolio/livetrace.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Design a pixal profolio"><i class="bx bx-plus"></i></a>
-              <a href="live-trace.html" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-            <div class="box-content">
-              <h2 class="box-title">Your Title Here</h2>
-              <h3 class="box-subtitle">Your Subtitle Here</h3>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-
-       
-      
-
-
-      
-<!-- 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-sketch">
-            <div class="portfolio-box">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/sketch-jelllyfish.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Sketch</h4>
-                <p>
-                  Create a paper shadowing artwork</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/sketch-jelllyfish.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="
-                Create a paper shadowing artwork"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              <!-- </div>
-              <div class="box-content">
-                <h2 class="box-title">Your Title Here</h2>
-                <h3 class="box-subtitle">Your Subtitle Here</h3>
-              </div>
-            </div>
-          </div>
-        </div> --> 
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-active filter-sketch">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/mushroom.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Sketch</h4>
-                <p>Mushrooms</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/mushroom.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sketch of several small mushrooms "><i class="bx bx-plus"></i></a>
-             <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              <!-- </div>
-              <div class="box-content">
-                <h2 class="box-title">Your Title Here</h2>
-                <h3 class="box-subtitle">Your Subtitle Here</h3>
-              </div>
-            </div>
-          </div>
-        </div> --> 
-
-
-
-
-
-<!-- 
-        </div>
-
       </div>
-    </section>End Portfolio Section -->
 
-   
+      <!-- Third Service -->
+      <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+        <a href="graphic.html" class="icon-box" style="color: rgb(50, 49, 49);">
+          <div class="icon"><i class="bi bi-journal-richtext"></i></div>
+          <h4 class="title">Adobe</h4>
+          <p class="description">I create eye-catching posters for your events, promotions, or campaigns, capturing attention and conveying your message effectively</p>
+        </a>
+      </div>
 
-    
+      <!-- Fourth Service -->
+      <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+        <a href="artwork.html" class="icon-box" style="color: rgb(50, 49, 49);">
+          <div class="icon"><i class="bi bi-pencil"></i></div>
+          <h4 class="title">Sketching</h4>
+          <p class="description">I offer sketching services for illustrations, concepts, or prototypes, providing visual representations to bring your ideas to life.</p>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Services Section -->
+
+
+
 
 <!-- ======= Resume Section ======= -->
 <section id="resume" class="resume section-bg">
@@ -687,54 +358,6 @@
   </div>
 </section><!-- End Resume Section -->
 
-<!-- ======= Services Section ======= -->
-<section id="services" class="services section-bg">
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Services</h2>
-      
-    </div>
-
-    <div class="row">
-      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-        <div class="icon-box">
-          <div class="icon"><i class="bi bi-brush"></i></div>
-          <h4 class="title"><a href="">Logo Design</a></h4>
-          <p class="description">I specialize in crafting unique and creative logos tailored to your brand, utilizing Adobe Illustrator for precision and quality.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-        <div class="icon-box">
-          <div class="icon"><i class="bi bi-laptop"></i></div>
-          <h4 class="title"><a href="">Website Development</a></h4>
-          <p class="description">I build responsive and user-friendly websites from scratch, ensuring your online presence effectively showcases your business using Bootstrap, HTML, CSS, and JavaScript.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-        <div class="icon-box">
-          <div class="icon"><i class="bi bi-journal-richtext"></i></div>
-          <h4 class="title"><a href="">Posters</a></h4>
-          <p class="description">I create eye-catching posters for your events, promotions, or campaigns, capturing attention and conveying your message effectively</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-        <div class="icon-box">
-          <div class="icon"><i class="bi bi-pencil"></i></div>
-          <h4 class="title"><a href="">Sketching</a></h4>
-          <p class="description">I offer sketching services for illustrations, concepts, or prototypes, providing visual representations to bring your ideas to life.</p>
-        </div>
-      </div>
-
-    
-
-    </div>
-
-  </div>
-</section><!-- End Services Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">

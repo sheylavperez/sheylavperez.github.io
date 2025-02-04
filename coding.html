@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Collection</title>
+  
+ <!-- Favicons -->
+ <link href="assets/img/" rel="icon">
+ <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&subset=cyrillic" rel="stylesheet">
+
+ <!-- Vendor CSS Files -->
+ <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+ <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+ <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+ <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+
+    /* Targeting the logo h1 directly */
+    h1 a {
+      color: #2c4964; /* Blue color */
+      text-decoration: none; /* Remove underline on hover */
+      font-size: 26px;
+      margin: 0;
+      padding: 6px 0;
+      line-height: 1;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h1 a:hover {
+      color: #2c4964; /* Ensure the color remains the same on hover */
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+      color: #5a656e;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Playfair Display", serif;
+    }
+
+    .gallery-container {
+      padding: 50px 15px;
+      background-color: #f9f9f9;
+    }
+    
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 1.2rem;
+      padding: 10px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover .overlay {
+      opacity: 1;
+    }
+
+    .drawing-effect {
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #333;
+      position: relative;
+      animation: textFadeIn 1.5s ease-out forwards;
+    }
+
+    @keyframes textFadeIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Ensure the heading and paragraph stack vertically */
+    .section-title {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;    /* Center align the text */
+      text-align: center;     /* Center text inside the container */
+      margin-bottom: 50px;    /* Space at the bottom */
+    }
+
+    /* Adjust the font size and styling for the Art Gallery heading */
+    .section-title h2.drawing-effect {
+      font-size: 3.5rem; /* Larger title */
+      font-weight: 700;  /* Bold weight */
+      letter-spacing: 2px; /* Slight letter-spacing */
+      color: #333; /* Dark text */
+      margin-bottom: 20px; /* Space below the title */
+    }
+
+    /* Adjust the font size and styling for the paragraph */
+    .section-title p.drawing-effect {
+      font-size: 1.2rem; /* Smaller paragraph */
+      color: #666; /* Lighter color */
+      line-height: 1.6; /* Improve readability */
+      font-weight: 400; /* Regular weight */
+      max-width: 700px; /* Limit paragraph width for better readability */
+      margin: 0 auto; /* Center align paragraph */
+    }
+
+    /* Optional: To add more spacing between elements */
+    .section-title {
+      margin-bottom: 50px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">Sheyla Perez</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link" href="about-me.html">About</a></li>
+          <li><a class="nav-link" href="#portfolio">UX Portfolio</a></li>
+          <li class="dropdown">
+            <a class="nav-link scrollto" href="index.html#services">More Projects</a>
+            <ul class="dropdown-content">
+            
+              <li><a href="graphic.html">Graphic</a></li>
+              <li><a href="coding.html">Coding</a></li>
+              <li><a href="artwork.html" >Sketch</a></li>
+
+            </ul>
+          </li>
+
+          <li><a class="nav-link scrollto" href="index.html#resume">Resume</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- Artwork Gallery -->
+  <section class="gallery-container">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="drawing-effect">Coding Collection</h2>
+        <p class="drawing-effect">Discover the creative possibilities using Adobe tools. Explore a range of designs, illustrations, and digital art.</p>
+      </div>
+    </div>
+    
+
+      <div class="row">
+        <!-- Artwork items with links -->
+        <div class="col-md-6 col-sm-12 gallery-item mb-4">
+          <a href="graphic-details.html?artwork=1">
+            <img src="assets/img/portfolio/techforher-header.png" alt="Artwork 1" class="img-fluid">
+            <div class="overlay">Artwork 1</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-12 gallery-item mb-4">
+          <a href="graphic-details.html?artwork=2">
+            <img src="assets/img/portfolio/devil_game.png" alt="Artwork 2" class="img-fluid">
+            <div class="overlay">Artwork 2</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-12 gallery-item mb-4">
+          <a href="graphic-details.html?artwork=3">
+            <img src="assets/img/portfolio/Resturant-Search.png" alt="Artwork 3" class="img-fluid">
+            <div class="overlay">Artwork 3</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-12 gallery-item mb-4">
+          <a href="artwork-details.html?artwork=3">
+            <img src="assets/img/portfolio/short-portfolio.png" alt="Artwork 3" class="img-fluid">
+            <div class="overlay">Artwork 3</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-12 gallery-item mb-4">
+          <a href="artwork-details.html?artwork=4">
+            <img src="assets/img/portfolio/simple-todoish.png" alt="Artwork 4" class="img-fluid">
+            <div class="overlay">Artwork 4</div>
+          </a>
+          </div>
+
+          <div class="col-md-6 col-sm-12 gallery-item mb-4">
+            <a href="artwork-details.html?artwork=4">
+              <img src="assets/img/portfolio/language-selector.png" alt="Artwork 4" class="img-fluid">
+              <div class="overlay">Artwork 4</div>
+            </a>
+            </div>
+
+            <div class="col-md-6 col-sm-12 gallery-item mb-4">
+              <a href="artwork-details.html?artwork=4">
+                <img src="assets/img/portfolio/linkedin.png" alt="Artwork 4" class="img-fluid">
+                <div class="overlay">Artwork 4</div>
+              </a>
+              </div>
+        
+
+              
+    
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>© 2024 Sheyla Perez. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".book-container").turn({
+        width: 800,
+        height: 500,
+        autoCenter: true,
+      });
+    });
+  </script>
+
+</body>
+
+</html>

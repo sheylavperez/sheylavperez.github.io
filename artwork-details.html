@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artwork Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      color: #5a656e;
+      margin: 0;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Playfair Display", serif;
+    }
+
+    .container {
+      display: flex;
+      align-items: center; /* Aligns the items vertically in the center */
+      justify-content: center;
+      width: 90%;
+      max-width: 1200px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    .image-section {
+      flex: 0 0 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .details-section {
+      flex: 0 0 50%;
+      padding: 20px;
+    }
+
+    .details-section h2 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .details-section p {
+      font-size: 18px;
+      color: #555;
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    .details-section .tools-used {
+      font-size: 16px;
+      color: #007bff;
+      font-weight: 600;
+      margin-top: 20px;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+
+    .back-link {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    /* Additional Styling for Extra Description */
+    .extra-description {
+      font-size: 16px;
+      color: #444;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-section">
+      <img id="artwork-image" src="assets/img/portfolio/sketch-jelllyfish.jpeg" alt="Artwork">
+    </div>
+    <div class="details-section">
+      <h2 id="artwork-title">Jellyfish Sketch</h2>
+      <p id="artwork-description">A mesmerizing jellyfish sketch showcasing the beauty of marine life, with intricate details that capture the fluid movement of the creature.</p>
+      <!-- New Extra Description Paragraph -->
+      <p class="extra-description" id="extra-description"></p>
+      <p class="tools-used" id="artwork-tools">Tools used: Pencil, Charcoal, Photoshop</p>
+      <a href="artwork.html" class="back-link">← Back to Gallery</a>
+    </div>
+  </div>
+
+  <script>
+    // Get query parameter for the artwork ID
+    const params = new URLSearchParams(window.location.search);
+    const artworkId = params.get('artwork');
+
+    // Artwork details
+    const artworkDetails = {
+      1: {
+        img: 'assets/img/portfolio/sketch-jelllyfish.jpeg',
+        title: 'Graceful Jellyfish',
+        description: 'An elegant hand-drawn sketch capturing the fluid motion and delicate structure of a jellyfish. The intricate linework highlights the ethereal beauty of marine life.',
+        extraDescription: 'The drawing emphasizes the translucent nature of the jellyfish, showcasing the delicate curves and textures that give it a sense of movement and grace.',
+        tools: 'Tools used: Pencil, inspired by an image reference.',
+      },
+      2: {
+        img: 'assets/img/portfolio/sketch-man.jpeg',
+        title: 'Sketch of a Man',
+        description: 'A detailed sketch of a man with intricate line work and depth.',
+        extraDescription: 'This sketch explores the human form with a focus on anatomy, showcasing the realistic rendering of the subject’s expression and posture.',
+        tools: 'Tools used: Pencil',
+      },
+      3: {
+      img: 'assets/img/portfolio/sketch-women.jpeg',
+      title: 'Modern Woman Sketch',
+      description: 'A striking portrayal of a woman in a modern art style, focusing on her back and the elegance of her posture.',
+      extraDescription: 'The sketch explores the balance between abstraction and realism, with clean pencil lines emphasizing the fluidity of form and the beauty of the human figure, capturing the natural posture and movement.',
+      tools: 'Tools used: Pencil'
+    },
+
+      4: {
+      img: 'assets/img/portfolio/mushroom.png',
+      title: 'Mushroom Drawing',
+      description: 'A detailed drawing of a mushroom observed in a park, showcasing intricate details and natural textures.',
+      extraDescription: 'The sketch emphasizes the organic form of the mushroom, highlighting the texture and patterns found in nature. The focus on shadows and shading techniques captures the essence of the natural environment.',
+      tools: 'Tools used: Pencil'
+      },
+      5: {
+      img: 'assets/img/portfolio/sketch-fork.png',
+      title: 'Abstract Fork',
+      description: 'An artistic interpretation of a fork with dynamic shading techniques.',
+      extraDescription: 'The abstract nature of the fork adds a modern touch, exploring the intersection of everyday objects and artistic expression.',
+      tools: 'Tools used: Pencil, Charcoal' 
+    } 
+
+    };
+
+    // Display artwork or error message
+    const imageElement = document.getElementById('artwork-image');
+    const titleElement = document.getElementById('artwork-title');
+    const descriptionElement = document.getElementById('artwork-description');
+    const extraDescriptionElement = document.getElementById('extra-description');
+    const toolsElement = document.getElementById('artwork-tools');
+
+    if (artworkDetails[artworkId]) {
+      const artwork = artworkDetails[artworkId];
+      imageElement.src = artwork.img;
+      imageElement.alt = artwork.title;
+      titleElement.textContent = artwork.title;
+      descriptionElement.textContent = artwork.description;
+      extraDescriptionElement.textContent = artwork.extraDescription;
+      toolsElement.textContent = artwork.tools;
+    } else {
+      titleElement.textContent = 'Artwork not found';
+      descriptionElement.textContent = 'Please go back to the gallery and select a valid artwork.';
+      extraDescriptionElement.style.display = 'none';
+      toolsElement.style.display = 'none';
+      imageElement.src = 'assets/img/default-placeholder.png'; // Placeholder image
+      imageElement.alt = 'Artwork not found';
+    }
+  </script>
+</body>
+
+</html>
