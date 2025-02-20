@@ -1,308 +1,87 @@
-
-(function() {
+(function () {
   "use strict";
 
-  /**
-   * Easy selector helper function
-   */
+  /** Easy selector helper function */
   const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
+    el = el.trim();
+    return all ? [...document.querySelectorAll(el)] : document.querySelector(el);
+  };
+
+  /** Typing Effect */
+  const roleElement = document.getElementById("role-text");
+  const roles = ["Product Designer", "Graphic Designer", "Web Developer", "Entrepreneur"];
+  let roleIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let typingSpeed = 100;
+  let deletingSpeed = 50;
+  let delayBeforeDelete = 1000; // Pause before deleting
+
+  function typeEffect() {
+    const currentRole = roles[roleIndex];
+
+    if (!isDeleting) {
+      // Typing logic
+      roleElement.textContent = currentRole.substring(0, charIndex + 1);
+      charIndex++;
+
+      if (charIndex === currentRole.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, delayBeforeDelete);
+      } else {
+        setTimeout(typeEffect, typingSpeed);
+      }
     } else {
-      return document.querySelector(el)
+      // Deleting logic
+      roleElement.textContent = currentRole.substring(0, charIndex - 1);
+      charIndex--;
+
+      if (charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length; // Move to next role
+        setTimeout(typeEffect, 500); // Short pause before typing next role
+      } else {
+        setTimeout(typeEffect, deletingSpeed);
+      }
     }
   }
 
-  /**
-   * Easy event listener function
-   */
+  typeEffect(); // Start the animation
+
+  /** Other UI functionalities (Navbar, Scrolling, etc.) */
+  let navbarlinks = select("#navbar .scrollto", true);
+  const navbarlinksActive = () => {
+    let position = window.scrollY + 200;
+    navbarlinks.forEach((navbarlink) => {
+      if (!navbarlink.hash) return;
+      let section = select(navbarlink.hash);
+      if (!section) return;
+      navbarlink.classList.toggle(
+        "active",
+        position >= section.offsetTop && position <= section.offsetTop + section.offsetHeight
+      );
+    });
+  };
+
+  window.addEventListener("load", navbarlinksActive);
+  document.addEventListener("scroll", navbarlinksActive);
+
+  /** Mobile nav toggle */
   const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
+    let selectEl = select(el, all);
     if (selectEl) {
       if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
+        selectEl.forEach((e) => e.addEventListener(type, listener));
       } else {
-        selectEl.addEventListener(type, listener)
+        selectEl.addEventListener(type, listener);
       }
     }
-  }
+  };
 
-  /**
-   * Easy on scroll event listener 
-   */
-  const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
-  }
-
-  /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
-      } else {
-        navbarlink.classList.remove('active')
-      }
-    })
-  }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
-
-  /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let header = select('#header')
-    let offset = header.offsetHeight
-
-    if (!header.classList.contains('header-scrolled')) {
-      offset -= 16
-    }
-
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos - offset,
-      behavior: 'smooth'
-    })
-  }
-
-  /**
-   * Header fixed top on scroll
-   */
-  let selectHeader = select('#header')
-  if (selectHeader) {
-    let headerOffset = selectHeader.offsetTop
-    let nextElement = selectHeader.nextElementSibling
-    const headerFixed = () => {
-      if ((headerOffset - window.scrollY) <= 0) {
-        selectHeader.classList.add('fixed-top')
-        nextElement.classList.add('scrolled-offset')
-      } else {
-        selectHeader.classList.remove('fixed-top')
-        nextElement.classList.remove('scrolled-offset')
-      }
-    }
-    window.addEventListener('load', headerFixed)
-    onscroll(document, headerFixed)
-  }
-
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
-
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
-
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
-    }
-  }, true)
-
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
-
-      let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
-      scrollto(this.hash)
-    }
-  }, true)
-
-  /**
-   * Scroll with ofset on page load with hash links in the url
-   */
-  window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
+  on("click", ".mobile-nav-toggle", function () {
+    select("#navbar").classList.toggle("navbar-mobile");
+    this.classList.toggle("bi-list");
+    this.classList.toggle("bi-x");
   });
 
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-      });
-
-      let portfolioFilters = select('#portfolio-flters li', true);
-
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-      }, true);
-    }
-
-  });
-
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Skills animation
-   */
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%'
-        });
-      }
-    })
-  }
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 40
-      },
-
-      1200: {
-        slidesPerView: 3,
-      }
-    }
-  });
-
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
-
-})()
-
-const roles = ["Graphic Designer", "UX Designer",  "Web Developer"]; // Define the roles in the desired order
-let roleIndex = 0;
-let isDeleting = false;
-let delay = 1000; // Time delay before deleting the text
-const roleElement = document.getElementById('role-text');
-
-function changeRole() {
-  const currentRole = roles[roleIndex];
-  if (!isDeleting) {
-    animateTyping(currentRole);
-  } else {
-    animateDeleting(currentRole);
-  }
-}
-
-function animateTyping(text) {
-  let i = 0;
-  const typingInterval = setInterval(() => {
-    if (i < text.length) {
-      roleElement.textContent += text.charAt(i);
-      i++;
-    } else {
-      clearInterval(typingInterval); // Stop typing animation when reaching the end of the sentence
-      isDeleting = true;
-      setTimeout(changeRole, delay); // Delay before deleting the text
-    }
-  }, 100); // Typing speed (adjust as needed)
-}
-
-function animateDeleting(text) {
-  let i = text.length;
-  const deletingInterval = setInterval(() => {
-    if (i >= 0) {
-      roleElement.textContent = text.substring(0, i);
-      i--;
-    } else {
-      clearInterval(deletingInterval); // Stop deleting animation when reaching the beginning of the sentence
-      isDeleting = false;
-      roleIndex = (roleIndex + 1) % roles.length;
-      setTimeout(changeRole, delay); // Delay before typing the next role
-    }
-  }, 50); // Deleting speed (adjust as needed)
-}
-
-changeRole(); // Start the animation immediately
+})();
