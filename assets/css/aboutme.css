@@ -20,19 +20,78 @@
     display: block;
     border-radius: 10px;
 }
-
+/* About Me Section Styles */
 .about-me-section {
     background-color: #ffeaed;
-    padding: 20px;
+    padding: 40px;
     border-radius: 20px;
+    margin-top: 30px;
 }
+
+.about-me-section .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-me-text {
+    padding-right: 20px;
+}
+
 .about-me-image img {
     width: 100%;
     height: auto;
     border-radius: 20px;
 }
+
+.about-me-title {
+    color: #d43076; /* Give it a unique color */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.about-me-text ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about-me-text li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
 .about-me-text strong {
     font-weight: bold;
+    color: #d43076;
+}
+
+.about-me-text h7 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #666;
+}
+
+/* Extra small screen adjustments */
+@media (max-width: 767px) {
+    .about-me-section .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-me-image img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-me-title {
+        font-size: 1.8rem;
+    }
 }
 
 
@@ -131,3 +190,13 @@
     height: 100%; /* Ensures the image fills the container height */
     object-fit: cover; /* Crops the image while preserving aspect ratio */
 }
+
+/* Ensure the parent container has relative positioning */
+#portfolio {
+    position: relative;
+    padding: 50px 0;
+  }
+
+  
+  
+  

@@ -1,24 +1,42 @@
 #hero {
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding: 50px;
-    flex-wrap: wrap; /* Allow elements to wrap */
+    flex-wrap: wrap;
 }
-
 
 .photo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    flex-wrap: wrap; /* Ensure responsive wrapping */
 }
-.text-container {
-    flex: 1;
-    max-width: 500px; /* Limit width of the text section */
-    margin-right: 20px;
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers images */
+    align-items: center;
+    gap: 20px; /* Space between images */
+    width: 100%;
 }
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
 
 .image-container {
     flex: 1;
@@ -211,3 +229,25 @@
 }
 
 
+  /* Container to hold the GIF */
+  
+  
+  /* Walking GIF settings */
+  .walking-gif {
+    width: 65px; /* Adjust width as needed */
+    height: auto;
+    position: relative;
+    animation: walkAcross 15s linear infinite; /* Adjust animation duration */
+  }
+  
+  /* Animation for the walking GIF */
+  @keyframes walkAcross {
+    0% {
+      left: -150px;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  
