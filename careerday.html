@@ -482,6 +482,97 @@ strong {
     margin-bottom: 5px;
 }
 
+/* Portfolio Details Section */
+#portfolio-details {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f8f9fa; /* Light background color for contrast */
+}
+
+/* Heading Style */
+#portfolio-details h2 {
+
+  font-weight: bold;
+
+
+  margin-bottom: 40px;
+}
+
+/* Portfolio Slider */
+.portfolio-details-slider .swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-details-slider img {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Limit max height for better scaling */
+  object-fit: cover; /* Ensures the image scales proportionally */
+  border-radius: 8px; /* Add rounded corners to the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Portfolio Info */
+.portfolio-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.portfolio-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.portfolio-info ul li {
+
+  margin-bottom: 8px;
+}
+
+.portfolio-info ul li strong {
+
+
+}
+
+/* Portfolio Description */
+.portfolio-description {
+  margin-top: 30px;
+}
+
+.portfolio-description h2 {
+
+
+
+}
+
+.portfolio-description p {
+
+
+  line-height: 1.6;
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+  /* Stack the columns vertically on medium screens */
+  .portfolio-details .row {
+    flex-direction: column;
+ 
+  }
+
+  .col-lg-8,
+  .col-lg-4 {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+
+ 
 /* Responsive Design */
 @media (max-width: 768px) {
     .persona-card {
@@ -558,7 +649,7 @@ strong {
   
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project Information</h3>
+              <h4>Project Information</h4>
               <ul class="list-unstyled">
                 <li><strong>Category:</strong> Web design</li>
                 <li><strong>Responsibilities:</strong> User research, prototyping, frontend development, and collaboration with stakeholders</li>
