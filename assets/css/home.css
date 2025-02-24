@@ -1,3 +1,93 @@
+/*heading section*/
+/*--------------------------------------------------------------
+Hero Section
+--------------------------------------------------------------*/
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 75vh;
+  background-color: white;
+  padding: 0 15px;
+}
+
+#hero .text-container {
+  flex: 1;
+  padding-left: 10%;
+}
+
+#hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #2c4964;
+  margin: 0 0 10px 0;
+}
+
+#hero h1 span {
+  color: #d43076;
+}
+
+#hero h2 {
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #2c4964;
+}
+
+#hero .image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#hero .image-container img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border: 5px solid white;
+}
+
+#hero .btn-get-started {
+  font-size: 64px;
+  color: black;
+  height: 60px;
+  transition: 0.5s;
+}
+
+#hero .btn-get-started:hover {
+  color: #d43076;
+}
+
+@media (max-width: 768px) {
+  #hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #hero .text-container {
+    padding: 0;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+  }
+
+  #hero .image-container {
+    padding: 0;
+  }
+
+  #hero .image-container img {
+    width: 200px;
+  }
+}
+
 #hero {
     display: flex;
     flex-direction: row;
@@ -109,6 +199,7 @@
     width: 100%;
 }
 
+
 /* Section Title */
 .section-title {
     margin-bottom: 40px;
@@ -148,12 +239,16 @@
 
 /* Portfolio Item */
 .portfolio-item {
-    max-width: 1040px;
+    max-width: 1000px;
     margin: 20px auto 0; /* Add margin for spacing */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px; /* Optional: Adjust spacing between items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: #fff;
+   
 }
 
 /* Image Container */
@@ -166,13 +261,16 @@
     width: 100%;
     height: auto;
     border-radius: 8px;
+    margin-top: 10%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 /* Text Container */
 .portfolio-content {
     flex: 2;
     max-width: 600px;
+ 
 }
 
 .portfolio-info-container {
@@ -192,24 +290,7 @@
     margin-bottom: 20px;
 }
 
-/* Pink Button Link */
-.pink-button-link {
-    text-decoration: none;
-}
 
-.pink-button {
-    padding: 10px 20px;
-    background-color: #f06292;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.pink-button:hover {
-    background-color: #d34f7e;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -251,3 +332,21 @@
   }
   
   
+
+  /*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+
+  
+
+.ux-design-h4 {
+    font-size: 24px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #2c4964;
+}
+
+
+.highlight {
+    color: #d43076;
+  }

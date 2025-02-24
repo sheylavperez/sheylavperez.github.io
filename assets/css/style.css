@@ -181,94 +181,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-#hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 75vh;
-  background-color: white;
-  padding: 0 15px;
-}
-
-#hero .text-container {
-  flex: 1;
-  padding-left: 10%;
-}
-
-#hero h1 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #2c4964;
-  margin: 0 0 10px 0;
-}
-
-#hero h1 span {
-  color: #d43076;
-}
-
-#hero h2 {
-  font-size: 24px;
-  font-weight: 300;
-  font-family: "Poppins", sans-serif;
-  color: #2c4964;
-}
-
-#hero .image-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-#hero .image-container img {
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border: 5px solid white;
-}
-
-#hero .btn-get-started {
-  font-size: 64px;
-  color: black;
-  height: 60px;
-  transition: 0.5s;
-}
-
-#hero .btn-get-started:hover {
-  color: #d43076;
-}
-
-@media (max-width: 768px) {
-  #hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  #hero .text-container {
-    padding: 0;
-  }
-
-  #hero h1 {
-    font-size: 28px;
-  }
-
-  #hero h2 {
-    font-size: 18px;
-  }
-
-  #hero .image-container {
-    padding: 0;
-  }
-
-  #hero .image-container img {
-    width: 200px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -285,13 +197,17 @@ section {
   padding-bottom: 30px;
 }
 
-.section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  position: relative;
-  color: #345676;
+.section-title h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #2c4964;
+    margin: 0 0 10px 0;
+
 }
+/* .section-title h1 {
+  font-size: 28px;
+} */
 
 
 /*--------------------------------------------------------------
@@ -308,7 +224,7 @@ section {
 }
 
 
-.section-title h2::after {
+/* .section-title h2::after {
   content: "";
   position: absolute;
   display: block;
@@ -318,10 +234,15 @@ section {
   bottom: 0;
   left: 0;
 }
+*/
 
-.section-title p {
-  margin-bottom: 0;
-}
+/*.section-title p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+} */
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -492,6 +413,8 @@ section {
   background-color: #dd5a92;
 }
 
+
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -641,52 +564,9 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-.portfolio-item {
-  display: flex;
-  margin-bottom: 30px;
-}
 
-.portfolio-wrap {
-  position: relative;
-  display: flex;
-  border: 2px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-}
 
-.portfolio-img {
-  width: 400px;
-  height: auto;
-  object-fit: cover;
-}
-
-.portfolio-content {
-  flex: 1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.portfolio-info h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 10px;
-
-  margin: 5px;
-}
-
-.portfolio-info p {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 0;
-  margin: 5px;
-  margin-top: 3%;
-}
-
-* Portfolio Details Section */
+/* Portfolio Details Section */
 #portfolio-details {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -738,21 +618,13 @@ section {
   margin-bottom: 8px;
 }
 
-.portfolio-info ul li strong {
 
-
-}
 
 /* Portfolio Description */
 .portfolio-description {
   margin-top: 30px;
 }
 
-.portfolio-description h2 {
-
-
-
-}
 
 .portfolio-description p {
 
