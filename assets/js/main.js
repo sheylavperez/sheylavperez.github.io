@@ -1,50 +1,50 @@
-(function () {
-  "use strict";
+// (function () {
+//   "use strict";
 
-  /** Easy selector helper function */
-  const select = (el, all = false) => {
-    el = el.trim();
-    return all ? [...document.querySelectorAll(el)] : document.querySelector(el);
-  };
+//   /** Easy selector helper function */
+//   const select = (el, all = false) => {
+//     el = el.trim();
+//     return all ? [...document.querySelectorAll(el)] : document.querySelector(el);
+//   };
 
-  /** Typing Effect */
-  const roleElement = document.getElementById("role-text");
-  const roles = ["Product Designer", "Graphic Designer", "Web Developer", "Entrepreneur"];
-  let roleIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  let typingSpeed = 100;
-  let deletingSpeed = 50;
-  let delayBeforeDelete = 1000; // Pause before deleting
+//   /** Typing Effect */
+//   const roleElement = document.getElementById("role-text");
+//   const roles = ["Product Designer", "Graphic Designer", "Web Developer", "Entrepreneur"];
+//   let roleIndex = 0;
+//   let charIndex = 0;
+//   let isDeleting = false;
+//   let typingSpeed = 100;
+//   let deletingSpeed = 50;
+//   let delayBeforeDelete = 1000; // Pause before deleting
 
-  function typeEffect() {
-    const currentRole = roles[roleIndex];
+//   function typeEffect() {
+//     const currentRole = roles[roleIndex];
 
-    if (!isDeleting) {
-      // Typing logic
-      roleElement.textContent = currentRole.substring(0, charIndex + 1);
-      charIndex++;
+//     if (!isDeleting) {
+//       // Typing logic
+//       roleElement.textContent = currentRole.substring(0, charIndex + 1);
+//       charIndex++;
 
-      if (charIndex === currentRole.length) {
-        isDeleting = true;
-        setTimeout(typeEffect, delayBeforeDelete);
-      } else {
-        setTimeout(typeEffect, typingSpeed);
-      }
-    } else {
-      // Deleting logic
-      roleElement.textContent = currentRole.substring(0, charIndex - 1);
-      charIndex--;
+//       if (charIndex === currentRole.length) {
+//         isDeleting = true;
+//         setTimeout(typeEffect, delayBeforeDelete);
+//       } else {
+//         setTimeout(typeEffect, typingSpeed);
+//       }
+//     } else {
+//       // Deleting logic
+//       roleElement.textContent = currentRole.substring(0, charIndex - 1);
+//       charIndex--;
 
-      if (charIndex === 0) {
-        isDeleting = false;
-        roleIndex = (roleIndex + 1) % roles.length; // Move to next role
-        setTimeout(typeEffect, 500); // Short pause before typing next role
-      } else {
-        setTimeout(typeEffect, deletingSpeed);
-      }
-    }
-  }
+//       if (charIndex === 0) {
+//         isDeleting = false;
+//         roleIndex = (roleIndex + 1) % roles.length; // Move to next role
+//         setTimeout(typeEffect, 500); // Short pause before typing next role
+//       } else {
+//         setTimeout(typeEffect, deletingSpeed);
+//       }
+//     }
+//   }
 
   typeEffect(); // Start the animation
 

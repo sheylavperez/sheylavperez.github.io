@@ -27,7 +27,8 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/home.css" rel="stylesheet">
  
- 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
   /* Dropdown for large screens (desktop view) */
 .navbar .dropdown ul {
@@ -85,45 +86,44 @@
 
 </style>
 <body>
+ 
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+            <h1><a href="index.html">Sheyla Perez</a></h1>
+        </div>
 
-      <div class="logo">
-        <h1><a href="index.html">Sheyla Perez</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="about-me.html">About</a></li>
-          <li> <a class="nav-link" href="#portfolio"> UX Portfolio</a></li>
-          <!-- <li class="dropdown"> -->
-           <!-- <a class="nav-link scrollto" href="#services">More Projects</a>
-            <ul class="dropdown-content">
-            
-              <li><a href="graphic.html">Graphic</a></li>
-              <li><a href="Coding.html">Coding</a></li>
-              <li><a href="artwork.html">Sketch</a></li>
-            </ul> -->
-          </li>
-          <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+                <li><a class="nav-link scrollto active" href="about-me.html">About</a></li>
+                <li><a class="nav-link" href="index.html#portfolio"> UX Portfolio</a></li>
+                <!-- <li class="dropdown">
+                    <a class="nav-link scrollto" href="#services">More Projects</a>
+                    <ul class="dropdown-content">
+                        <li><a href="graphic.html">Graphic</a></li>
+                        <li><a href="Coding.html">Coding</a></li>
+                        <li><a href="artwork.html">Sketch</a></li>
+                    </ul>
+                </li> -->
+                <li><a class="nav-link scrollto" href="index.html#resume">Resume</a></li>
+                <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+            </ul>
+            <!-- Hamburger menu toggle icon -->
+            <button class="navbar-toggler mobile-nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+        </nav>
     </div>
-  </header><!-- End Header -->
+</header>
 
 <section id="hero">
   <div class="photo">
       <div class="text-container">
-          <h1>Hi, I'm <span class="highlight">Sheyla!</span></h1>
-          <h2>I'm a <span id="role-text">Product Designer & Educator</span></h2>
+          <h1>Hi, I'm Sheyla!</h1>
+          <h2>I'm a <span id="role-text">Product Designer </span></h2>
           <p class="intro-text">
-            Deeply focused on creating simple, user-friendly experiences. I believe good design is essential—if it doesn’t help people, it’s not truly design.
+            Deeply focused on creating <span class="highlight">simple, useful, human</span> centered experiences. I believe good design is essential—if it doesn’t help people, it’s not truly design.
           </p>
         
 
@@ -159,7 +159,7 @@
     
   
     <div class="section-title">
-      <h1>Product Design <span class="highlight">Portfolio</span></h1>
+      <h1>Product Design Portfolio</h1>
       <p>Design is solving problems with style and creativity, understanding what people need, and creating experiences that truly make an impact!</p>
     </div>
 
@@ -232,7 +232,7 @@
   <div class="container">
 
     <div class="section-title">
-      <h1>The Full <span class="highlight">Collection</span></h1>
+      <h1>The Full Collection </h1>
     </div>
 
     <div class="row" >
@@ -277,7 +277,7 @@
 
     <div class="section-title">
       <h1>Resume</h1>
-    </div>
+
 
     <div class="row">
       <div class="col-lg-6">
@@ -380,6 +380,7 @@
     </div>
 
   </div>
+</div>
 </section><!-- End Resume Section -->
 
 
@@ -459,7 +460,35 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+const select = (el, all = false) => {
+  el = el.trim();
+  if (all) {
+    return [...document.querySelectorAll(el)];
+  } else {
+    return document.querySelector(el);
+  }
+};
 
+const on = (type, el, listener, all = false) => {
+  let selectEl = select(el, all);
+  if (selectEl) {
+    if (all) {
+      selectEl.forEach((e) => e.addEventListener(type, listener));
+    } else {
+      selectEl.addEventListener(type, listener);
+    }
+  }
+};
+
+on("click", ".mobile-nav-toggle", function () {
+  select("#navbar").classList.toggle("navbar-mobile");
+  this.classList.toggle("bi-list");
+  this.classList.toggle("bi-x");
+});
+
+
+ </script>
 </body>
 
 </html>

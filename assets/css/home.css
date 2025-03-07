@@ -186,7 +186,7 @@ Hero Section
         line-height: 1.6;
         color: #666;
         margin-bottom: 20px;
-        font-family: "Playfair Display", serif;
+        font-family: "open sans";
     }
 }
 
@@ -349,4 +349,17 @@ Hero Section
 
 .highlight {
     color: #d43076;
+    font-weight: bold;
   }
+
+  /* Default color for the mobile nav toggle */
+.bi-x {
+  color: #d43076;
+  background-color: #fff;
+  margin: 20px;
+}
+
+/* Optional: Change color on hover if needed */
+.bi-x:hover {
+  color: #d43076;
+}
