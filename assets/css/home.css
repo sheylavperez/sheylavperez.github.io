@@ -1,32 +1,20 @@
-/*heading section*/
+
 /*--------------------------------------------------------------
-Hero Section
+# Hero Section
 --------------------------------------------------------------*/
 #hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 75vh;
   background-color: white;
-  padding: 0 15px;
+  padding: 50px 15px 20px 15px;
+  flex-wrap: wrap; /* Ensure responsive wrapping */
 }
 
 #hero .text-container {
   flex: 1;
   padding-left: 10%;
-}
-
-#hero h1 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #2c4964;
-  margin: 0 0 10px 0;
-}
-
-#hero h1 span {
-  color: #d43076;
 }
 
 #hero h2 {
@@ -61,18 +49,18 @@ Hero Section
   color: #d43076;
 }
 
+/*--------------------------------------------------------------
+# Mobile Styling (Max Width: 768px)
+--------------------------------------------------------------*/
 @media (max-width: 768px) {
   #hero {
-    flex-direction: column;
+    flex-direction: column; /* Stacks content vertically on mobile */
     text-align: center;
   }
 
   #hero .text-container {
     padding: 0;
-  }
-
-  #hero h1 {
-    font-size: 28px;
+    margin-bottom: 20px; /* Adds space below text */
   }
 
   #hero h2 {
@@ -81,51 +69,30 @@ Hero Section
 
   #hero .image-container {
     padding: 0;
+    margin-bottom: 20px; /* Adds space below image */
   }
 
   #hero .image-container img {
-    width: 200px;
+    width: 200px; /* Resize image for mobile */
   }
 }
 
-#hero {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    flex-wrap: wrap;
-}
-
 .photo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    flex-wrap: wrap; /* Ensure responsive wrapping */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap; /* Ensures responsive wrapping */
 }
+
 .image-container {
-    display: flex;
-    justify-content: center; /* Centers images */
-    align-items: center;
-    gap: 20px; /* Space between images */
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
 }
 
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    #hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .text-container {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-}
 
 
 .image-container {

@@ -128,23 +128,27 @@ h1, h2, h3, h4, h5, h6 {
   visibility: visible;
 }
 
-/* Mobile Navigation */
-.mobile-nav-toggle {
+
+
+ /* Mobile Navigation */
+ .mobile-nav-toggle {
   color: #2c4964;
   font-size: 28px;
   cursor: pointer;
   display: none;
 }
 
+/* Hide the navigation on mobile by default */
 @media (max-width: 991px) {
   .mobile-nav-toggle {
-    display: block;
+    display: block; /* Show the hamburger icon */
   }
 
   .navbar ul {
-    display: none;
+    display: none; /* Hide the navigation links by default */
   }
 
+  /* Mobile navigation menu that appears when toggled */
   .navbar-mobile {
     position: fixed;
     top: 0;
@@ -159,13 +163,24 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-mobile ul {
     display: block;
     position: absolute;
-    top: 55px;
+    top: 15px;
     left: 15px;
     right: 15px;
-    padding: 10px 0;
+    padding: 0px 0;
     background: #fff;
     border-radius: 10px;
     overflow-y: auto;
+  }
+
+  .navbar-mobile ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Default desktop view */
+@media (min-width: 992px) {
+  .navbar ul {
+    display: flex; /* Show navigation as flex on desktop */
   }
 }
 
@@ -181,22 +196,19 @@ section {
   background: linear-gradient(180deg, #f2f6f9 0%, #f2f6f9 100%);
 }
 
+
 .section-title {
   padding-bottom: 30px;
+ 
 }
 
 .section-title h1 {
     font-size: 40px;
-  
     line-height: 56px;
     color: #2c4964;
     margin: 0 0 10px 0;
 
 }
-/* .section-title h1 {
-  font-size: 28px;
-} */
-
 
 /*--------------------------------------------------------------
 # Utility Classes
@@ -211,26 +223,6 @@ section {
   text-align: center;
 }
 
-
-/* .section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #d43076;
-  bottom: 0;
-  left: 0;
-}
-*/
-
-/*.section-title p {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  color: #666;
-  margin-bottom: 20px;
-  font-family: "Playfair Display", serif;
-} */
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -470,6 +462,9 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services{
+  background: linear-gradient(180deg, #f2f6f9 0%, #ffffff 100%);
+}
 .services .icon-box {
   padding: 20px 15px;
   position: relative;
@@ -525,7 +520,6 @@ section {
 }
 
 
-
 /* Portfolio Details Section */
 #portfolio-details {
   padding-top: 60px;
@@ -537,8 +531,6 @@ section {
 #portfolio-details h2 {
 
   font-weight: bold;
-
-
   margin-bottom: 40px;
 }
 
@@ -691,6 +683,10 @@ section {
 
 .contact .contact-form .form-group button:hover {
   background-color: #ff1493;
+}
+
+.contact .section-b{
+  color: #000;
 }
 
 /*--------------------------------------------------------------
