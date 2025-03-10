@@ -32,7 +32,7 @@ Hero Section
 #hero h2 {
   font-size: 24px;
   font-weight: 300;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato";
   color: #2c4964;
 }
 
@@ -52,7 +52,7 @@ Hero Section
 
 #hero .btn-get-started {
   font-size: 64px;
-  color: black;
+  color: #2c4964;
   height: 60px;
   transition: 0.5s;
 }
@@ -139,9 +139,8 @@ Hero Section
     width: 250px;
     padding: 15px 15px 40px; /* Padding to simulate Polaroid photo style */
     background: white;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for effect */
     text-align: center;
-    font-family: "Playfair Display", serif;
+    font-family: "Lato";
     font-size: 14px;
     color: #333;
     transform: rotate(-3deg); /* Tilt for effect */
@@ -186,7 +185,7 @@ Hero Section
         line-height: 1.6;
         color: #666;
         margin-bottom: 20px;
-        font-family: "open sans";
+        font-family: "Lato";
     }
 }
 
@@ -219,7 +218,7 @@ Hero Section
 
 .section-title p {
     font-size: 1.125rem;
-    color: #666;
+    color: #2c4964;
     max-width: 1040px;
     margin: 20px auto 0; /* Add margin for spacing */
     line-height: 1.8;
@@ -255,6 +254,8 @@ Hero Section
 .portfolio-img-container {
     flex: 1;
     max-width: 350px;
+
+    
 }
 
 .portfolio-img {
@@ -262,8 +263,7 @@ Hero Section
     height: auto;
     border-radius: 8px;
     margin-top: 10%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+  
 }
 
 /* Text Container */
@@ -286,7 +286,7 @@ Hero Section
 .portfolio-info-container p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #555;
+    color: #2c4964;
     margin-bottom: 20px;
 }
 
@@ -342,7 +342,7 @@ Hero Section
 .ux-design-h4 {
     font-size: 24px;
   font-weight: 300;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato";
   color: #2c4964;
 }
 
