@@ -20,7 +20,7 @@
 #hero h2 {
   font-size: 24px;
   font-weight: 300;
-  font-family: "Alata";
+  font-family: "Alata", sans-serif;
   color: #2c4964;
 }
 
@@ -107,7 +107,7 @@
     padding: 15px 15px 40px; /* Padding to simulate Polaroid photo style */
     background: white;
     text-align: center;
-    font-family: "Alata";
+    font-family: "Alata", sans-serif;
     font-size: 14px;
     color: #333;
     transform: rotate(-3deg); /* Tilt for effect */
@@ -152,7 +152,7 @@
         line-height: 1.6;
         color: #666;
         margin-bottom: 20px;
-        font-family: "Alata";
+        font-family: "Alata", sans-serif;
     }
 }
 
@@ -309,7 +309,7 @@
 .ux-design-h4 {
     font-size: 24px;
   font-weight: 300;
-  font-family: "Alata";
+  font-family: "Alata", sans-serif;
   color: #2c4964;
 }
 

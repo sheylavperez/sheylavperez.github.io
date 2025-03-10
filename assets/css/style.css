@@ -2,7 +2,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Alata";
+  font-family: "Alata", sans-serif;
   color: #2c4964;
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Alata";
+  font-family: "Alata", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -120,7 +120,6 @@ h1, h2, h3, h4, h5, h6 {
 .navbar a:hover {
   color: #d43076;
 }
-
 
 
 .navbar .dropdown:hover > ul {
@@ -311,13 +310,13 @@ section {
   font-weight: 700;
   color: #2c4964;
   margin-left: 50px;
-  font-family: "Alata";
+  font-family: "Alata", sans-serif;
 }
 
 .about .content .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 50px;
-  font-family: "Alata";
+  font-family: "Alata", sans-serif;
   font-size: 14px;
   color: #437099;
 }
@@ -328,7 +327,7 @@ section {
   margin-top: 20px;
   color: #437099;
   font-size: 15px;
-  font-family: "Alata";
+  font-family: "Alata", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -373,7 +372,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Alata";
+  font-family: "Alata", sans-serif;
   color: #2c4964;
 }
 
@@ -407,7 +406,8 @@ section {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #4b7dab;
-  font-family: "Alata";
+  font-family: "Alata", sans-serif;
+
 }
 
 .resume .resume-item {
@@ -432,7 +432,7 @@ section {
   display: inline-block;
   font-weight: 400;
   margin-bottom: 10px;
-  font-family: "Alata";
+  font-family: "Alata", sans-serif;
 }
 
 .resume .resume-item ul {
