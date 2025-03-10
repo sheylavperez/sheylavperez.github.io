@@ -22,7 +22,7 @@
 }
 
 .about-me-title {
-    color: #d43076;
+    color: #2c4964;
     font-size: 2rem;
     margin-bottom: 10px;
 }
@@ -210,7 +210,7 @@
 }
 
 .gallery-item {
-    width: 220px;
+    width: 260px;
     height: 270px;
     background: white;
     border-radius: 10px;
