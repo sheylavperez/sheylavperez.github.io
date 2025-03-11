@@ -33,9 +33,9 @@
 # Portfolio Section
 --------------------------------------------------------------*/
 /* Portfolio Section Styling */
-/* Portfolio Section Styling */
 #portfolio-details {
   padding: 20px 0;
+  background: linear-gradient(180deg, #f2f6f9 0%, #f2f6f9 100%);
 }
 
 .portfolio-description {
@@ -91,21 +91,14 @@ strong {
 }
 
 
-#competitive-analysis {
 
-  background: linear-gradient(180deg, #f2f6f9 0%, #f2f6f9 100%);
-}
 
 #competitive-analysis h2 {
 
   margin-bottom: 1.5rem;
 }
 
-#competitive-analysis p {
 
-  line-height: 1.6;
-  color: #333;
-}
 
 #competitive-analysis .comparison h3 {
 
@@ -136,8 +129,10 @@ strong {
 
 #iteration-journey {
   padding: 60px 0;
-  background-color: #f4f9fd;
+  background: linear-gradient(180deg, #f2f6f9 0%, #f2f6f9 100%);
 }
+ 
+
 
 #iteration-journey h2 {
   margin-bottom: 1.5rem;
@@ -213,7 +208,7 @@ strong {
 
     .impact-metric {
       padding: 30px;
-      background: rgba(0, 123, 255, 0.1);
+     
       border-radius: 10px;
       text-align: center;
     }
@@ -237,10 +232,6 @@ strong {
   margin-top: 1rem;
 }
 
-#impact p {
-  color: #333;
-
-}
 
 #impact .pilot-results, .testimonial {
   margin-top: 40px;
@@ -295,10 +286,7 @@ strong {
   margin-top: 1rem;
 }
 
-#lessons p {
-  color: #333;
-  line-height: 1.6;
-}
+
 
 #lessons .lesson {
   margin-top: 40px;
@@ -327,7 +315,7 @@ strong {
 
 #whats-next {
   padding: 60px 0;
-  background-color: #f7f7f7;
+  background: linear-gradient(180deg, #f2f6f9 0%, #f2f6f9 100%);
 }
 
 #whats-next h2 {
@@ -383,10 +371,10 @@ strong {
 
 #closing-scene p {
 
-  color: #333;
+
   margin-top: 30px;
   line-height: 1.6;
-  font-style: italic;
+  
 }
 
 .button-container {
@@ -584,7 +572,7 @@ strong {
 
 
 .bold-p {
-  
+  font-size: 18px;
 }
 
 
@@ -700,7 +688,7 @@ strong {
 
 
     <section id="wake-up-call" class="wake-up-call">
-      <div class="container">
+      <div class="container mt-5">
         <div class="portfolio-description">
           <h2>The Problem</h2>
           <h4><strong>"I chose my major because my parents said it's safe... Now I hate every class."</strong></h4>
@@ -725,14 +713,15 @@ strong {
     
 
 <section id="deep-dive-maze" class="deep-dive-maze">
-  <div class="container">
+  <div class="container mt-5">
     <div class="portfolio-description">
     <h2>Qualitative Research</h2>
     <p >Through 47 student interviews and 300+ survey responses, we uncovered three pain points:</p>
-
+      <br>
  
+      <div class="indent">
     <div class="pain-point">
-      <p class="bold-p">The "Google Paralysis" Effect</p>
+      <p>The "Google Paralysis" Effect</p>
 
       <p><em>"Whenever I search 'good careers', I get overwhelmed by 10,000 options" - High School Junior</em></p>
 
@@ -740,21 +729,22 @@ strong {
 
     <!-- Pain Point 2: The LinkedIn Illusion -->
     <div class="pain-point">
-      <h4>The LinkedIn Illusion</h4>
+      <p>The LinkedIn Illusion</p>
       <p><em>"All I see are people's success stories, never the daily grind" - College Freshman</em></p>
 
      
     <div class="pain-point">
-      <h4>The Guidance Gap</h4>
+      <p>The Guidance Gap</p>
       <p><em>"Our school counselor has 800 students. She barely knows my name." - Community College Student</em></p>
 
     
-
+    </div>
   </div>
   </div>
 </section>
 
 <div class="persona-container">
+  <div class="container mt-5">
   <div class="portfolio-description">
   <h2>Persona: Student Seeking Career Insights</h2>
 
@@ -803,11 +793,12 @@ strong {
   </div>
 </div>
 </div>
+</div>
 
 <section id="portfolio-details" class="portfolio-details py-5"> <!-- Added py-5 for top and bottom padding -->
-  <div class="container">
+  <div class="container mt-5">
     <div class="portfolio-description">
-      <div class="row">
+
         <!-- First Column -->
         <div class="col">
           <h2>User's Pain Points</h2> <!-- Added margin-bottom to separate it from the list -->
@@ -815,64 +806,38 @@ strong {
           
         </div>
 
-        <!-- Second Column (Empty, but can be used for future content or spacing) -->
+    
         <div class="col">
           <ul>
             <li class="mb-3">Lack of exposure to diverse fields.</li> <!-- Added margin-bottom to separate list items -->
             <li class="mb-3">One-third of students change majors during their college years.</li>
             <li class="mb-3">Overwhelmed by complex career data.</li>
           </ul>
-          <!-- You can add content here or leave it empty for spacing -->
+        
         </div>
-      </div>
+     
     </div>
   </div>
 </section>
 
 
 
-<section id="competitive-analysis" class="competitive-analysis">
-  <div class="portfolio-description">
-  <div class="container">
-    <h2>Competitive Analysis Revelation</h2>
-    <p><em>Existing platforms felt like "homework assignments from the 90s" - Direct user quote</em></p>
-    
-    <div class="comparison">
-      <h4>Old Career Platforms vs. CareerDay</h4>
-
-      <!-- Side-by-side comparison of old career platforms vs. CareerDay -->
-      <div class="row">
-        <!-- Old Career Platform Image -->
-        <div class="col-md-6">
-          <h4>Old Career Platforms</h4>
-          <img src="assets/img/portfolio/non-art/career-personality.png" alt="Old Career Platform" class="img-fluid" />
-        </div>
-
-        <!-- CareerDay Image -->
-        <div class="col-md-6">
-          <h4>CareerDay</h4>
-          <img src="assets/img/portfolio/non-art/career-example.png" alt="CareerDay Platform" class="img-fluid" />
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-</section>
 
 <section id="career-adventure" class="career-adventure">
   <div class="portfolio-description">
-  <div class="container">
-    <h2>What if Career Exploration Felt Like a Video Game</h2>
+    <div class="container mt-5">
+    <h2>What If Career Exploration Felt Like A Video Game</h2>
 
     <p><strong>Core Insight:</strong> Gen Z needs to experience careers, not just read about them</p>
-    
+    <br>
     <div class="game-plan">
-      <h3>Our Game Plan:</h3>
+      <h4>Our Game Plan:</h4>
+
 
       <!-- Career Simulation Quests -->
       <div class="row">
         <div class="col-md-6">
-          <h4>Career Simulation Quests</h4>
+          <p class="highlight">Career Simulation Quests</p>
           <p>Day-in-the-life simulations (e.g., "Be a Cybersecurity Agent" with real hacking puzzles)</p>
           
 
@@ -880,7 +845,7 @@ strong {
 
         <!-- AI-Powered Roadmap Builder -->
         <div class="col-md-6">
-          <h4>AI-Powered Roadmap Builder</h4>
+          <p class="highlight">AI-Powered Roadmap Builder</p>
           <p>Turn vague aspirations into actionable steps with skill mapping (e.g., "Your debate club experience = 60% to Lawyer role")</p>
        
         </div>
@@ -894,12 +859,13 @@ strong {
 
 
 <section id="wake-up-call" class="wake-up-call">
-  <div class="container">
+  <div class="container mt-5">
     <div class="portfolio-description">
-      <h2>But why create an interactive platform?</h2>
+      <h2>But Why Create An Interactive Platform?</h2>
       <p><strong>Based on research, it shows that students are more interested in a career search from online platform. </strong></p>
 
     <br>
+    <div class="indent">
       <ul>
         <li>The COVID-19 pandemic has disrupted traditional career exploration opportunities (job shadowing & internship) making virtual resources such as career exploration websites more important than ever before
           
@@ -908,7 +874,7 @@ strong {
           </li>
       
       </ul>
-
+    </div> 
      
     </div>
   </div>
@@ -919,12 +885,12 @@ strong {
 
 <section id="iteration-journey" class="iteration-journey">
   <div class="portfolio-description">
-    <div class="container">
+    <div class="container mt-5">
       <h2>From Chaos to Clarity: The Iteration Journey</h2>
 
       <!-- Version 1: Skeuomorphic Design -->
       <div class="version">
-        <h4>Version 1</h4>
+     
         <div class="version-images">
           <img src="assets/img/portfolio/careerdayfigma/List-of-careers.png" alt="Initial Design 1" class="img-fluid custom-img" />
           <img src="assets/img/portfolio/careerdayfigma/wirefram2.png" alt="Initial Design 2" class="img-fluid custom-img" />
@@ -985,22 +951,33 @@ strong {
   </div> <!-- Closing portfolio-description -->
 </section>
 
-<!-- <section id="portfolio-details" class="portfolio-details">
+<section id="competitive-analysis" class="competitive-analysis">
   <div class="portfolio-description">
-      <div class="container">
-          <h3>Persona: Student Seeking Career Insights</h3>
-          
-          <div>
-              <div class="portfolio-description d-flex justify-content-center align-items-center">
-                  <img src="assets/img/portfolio/Careerday_persona.png" alt="Student Persona" style="max-width: 100%; height: auto;">
-              </div>
-          </div>
+    <div class="container mt-5">
+    <h2>Competitive Analysis Revelation</h2>
+    <p><em>Existing platforms felt like "homework assignments from the 90s" - Direct user quote</em></p>
+    
+    <div class="comparison">
+      <h4>Old Career Platforms vs. CareerDay</h4>
+
+      <!-- Side-by-side comparison of old career platforms vs. CareerDay -->
+      <div class="row">
+        <!-- Old Career Platform Image -->
+        <div class="col-md-6">
+          <h4>Old Career Platforms</h4>
+          <img src="assets/img/portfolio/non-art/career-personality.png" alt="Old Career Platform" class="img-fluid" />
+        </div>
+
+        <!-- CareerDay Image -->
+        <div class="col-md-6">
+          <h4>CareerDay</h4>
+          <img src="assets/img/portfolio/non-art/career-example.png" alt="CareerDay Platform" class="img-fluid" />
+        </div>
       </div>
+    </div>
+  </div>
   </div>
 </section>
-
-
-        <hr> -->
 
 
 
@@ -1010,13 +987,13 @@ strong {
 
 <section id="impact" class="impact">
   <div class="portfolio-description">
-  <div class="container">
+    <div class="container mt-5">
     <h2>Impact That Speaks Volumes</h2>
     
     <!-- 6-Month Pilot Results -->
     <div class="pilot-results">
-      <h3>6-Month Pilot Results</h3>
-      <p><strong>85%</strong>of users found the interface intuitive and easy to navigate.</p>
+      <h4>6-Month Pilot Results</h4>
+      <p><strong>85%</strong> of users found the interface intuitive and easy to navigate.</p>
       <p><strong>30%</strong> increase in interaction with career exploration tools after A/B testing.</p>
       <p><strong> 25+ </strong>students provided direct feedback, leading to design refinements that improved accessibility and clarity.</p>
       <!-- <div class="visuals">
@@ -1033,12 +1010,12 @@ strong {
 
     <section id="lessons" class="lessons">
       <div class="portfolio-description">
-      <div class="container">
+        <div class="container mt-5">
         <h2>Lessons from the Trenches</h2>
         
         <!-- The Power of "Micro-Fun" -->
         <div class="lesson">
-          <h3>Empathy Drives Impact</h3>
+          <h4>Empathy Drives Impact</h4>
           <p>A heartfelt confession from a 19-year-old student sparked the mission, leading to a solution that resonated deeply with Gen Z.</p>
           <!-- <div class="visuals">
             <h4>Visual Insights</h4>
@@ -1048,7 +1025,7 @@ strong {
         
         <!-- Accessibility ≠ Boring -->
         <div class="lesson">
-          <h3>Gamification Boosts Engagement</h3>
+          <h4>Gamification Boosts Engagement</h4>
           <p>Introducing gaming elements like progress bars and achievement badges increased user interaction by <strong>30%</strong></p>
           <!-- <div class="visuals">
             <h4>Visual Insights</h4>
@@ -1058,7 +1035,7 @@ strong {
         
         <!-- Data Storytelling Wins -->
         <div class="lesson">
-          <h3>  Accessibility Enhances Usability</h3>
+          <h4>  Accessibility Enhances Usability</h4>
           <p>Direct feedback from <strong>25+</strong> students led to design refinements that improved accessibility and clarity for all users.</strong>
           </p>
           <!-- <div class="visuals">
@@ -1073,32 +1050,25 @@ strong {
 
     <section id="whats-next" class="whats-next">
       <div class="portfolio-description">
-      <div class="container">
+        <div class="container mt-5">
         <h2>What I'd Do Next</h2>
         
         <!-- AR Career Simulations -->
         <div class="next-step">
-          <h3>AR Career Simulations (tested prototype with Oculus)</h3>
+          <h4>AR Career Simulations (tested prototype with Oculus)</h4>
           <div class="visuals">
-            <h4>Visual Insights</h4>
+           
             <img src="assets/img/portfolio/non-art/3d.jpg" alt="Oculus Prototype" class="img-fluid" style="width: 200px; height: auto;" />
 
         </div>
         
-        <!-- AI Mentor Avatars -->
-        <!-- <div class="next-step">
-          <h3>AI Mentor Avatars (early concept validated by NSF grant)</h3>
-          <div class="visuals">
-            <h4>Visual Insights</h4>
-            <img src="path/to/ai-mentor-mockup.jpg" alt="AI Mentor Mockup" class="img-fluid" />
-          </div>
-        </div> -->
+  
         
         <!-- Corporate Partnership Pipeline -->
         <div class="next-step">
-          <h3>Corporate Partnership Pipeline (3 pilot discussions underway)</h3>
+          <h4>Corporate Partnership Pipeline (3 pilot discussions underway)</h4>
           <div class="visuals">
-            <h4>Visual Insights</h4>
+         
             <img src="assets/img/portfolio/non-art/logoseek.png" alt="Corporate Partners"  class="img-fluid" style="width: 200px; height: auto;" />
           </div>
         </div>
@@ -1108,20 +1078,13 @@ strong {
     
     <section id="closing-scene" class="closing-scene">
       <div class="portfolio-description">
-      <div class="container">
+        <div class="container mt-5">
         <h2>Closing Scene</h2>
         <p>This project taught me that UX isn't just about solving problems - it's about creating experiences that help people rewrite their life stories. As I watched a user light up realizing "I could actually enjoy being a data analyst!", I knew we'd built more than an app - we'd created hope.</p>
       </div>
       </div>
 
-<br>
-      <div class="button-container">
-        <a href="mastercard.html" class="pink-button-link">
-          <button class="pink-button-right">Case Study #2: Mastercard's QR Payment</button>
-        </a>
-      </div>
-   <br>
-   <br>
+
     </section>
        
       
@@ -1131,7 +1094,7 @@ strong {
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="container">
+    <div class="container mt-5">
     </div>
   </footer><!-- End Footer -->
   

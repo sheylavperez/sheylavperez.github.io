@@ -524,12 +524,11 @@ section {
 #portfolio-details {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #f8f9fa; /* Light background color for contrast */
+
 }
 
 /* Heading Style */
 #portfolio-details h2 {
-
   font-weight: bold;
   margin-bottom: 40px;
 }
@@ -893,7 +892,6 @@ section {
   background: #fff;
   padding: 40px 0;
   font-size: 14px;
- 
   text-align: center;
 }
 
