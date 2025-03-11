@@ -64,7 +64,7 @@ strong {
 }
 #deep-dive-maze {
   padding: 50px 0;
-  background-color: #f4f4f4;
+  background: linear-gradient(180deg, #f2f6f9 0%, #f2f6f9 100%);
 }
 
 #deep-dive-maze p {
@@ -93,7 +93,7 @@ strong {
 
 #competitive-analysis {
 
-  background-color: #f4e9fa;
+  background: linear-gradient(180deg, #f2f6f9 0%, #f2f6f9 100%);
 }
 
 #competitive-analysis h2 {
@@ -419,7 +419,7 @@ strong {
     background: linear-gradient(to right, #b3b3ff, #d9d9ff);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
 }
 
 /* Persona Image & Name */
@@ -433,7 +433,7 @@ strong {
     width: 100%;
     max-width: 250px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
 }
 
 .persona-image h2 {
@@ -465,7 +465,7 @@ strong {
     background: white;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .info-section h3 {
@@ -509,7 +509,7 @@ strong {
   max-height: 400px; /* Limit max height for better scaling */
   object-fit: cover; /* Ensures the image scales proportionally */
   border-radius: 8px; /* Add rounded corners to the image */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
 }
 
 /* Portfolio Info */
@@ -517,9 +517,12 @@ strong {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
 }
-
+.highlight {
+    color: #d43076;
+    font-weight: bold;
+  }
 
 
 .portfolio-info ul {
@@ -559,6 +562,7 @@ strong {
 }
 
 
+
  
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -571,13 +575,25 @@ strong {
     }
 }
 
+.indent{
 
+  margin: 10px 80px; /* Corrected syntax */
+  
+
+}
+
+
+.bold-p {
+  
+}
 
 
 </style>
 <body>
 
+
   <!-- ======= Header ======= -->
+    
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
@@ -606,189 +622,141 @@ strong {
     <!-- ======= Breadcrumbs Section ======= -->
 
     <!-- Portfolio Details Section -->
-    <section id="portfolio-details section-bg" class="portfolio-details py-4 ">
-      <div class="container">
-        <h2 class="mb-4">CareerDay: Making Career Choices Fun</h2>
-  
-        <div class="row gy-4">
-          <div class="col-lg-8">
+
+    <div class="portfolio-description">
+      <div class="container-fluid full-screen mt-5">
+        <h1 class="mb-4">CareerDay: Making Career Choices Fun</h1>
+    
+        <div class="row">
+          <div class="col-lg-12">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper">
-    
-                  <img src="assets/img/portfolio/Careerday-headerforux.png" alt="CareerDay Header" class="w-100">
-        
+                <img src="assets/img/portfolio/Careerday-headerforux.png" alt="CareerDay Header" class="w-100">
               </div>
             </div>
           </div>
-  
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h4>Project Information</h4>
-              <ul class="list-unstyled">
-                <li><strong>Category:</strong> Web design</li>
-                <li><strong>Responsibilities:</strong> User research, prototyping, frontend development, and collaboration with stakeholders</li>
-                <li><strong>Role:</strong> Founder and Product Designer</li>
-                <li><strong>Project Duration:</strong> Ongoing, with Phase 2 completed over six months</li>
-              </ul>
-            </div>
-            
+    
+          <div class="col-lg-12">
             <div class="portfolio-description mt-4">
-              <h2>Project Overview:</h2>
+              <h2>Summary:</h2>
               <p>
-                The objective of this project is to empower students by simplifying complex career information in a manner that resonates with Gen Z.
+                As a first-generation college student, I faced uncertainty in choosing a major and career path. This inspired me to<span class="highlight"> co-found CareerDay </span>, a platform designed to help students navigate career choices. I led the design and product management, working with a team of five to build the platform from scratch. We collaborated with engineers to create a solution that simplifies career information, making it accessible and engaging for students, especially those from underrepresented backgrounds. CareerDay empowers students to confidently explore careers that align with their strengths and interests.
               </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    
+    
   
     <!-- Project Details Section (Role, Specifications, Deliverables) -->
-    <section id="project-details" class="portfolio-details py-4">
+      
+    <div class="portfolio-description">
+      <section id="project-details" class="portfolio-details py-4">
+        <div class="container mt-5">
+          <div class="row d-flex align-items-start">
+    
+            <!-- Role Section -->
+            <div class="col-md-4 mb-4">
+              <h2>Role</h2>
+              <p>The following roles designing this app:</p>
+              <ul>
+                <li>Founder</li>
+                <li>Product Designer</li>
+              </ul>
+            </div>
+    
+            <!-- Project Specifications Section -->
+            <div class="col-md-4 mb-4">
+              <h2>Details</h2>
+              <p><strong>Duration:</strong> 6 weeks</p>
+              <p><strong>Tools:</strong></p>
+              <ul>
+                <li>Figma</li>
+                <li>Miro</li>
+                <li>Google Slides</li>
+                <li>Balsamiq</li>
+              </ul>
+            </div>
+    
+            <!-- Deliverables Section -->
+            <div class="col-md-4 mb-4">
+              <h2>Deliverables</h2>
+              <p>High-fidelity interactive prototype</p>
+              <p><strong>UX/UI Design:</strong></p>
+              <ul>
+                <li>Competitive analysis</li>
+                <li>Personas</li>
+                <li>High-fidelity mockups and prototypes</li>
+              </ul>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+    </div>
+    
+
+
+    <section id="wake-up-call" class="wake-up-call">
       <div class="container">
-        <div class="row">
-  
-          <!-- Role Section -->
-          <div class="col-md-4 mb-4">
-            <h2>Role</h2>
-            <p>The following roles designing this app:</p>
-            <ul>
-              <li>Founder</li>
-              <li>Product Designer</li>
-            </ul>
-          </div>
-          
-          <!-- Project Specifications Section -->
-          <div class="col-md-4 mb-4">
-            <h2>Project Specifications</h2>
-            <p><strong>Duration:</strong> 6 weeks</p>
-            <p><strong>Tools:</strong></p>
-            <ul>
-              <li>Figma</li>
-              <li>Miro</li>
-              <li>Google Slides</li>
-              <li>Balsamiq</li>
-            </ul>
-          </div>
-          
-          <!-- Deliverables Section -->
-          <div class="col-md-4 mb-4">
-            <h2>Deliverables</h2>
-            <p>High-fidelity interactive prototypes for key tasks on the website</p>
-            <p><strong>UX/UI Design:</strong></p>
-            <ul>
-              <li>Competitive analysis</li>
-              <li>Personas</li>
-              <li>High-fidelity mockups and prototypes</li>
-            </ul>
-          </div>
-  
+        <div class="portfolio-description">
+          <h2>The Problem</h2>
+          <h4><strong>"I chose my major because my parents said it's safe... Now I hate every class."</strong></h4>
+    
+          <!-- Paragraphs -->
+          <p class="mt-4">This heartfelt confession from a 19-year-old college sophomore during user interviews sparked our mission. With 33% of students changing majors (costing $10B annually in wasted tuition) and pandemic-induced career anxiety at record highs, we set out to reinvent career exploration for the TikTok generation.</p>
+          <br>
+          <div class= "indent">
+              <p style="font-weight:900;">Many students struggle to find their career passions, leading to wasted time, <br>resources, and increased dropout rates.</p>
+        
+              <p>The project aimed to address the challenges faced by students:</p>
+              <ul>
+                <li>Feelings of uncertainty</li>
+                <li>Limited exposure to diverse fields</li>
+                <li>Disruptions caused by the COVID-19 pandemic</li>
+              </ul>
+              
+              </div>
         </div>
       </div>
     </section>
-  
-  </main>
-  
+    
 
-<hr>
-
-<section id="wake-up-call" class="wake-up-call">
+<section id="deep-dive-maze" class="deep-dive-maze">
   <div class="container">
     <div class="portfolio-description">
-    <h2>The Wake-Up Call</h2>
-    <p><strong>"I chose my major because my parents said it's safe... Now I hate every class."</strong></p>
+    <h2>Qualitative Research</h2>
+    <p >Through 47 student interviews and 300+ survey responses, we uncovered three pain points:</p>
 
-    <!-- Image Section -->
-    <div class="row align-items-center">
-      <div class="col-md-6 d-flex justify-content-center mb-4 mb-md-0">
-        <!-- Image of student overwhelmed or collage -->
-        <img src="assets/img/portfolio/non-art/overwhelmed-student.jpg" alt="Overwhelmed Student" class="img-fluid rounded shadow-lg" style="object-fit: cover; max-width: 260px; height: auto;" />
-      </div>
-      <div class="col-md-6 d-flex justify-content-center align-items-center">
-        <!-- Statistics Visual -->
-        <div class="statistic-visual text-center">
-          <h4 class="mb-3">33% of students change majors, which can add $18,000 in tuition.</h4>
-          <img src="assets/img/portfolio/non-art/Undecided.png" alt="Statistics Image" class="img-fluid rounded shadow-lg" style="object-fit: cover; max-width: 250px; height: auto;" />
-        </div>
-      </div>
-    </div>
+ 
+    <div class="pain-point">
+      <p class="bold-p">The "Google Paralysis" Effect</p>
 
+      <p><em>"Whenever I search 'good careers', I get overwhelmed by 10,000 options" - High School Junior</em></p>
 
-    <!-- Paragraphs -->
-    <p class="mt-4">This heartfelt confession from a 19-year-old college sophomore during user interviews sparked our mission. With 33% of students changing majors (costing $10B annually in wasted tuition) and pandemic-induced career anxiety at record highs, we set out to reinvent career exploration for the TikTok generation.</p>
-  
-  </div>
-</div>
-</section>
+    
 
-<section id="wake-up-call" class="wake-up-call">
-  <div class="container">
-    <div class="portfolio-description">
-      <h2>The Problem</h2>
-      <p><strong>Many students struggle to find their career passions, leading to wasted time, resources, and increased dropout rates. </strong></p>
-
-      <p>The project aimed to address the challenges faced by students:</p>
-      <ul>
-        <li>Feelings of uncertainty</li>
-        <li>Limited exposure to diverse fields</li>
-        <li>Disruptions caused by the COVID-19 pandemic</li>
-      </ul>
+    <!-- Pain Point 2: The LinkedIn Illusion -->
+    <div class="pain-point">
+      <h4>The LinkedIn Illusion</h4>
+      <p><em>"All I see are people's success stories, never the daily grind" - College Freshman</em></p>
 
      
-    </div>
+    <div class="pain-point">
+      <h4>The Guidance Gap</h4>
+      <p><em>"Our school counselor has 800 students. She barely knows my name." - Community College Student</em></p>
+
+    
+
+  </div>
   </div>
 </section>
-
-<!-- 
-<section id="career-adventure" class="career-adventure">
-  <div class="portfolio-description">
-  <div class="container">
-    <h2>Who would use this product?</h2>
-
-    <p> Primarily students seeking career insights, advice, and opportunities in different fields</p>
-    
-    <div class="game-plan">
-      -->
-
-      <!-- Career Simulation Quests -->
-      <!-- <div class="row">
-        
-        <div class="col-md-6">
-          <h4>Users:</h4>
-          <ul>
-          <li>Students</li>
-          <li>Parents</li>
-      
-        </ul>
-
-        </div> -->
-
-        <!-- AI-Powered Roadmap Builder -->
-        <!-- <div class="col-md-6">
-          <h4>Customers</h4>
-          <li>Career counselors</li>
-          <li>Educational institutions</li>
-          <li>Academic advisors</li>
-       
-        </div>
-      </div> -->
-
-      <!-- <div class="text-center">
-        <img src="assets/img/portfolio/Type _of_customers.png" alt="Types of Customers and Users" style="max-width: 100%; height: auto;">
-      </div> -->
-
-<!-- 
-    </div>
-    </div>
-  </div>
-</section> -->
-
-
 
 <div class="persona-container">
   <div class="portfolio-description">
   <h2>Persona: Student Seeking Career Insights</h2>
-  <p><strong>Many students struggle to find their career passions, leading to wasted time, resources, and increased dropout rates. </strong></p>
 
   <p>Emma is an 18-year-old high school senior from Queens, New York. She dreams of attending college but faces financial constraints and struggles to find the right career path. Coming from a low-income family, she needs guidance on funding her education, choosing a program, and understanding career options.
 
@@ -835,85 +803,6 @@ strong {
   </div>
 </div>
 </div>
-
-
-
-<!-- <section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-    <div class="portfolio-description">
-      <h2>Deep Dive into the Maze</h2>
-      <h4>Through 47 student interviews and 300+ survey responses, we uncovered three pain points:</h4>
-      
-      <p><strong>The "Google Paralysis" Effect:</strong></p>
-      <p>"Whenever I search 'good careers', I get overwhelmed by 10,000 options" - High School Junior</p>
-      
-      <p><strong>The LinkedIn Illusion:</strong></p>
-      <p>"All I see are people's success stories, never the daily grind" - College Freshman</p>
-      
-      <p><strong>The Guidance Gap:</strong></p>
-      <p>"Our school counselor has 800 students. She barely knows my name." - Community College Student</p>
-    </div>
-  </div>
-</section> -->
-
-<section id="deep-dive-maze" class="deep-dive-maze">
-  <div class="container">
-    <div class="portfolio-description">
-    <h2> Deep Dive into the Maze</h2>
-    <p>Through 47 student interviews and 300+ survey responses, we uncovered three pain points:</p>
-
-    <!-- Pain Point 1: The Google Paralysis Effect -->
-    <div class="pain-point">
-      <h4>The "Google Paralysis" Effect</h4>
-      <p><em>"Whenever I search 'good careers', I get overwhelmed by 10,000 options" - High School Junior</em></p>
-
-      <!-- Images for Google Paralysis Effect -->
-      <div class="row">
-        <div class="col-md-6">
-          <img src="assets/img/portfolio/non-art/google-search.png" alt="Cluttered Google Search Results" class="img-fluid"  class="img-fluid" style="max-width: 100%; height: 300px; object-fit: cover;" />
-        </div>
-        <div class="col-md-6">
-          <img src="assets/img/portfolio/non-art/career-test.png" alt="Overwhelming Career Quiz Interface" class="img-fluid" style="max-width: 100%;"  />
-        </div>
-      </div>
-    </div>
-
-    <!-- Pain Point 2: The LinkedIn Illusion -->
-    <div class="pain-point">
-      <h4>The LinkedIn Illusion</h4>
-      <p><em>"All I see are people's success stories, never the daily grind" - College Freshman</em></p>
-
-      <!-- Images for LinkedIn Illusion -->
-      <!-- <div class="row">
-        <div class="col-md-6">
-          <img src="path/to/linkedin-profile-mockup.jpg" alt="LinkedIn Profile Mockup" class="img-fluid" />
-        </div>
-        <div class="col-md-6">
-          <img src="path/to/day-in-the-life-story.jpg" alt="Day-in-the-life Story" class="img-fluid" />
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Pain Point 3: The Guidance Gap -->
-    <div class="pain-point">
-      <h4>The Guidance Gap</h4>
-      <p><em>"Our school counselor has 800 students. She barely knows my name." - Community College Student</em></p>
-
-      <!-- Images for Guidance Gap -->
-      <!-- <div class="row">
-        <div class="col-md-6">
-          <img src="path/to/overworked-counselor.jpg" alt="Overworked Counselor" class="img-fluid" />
-        </div>
-        <div class="col-md-6">
-          <img src="path/to/school-hallway.jpg" alt="School Hallway" class="img-fluid" />
-        </div>
-      </div>
-    </div> -->
-
-  </div>
-  </div>
-</section>
-
 
 <section id="portfolio-details" class="portfolio-details py-5"> <!-- Added py-5 for top and bottom padding -->
   <div class="container">
