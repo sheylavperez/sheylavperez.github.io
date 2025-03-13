@@ -110,43 +110,7 @@
     transform: rotate(0deg) scale(1.05); /* Hover effect */
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    #hero {
-        flex-direction: column; /* Stack content vertically */
-        padding: 20px; /* Reduce padding */
-        text-align: center; /* Center align all text */
-    }
 
-    .container {
-        flex-direction: column; /* Stack text and image */
-        align-items: center; /* Center the text and image */
-        
-    }
-
-    .text-container {
-        margin-bottom: 20px; /* Space between text and image */
-        text-align: center; /* Center align text */
-    }
-
-    .image-container {
-        margin-top: 20px; /* Space between image and text */
-        justify-content: center; /* Center the image */
-        width: 100%; /* Ensure image container takes full width */
-    }
-
-    .camera-style {
-        width: 80%; /* Make image responsive */
-        max-width: 300px; /* Set a max width for large screens */
-    }
-    .intro-text {
-        font-size: 1.125rem;
-        line-height: 1.6;
-        color: #666;
-        margin-bottom: 20px;
-        font-family: "Alata", sans-serif;
-    }
-}
 
 /* Portfolio Section */
 #portfolio {
@@ -251,26 +215,7 @@
 
 
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .portfolio-wrap {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: center;
-    }
 
-    .portfolio-img-container,
-    .portfolio-content {
-        max-width: 100%;
-    }
-
-    .portfolio-info-container {
-        margin-left: 0;
-    }
-}
-
-
-  /* Container to hold the GIF */
-  
   
   /* Walking GIF settings */
   .walking-gif {
@@ -322,6 +267,80 @@
 .bi-x:hover {
   color: #d43076;
 }
+
+
+
+
+
+/* Ensure image and text are side by side on larger screens */
+.photo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Image container styling */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Ensures image is responsive */
+.photo-frame img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Caption styling */
+.photo-caption {
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* Text container styling */
+.text-container {
+  flex: 1;
+  padding: 20px;
+  max-width: 600px;
+}
+
+/* Button styling */
+.pink-button-about {
+  display: inline-block;
+  padding: 10px 20px;
+ 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 📱 Mobile Styles: Stack Image on Top and Reduce Text Size */
+@media (max-width: 768px) {
+
+
+  .photo {
+      flex-direction: column; /* Ensure image is on top */
+      align-items: center;
+  }
+
+
+
+
+
+
+
+
+
+}
+
 
 
 

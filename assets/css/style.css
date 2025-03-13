@@ -21,39 +21,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Alata", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 9999;
-  background: #d43076;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s;
-}
 
-.back-to-top i {
-  font-size: 24px;
-  color: #fff;
-}
-
-.back-to-top:hover {
-  background: #db528c;
-}
-
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
 
 /*--------------------------------------------------------------
 # Header
@@ -80,14 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-#header .logo img {
-  max-height: 40px;
-  margin: 0;
-}
 
-.scrolled-offset {
-  margin-top: 60px;
-}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -176,13 +137,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
 /* Default desktop view */
 @media (min-width: 992px) {
   .navbar ul {
     display: flex; /* Show navigation as flex on desktop */
   }
 }
-
 
 /*--------------------------------------------------------------
 # Sections General
@@ -394,70 +355,6 @@ section {
 
 
 
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
-.resume .resume-title {
-  font-size: 26px;
-  font-weight: 500;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #4b7dab;
-  font-family: "Alata", sans-serif;
-
-}
-
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid #d43076;
-  position: relative;
-}
-
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #2c4964;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: #e4ebf3;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 400;
-  margin-bottom: 10px;
-  font-family: "Alata", sans-serif;
-}
-
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  left: -9px;
-  top: 0;
-  background: #ffffff;
-  border: 2px solid #d43076;
-}
 
 /*--------------------------------------------------------------
 # Services
