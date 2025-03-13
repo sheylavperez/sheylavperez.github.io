@@ -53,21 +53,23 @@
   #hero .text-container {
     padding: 0;
     margin-bottom: 20px; /* Adds space below text */
+
   }
 
   #hero h2 {
     font-size: 18px;
   }
-
-  #hero .image-container {
-    padding: 0;
-    margin-bottom: 20px; /* Adds space below image */
+  #hero .pink-button-about {
+    margin-top: 20px; /* Adds space above the button */
+    margin-bottom: 20px; /* Adds space below the button */
   }
 
-  #hero .image-container img {
-    width: 200px; /* Resize image for mobile */
-  }
+ 
+ 
 }
+
+
+
 
 .photo {
   display: flex;
@@ -329,12 +331,8 @@
   .photo {
       flex-direction: column; /* Ensure image is on top */
       align-items: center;
+    
   }
-
-
-
-
-
 
 
 
