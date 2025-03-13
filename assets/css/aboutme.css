@@ -157,12 +157,14 @@
 }
 
 .photo-frame {
+    
     width: 260px;
+    height: 270px;
     background: white;
-    padding: 15px 15px 40px;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    outline: 1px solid rgba(0, 0, 0, 0.2);
     text-align: center;
+    padding: 10px;
     position: relative;
     transform: rotate(5deg);
     opacity: 0;
@@ -171,7 +173,8 @@
 
 .photo-frame img {
     width: 100%;
-    height: auto;
+    height: 85%;
+    object-fit: cover;
     border-radius: 5px;
 }
 
@@ -214,7 +217,7 @@
     height: 270px;
     background: white;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    outline: 1px solid rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 10px;
     position: relative;
