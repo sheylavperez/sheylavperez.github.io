@@ -40,6 +40,70 @@
     color: #9f9f9f !important; 
 }
 
+.logo-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background: white;
+    padding: 20px 0;
+}
+
+.logo-track {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    animation: scroll 10s linear infinite;
+}
+
+.logo-track img {
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Pause animation on hover */
+.logo-track:hover {
+    animation-play-state: paused;
+}
+
+/* Smooth scale effect on hover */
+.logo-track img:hover {
+    transform: scale(1.2);
+}
+
+/* Keyframes for scrolling effect */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+.logo-track img {
+    height: 80px; /* Increase size */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Smooth scale effect on hover */
+.logo-track img:hover {
+    transform: scale(1.3); /* Slightly enlarge on hover */
+}
+.logo-track img {
+    height: 100px; /* Make it bigger */
+}
+.logo-track {
+    display: flex;
+    align-items: center;
+    gap: 60px; /* Increase space between logos */
+}
+
+
+@media (max-width: 768px) {
+    .logo-track img {
+        height: 60px; /* Adjust for smaller screens */
+    }
+}
 
 
 </style>
@@ -94,6 +158,28 @@
   </div> 
 </section>
 
+<!-- <div class="logo-container">
+  <div class="container mt-5 mb-5">
+  <div class="logo-track">
+      <img src="assets/img/portfolio/logos/nbcu.jpg" alt="NBCUniversal">
+      <img src="assets/img/portfolio/logos/discord.png" alt="Discord">
+      <img src="assets/img/portfolio/logos/linkedin.png" alt="LinkedIn">
+      <img src="assets/img/portfolio/logos/mastercard.png" alt="Mastercard">
+      <img src="assets/img/portfolio/logos/sesame.png" alt="Sesame">
+  
+     
+      <img src="assets/img/portfolio/logos/nbcu.jpg" alt="NBCUniversal">
+      <img src="assets/img/portfolio/logos/discord.png" alt="Discord">
+      <img src="assets/img/portfolio/logos/linkedin.png" alt="LinkedIn">
+      <img src="assets/img/portfolio/logos/mastercard.png" alt="Mastercard">
+      <img src="assets/img/portfolio/logos/sesame.png" alt="Sesame">
+  
+      <img src="assets/img/portfolio/logos/nbcu.jpg" alt="NBCUniversal">
+      <img src="assets/img/portfolio/logos/discord.png" alt="Discord">
+  </div>
+
+</div> -->
+
 
 <!-- ======= Portfolio Section ======= -->
    <img src="assets/img/portfolio/non-art/sheyla-right.gif" alt="Walking Character" class="walking-gif">
@@ -104,7 +190,31 @@
       <h1>Product Design Portfolio</h1>
     </div>
 
+    
+  
+
     <!-- Portfolio Item -->
+    <div class="portfolio-item">
+      <div class="portfolio-wrap">
+        <div class="portfolio-img-container">
+          <img src="assets/img/portfolio/careerdayfigma/elmo.png" alt="Title 2" class="portfolio-img">
+        </div>
+        <div class="portfolio-content">
+          <div class="portfolio-info-container">
+            <h4 class ="ux-design-h4">Emotional Engagement in Kids' Content
+            </h4>
+            <p> Through interactive Sesame Street activities, children explore and understand emotions, fostering empathy and building strong emotional foundations for the future.</p>
+            <a href="https://docs.google.com/document/d/10vWAjMcdhOvV_kopdlKGeycMoZHiBb9neNSLOJ5Xy94/edit?usp=sharing" class="pink-button-link">
+              <p class="soft-text">Category: UX Research Internship </p>
+              <button class="pink-button">View Project</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
     <div class="portfolio-item">
       <div class="portfolio-wrap">
         <div class="portfolio-img-container">
@@ -115,7 +225,7 @@
             <h4 class ="ux-design-h4">Help Students Explore Their Future</h4>
             <p> A platform where students explore jobs through interactive activities and personalized advice, helping them discover passions and make confident career choices.</p>
             <a href="careerday.html" class="pink-button-link">
-              <p class="soft-text">Category: Cofounder & Personal Project</p>
+              <p class="soft-text">Category: Cofounder & Personal UX Design Project</p>
               <button class="pink-button">View Project</button>
             </a>
           </div>
@@ -123,17 +233,19 @@
       </div>
     </div>
 
+    
+
     <!-- Portfolio Item -->
     <div class="portfolio-item">
       <div class="portfolio-wrap">
         <div class="portfolio-img-container">
-          <img src="assets/img/portfolio/mastercard-header.png" alt="Title 2" class="portfolio-img">
+          <img src="assets/img/portfolio/careerdayfigma/mastercard.png" alt="Title 2" class="portfolio-img">
         </div>
         <div class="portfolio-content">
           <div class="portfolio-info-container">
             <h4 class ="ux-design-h4">Simplify SMB Payments with Mastercard</h4>
             <p> Mastercard’s QR payment solution makes digital transactions faster and easier for small businesses, helping them succeed in the digital economy.</p>
-            <p class="soft-text">Category: Internship Project</p>
+            <p class="soft-text">Category: Product Design Internship </p>
 
             <a href="mastercard.html" class="pink-button-link">
               <button class="pink-button">View Project</button>
@@ -314,6 +426,13 @@ on("click", ".mobile-nav-toggle", function () {
   select("#navbar").classList.toggle("navbar-mobile");
   this.classList.toggle("bi-list");
   this.classList.toggle("bi-x");
+});
+document.querySelector(".logo-track").addEventListener("mouseover", function () {
+    this.style.animationPlayState = "paused";
+});
+
+document.querySelector(".logo-track").addEventListener("mouseleave", function () {
+    this.style.animationPlayState = "running";
 });
 
 
