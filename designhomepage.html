@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sheyla Perez - Graphic Designer Portfolio</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#d43076',secondary:'#FFB6C1'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+}
+.progress-bar {
+height: 8px;
+border-radius: 4px;
+background-color: #e5e7eb;
+overflow: hidden;
+}
+.progress-value {
+height: 100%;
+border-radius: 4px;
+background-color: #d43076; 
+transition: width 0.5s ease;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.timeline-item::before {
+content: "";
+position: absolute;
+left: -29px;
+top: 0;
+width: 14px;
+height: 14px;
+border-radius: 50%;
+background-color: #d43076;
+border: 3px solid white;
+z-index: 1;
+}
+.timeline-item::after {
+content: "";
+position: absolute;
+left: -23px;
+top: 14px;
+bottom: -50px;
+width: 2px;
+background-color: #e5e7eb;
+}
+.timeline-item:last-child::after {
+display: none;
+}
+.portfolio-item:hover .portfolio-overlay {
+opacity: 1;
+}
+.custom-checkbox {
+position: relative;
+padding-left: 35px;
+cursor: pointer;
+user-select: none;
+}
+.custom-checkbox input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 24px;
+width: 24px;
+background-color: #fff;
+border: 2px solid #e5e7eb;
+border-radius: 4px;
+}
+.custom-checkbox:hover input ~ .checkmark {
+border-color: #d43076;
+}
+.custom-checkbox input:checked ~ .checkmark {
+background-color: #d43076;
+border-color: #d43076;
+}
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+.custom-checkbox input:checked ~ .checkmark:after {
+display: block;
+}
+.custom-checkbox .checkmark:after {
+left: 8px;
+top: 4px;
+width: 6px;
+height: 11px;
+border: solid white;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+.custom-switch {
+position: relative;
+display: inline-block;
+width: 50px;
+height: 24px;
+}
+.custom-switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+.switch-slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #e5e7eb;
+transition: .4s;
+border-radius: 24px;
+}
+.switch-slider:before {
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+left: 3px;
+bottom: 3px;
+background-color: white;
+transition: .4s;
+border-radius: 50%;
+}
+input:checked + .switch-slider {
+background-color: #d43076;
+}
+input:checked + .switch-slider:before {
+transform: translateX(26px);
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header Section -->
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+<div class="container mx-auto px-6 py-4 flex items-center justify-between">
+<a href="#" class="text-2xl font-['Pacifico']" style="color: #d43076;">Sheyla Perez</a>
+
+<nav class="hidden md:flex items-center space-x-8">
+<a href="#portfolio" class="text-gray-700 hover:text-primary font-medium transition">Portfolio</a>
+<a href="#about" class="text-gray-700 hover:text-primary font-medium transition">About</a>
+<a href="#skills" class="text-gray-700 hover:text-primary font-medium transition">Skills</a>
+<a href="#process" class="text-gray-700 hover:text-primary font-medium transition">Process</a>
+<a href="#experience" class="text-gray-700 hover:text-primary font-medium transition">Experience</a>
+<a href="#contact" class="text-gray-700 hover:text-primary font-medium transition">Contact</a>
+</nav>
+<button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative">
+    <!-- <div style="background-color: #FFB6C1;" class="absolute inset-0 bg-cover bg-center opacity-20"></div> -->
+
+    <div style="background-image:  url('assets/img/portfolio/non-art/zoom-flowers.jpg')" class="absolute inset-0 bg-cover bg-center opacity-50 " ></div>
+    <!-- <div style="background-image: url('https://readdy.ai/api/search-image?query=modern%20minimalist%20graphic%20design%20studio%20with%20creative%20workspace%2C%20soft%20lighting%2C%20design%20tools%2C%20colorful%20artworks%20on%20wall%2C%20professional%20atmosphere%2C%20high-end%20equipment%2C%20clean%20aesthetic%2C%20inspirational%20environment%2C%20artistic%20elements%2C%20creative%20workspace&width=1920&height=1080&seq=1&orientation=landscape');" class="absolute inset-0 bg-cover bg-center opacity-20"></div> -->
+<div class="container mx-auto px-6 py-24 relative z-10">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-12 md:mb-0">
+   
+<h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Transforming <span class="text-primary">Ideas </span>Into Visual Stories</h1>
+<p class="text-xl text-gray-700 mb-8"> Where imagination blossoms into beautiful digital experiences.
+    Crafting unique designs that stand out and captivate.</p>
+<div class="flex space-x-4">
+<a href="#portfolio" class="bg-primary text-white px-6 py-3 font-medium !rounded-button whitespace-nowrap  hover:!bg-[#ffc0cb]">View Portfolio</a>
+<a href="#contact" class="border-2 border-primary text-primary px-6 py-3 font-medium !rounded-button whitespace-nowrap transition hover:!bg-[#fff2f4]">Hire Me</a>
+
+</div>
+</div>
+<div class="md:w-1/2 flex justify-center">
+<img src="assets/img/sheyla copy.png" alt="Sheyla Perez" class="w-64 h-64 object-cover rounded-full border-4 border-white shadow-lg">
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">A selection of my most impactful work across various design disciplines and industries.</p>
+</div>
+<div class="mb-8 flex justify-center">
+<div class="inline-flex p-1 bg-gray-100 rounded-full">
+<button class="px-6 py-2 rounded-full bg-primary text-white font-medium whitespace-nowrap" data-category="All">All</button>
+<button class="px-6 py-2 rounded-full text-gray-700 font-medium whitespace-nowrap hover:bg-gray-200 transition"  data-category="Branding">Branding</button>
+<button class="px-6 py-2 rounded-full text-gray-700 font-medium whitespace-nowrap hover:bg-gray-200 transition"  data-category="UI/UX">UI/UX</button>
+<button class="px-6 py-2 rounded-full text-gray-700 font-medium whitespace-nowrap hover:bg-gray-200 transition"  data-category="Print">Print</button>
+<button class="px-6 py-2 rounded-full text-gray-700 font-medium whitespace-nowrap hover:bg-gray-200 transition"  data-category="Illustration">Illustration</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Portfolio Item 1 -->
+<div class="portfolio-item group relative rounded-lg overflow-hidden shadow-md bg-white" data-category="Branding">
+<img src="https://readdy.ai/api/search-image?query=modern%20minimalist%20brand%20identity%20design%20for%20a%20luxury%20coffee%20brand%2C%20featuring%20elegant%20logo%2C%20business%20cards%2C%20packaging%2C%20and%20brand%20guidelines%20displayed%20on%20a%20clean%20white%20background%2C%20professional%20design%20presentation%2C%20high-quality%20branding%20materials&width=600&height=400&seq=3&orientation=landscape" alt="Artisan Coffee Rebrand" class="w-full h-64 object-cover object-top">
+<div class="portfolio-overlay absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<div class="text-center p-6">
+<h3 class="text-xl font-bold text-white mb-2">Artisan Coffee Rebrand</h3>
+<p class="text-white text-sm mb-4">Complete brand identity redesign for premium coffee roaster</p>
+<a href="detail-1.html" data-readdy="true" class="inline-block px-4 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap">View Case Study</a>
+</div>
+</div>
+</div>
+<!-- Portfolio Item 2 -->
+<div class="portfolio-item group relative rounded-lg overflow-hidden shadow-md bg-white">
+<img src="https://readdy.ai/api/search-image?query=modern%20mobile%20app%20UI%20design%20for%20finance%20application%2C%20showing%20multiple%20screens%20with%20clean%20interface%2C%20data%20visualization%2C%20transaction%20history%2C%20elegant%20color%20scheme%2C%20professional%20UI%2FUX%20design%20on%20smartphone%20mockups&width=600&height=400&seq=4&orientation=landscape" alt="FinTech Mobile App" class="w-full h-64 object-cover object-top">
+<div class="portfolio-overlay absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<div class="text-center p-6">
+<h3 class="text-xl font-bold text-white mb-2">FinTech Mobile App</h3>
+<p class="text-white text-sm mb-4">UI/UX design for innovative financial technology platform</p>
+<a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/e96df375-33d4-43d6-807f-6e62111c244f" data-readdy="true" class="inline-block px-4 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap">View Case Study</a>
+</div>
+</div>
+</div>
+<!-- Portfolio Item 3 -->
+<div class="portfolio-item group relative rounded-lg overflow-hidden shadow-md bg-white">
+<img src="https://readdy.ai/api/search-image?query=creative%20magazine%20layout%20design%20with%20modern%20typography%2C%20editorial%20spreads%2C%20fashion%20photography%2C%20elegant%20grid%20system%2C%20professional%20print%20design%2C%20high-end%20publication%20layout%2C%20clean%20aesthetic%2C%20artistic%20magazine%20pages&width=600&height=400&seq=5&orientation=landscape" alt="Vogue Editorial Design" class="w-full h-64 object-cover object-top">
+<div class="portfolio-overlay absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<div class="text-center p-6">
+<h3 class="text-xl font-bold text-white mb-2">Vogue Editorial Design</h3>
+<p class="text-white text-sm mb-4">Print layout and typography for special edition magazine</p>
+<a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/e96df375-33d4-43d6-807f-6e62111c244f" data-readdy="true" class="inline-block px-4 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap">View Case Study</a>
+</div>
+</div>
+</div>
+<!-- Portfolio Item 4 -->
+<div class="portfolio-item group relative rounded-lg overflow-hidden shadow-md bg-white">
+<img src="https://readdy.ai/api/search-image?query=modern%20packaging%20design%20for%20eco-friendly%20cosmetics%20brand%2C%20featuring%20sustainable%20materials%2C%20minimalist%20design%20aesthetic%2C%20elegant%20typography%2C%20clean%20product%20photography%2C%20professional%20packaging%20mockups%20on%20neutral%20background&width=600&height=400&seq=6&orientation=landscape" alt="Eco Cosmetics Packaging" class="w-full h-64 object-cover object-top">
+<div class="portfolio-overlay absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<div class="text-center p-6">
+<h3 class="text-xl font-bold text-white mb-2">Eco Cosmetics Packaging</h3>
+<p class="text-white text-sm mb-4">Sustainable packaging design for organic beauty brand</p>
+<a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/e96df375-33d4-43d6-807f-6e62111c244f" data-readdy="true" class="inline-block px-4 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap">View Case Study</a>
+</div>
+</div>
+</div>
+<!-- Portfolio Item 5 -->
+<div class="portfolio-item group relative rounded-lg overflow-hidden shadow-md bg-white">
+<img src="https://readdy.ai/api/search-image?query=modern%20website%20design%20for%20architecture%20firm%2C%20featuring%20clean%20layout%2C%20project%20gallery%2C%20minimalist%20aesthetic%2C%20professional%20web%20design%2C%20responsive%20mockups%20on%20devices%2C%20elegant%20typography%2C%20portfolio%20showcase&width=600&height=400&seq=7&orientation=landscape" alt="Architecture Firm Website" class="w-full h-64 object-cover object-top">
+<div class="portfolio-overlay absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<div class="text-center p-6">
+<h3 class="text-xl font-bold text-white mb-2">Architecture Firm Website</h3>
+<p class="text-white text-sm mb-4">Responsive web design for award-winning architecture studio</p>
+<a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/e96df375-33d4-43d6-807f-6e62111c244f" data-readdy="true" class="inline-block px-4 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap">View Case Study</a>
+</div>
+</div>
+</div>
+<!-- Portfolio Item 6 -->
+<div class="portfolio-item group relative rounded-lg overflow-hidden shadow-md bg-white">
+<img src="https://readdy.ai/api/search-image?query=creative%20digital%20illustration%20for%20music%20festival%20poster%2C%20vibrant%20colors%2C%20modern%20graphic%20style%2C%20artistic%20typography%2C%20professional%20event%20design%2C%20eye-catching%20visual%20elements%2C%20contemporary%20illustration%20style&width=600&height=400&seq=8&orientation=landscape" alt="Music Festival Campaign" class="w-full h-64 object-cover object-top">
+<div class="portfolio-overlay absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<div class="text-center p-6">
+<h3 class="text-xl font-bold text-white mb-2">Music Festival Campaign</h3>
+<p class="text-white text-sm mb-4">Integrated visual identity for international music event</p>
+<a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/e96df375-33d4-43d6-807f-6e62111c244f" data-readdy="true" class="inline-block px-4 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap">View Case Study</a>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+View All Projects
+<i class="ri-arrow-right-line ri-lg ml-1"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-20 py-20 bg-primary/5">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-12 md:mb-0">
+    <img src="assets/img/goals.png" class="rounded-lg" alt="Goals Image">
+
+</div>
+<div class="md:w-1/2 md:pl-12 ">
+
+
+<h2 class="text-3xl font-bold text-gray-900 mb-6">About Me</h2>
+<p class="text-gray-700 mb-6">Born in New York to Guatemalan parents, I’m the second oldest of six and grew up in a tight-knit, hardworking family that taught me humility, resilience, and gratitude. Though I studied math and computer science, my true passion has always been design.</p>
+<p class="text-gray-700 mb-6">With 3+ years of experience in graphic design, I specialize in blending creativity and problem-solving to craft visual solutions that resonate. From branding to web design, I aim to create work that’s both beautiful and meaningful.</p>
+<p class="text-gray-700 mb-8">Outside of design, I’m inspired by art galleries, urban photography, and learning new creative techniques.</p>
+<div class="flex space-x-4">
+    <a href="#contact" class="bg-primary text-white px-6 py-3 font-medium !rounded-button whitespace-nowrap transition hover:!bg-[#ffc0cb] text-primary">Get in Touch</a>
+
+<a href="#" class="border-2 border-gray-300 text-gray-700 px-6 py-3 font-medium !rounded-button whitespace-nowrap hover:border-primary hover:text-primary transition">Download CV</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Skills & Expertise</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">A comprehensive overview of my technical abilities and specialized design skills.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<h3 class="text-xl font-semibold text-gray-900 mb-6">Technical Skills</h3>
+<div class="space-y-6">
+<div>
+<div class="flex justify-between mb-2">
+<span class="font-medium text-gray-700">Adobe Photoshop</span>
+<span class="text-gray-600">95%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-value" style="width: 95%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="font-medium text-gray-700">Adobe Illustrator</span>
+<span class="text-gray-600">90%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-value" style="width: 90%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="font-medium text-gray-700">Adobe InDesign</span>
+<span class="text-gray-600">85%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-value" style="width: 85%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="font-medium text-gray-700">Figma</span>
+<span class="text-gray-600">92%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-value" style="width: 92%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="font-medium text-gray-700">Sketch</span>
+<span class="text-gray-600">80%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-value" style="width: 80%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="font-medium text-gray-700">After Effects</span>
+<span class="text-gray-600">75%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-value" style="width: 75%"></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-semibold text-gray-900 mb-6">Design Specialties</h3>
+<div class="grid grid-cols-2 gap-6">
+<div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
+    <div class="w-12 h-12 flex items-center justify-center text-primary rounded-lg mr-4" style="background-color: 
+#fff2f4;">
+
+<i class="ri-palette-line ri-xl"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Brand Identity</h4>
+<p class="text-sm text-gray-600">1 year</p>
+</div>
+</div>
+<div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-lg mr-4" style="background-color: 
+#fff2f4;">
+<i class="ri-layout-4-line ri-xl"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">UI/UX Design</h4>
+<p class="text-sm text-gray-600">3 years</p>
+</div>
+</div>
+<div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-lg mr-4" style="background-color: 
+#fff2f4;">
+<i class="ri-book-open-line ri-xl"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Print Design</h4>
+<p class="text-sm text-gray-600">1 years</p>
+</div>
+</div>
+<div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-lg mr-4" style="background-color: 
+#fff2f4;">
+<i class="ri-image-line ri-xl"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Illustration</h4>
+<p class="text-sm text-gray-600">2 years</p>
+</div>
+</div>
+<div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-lg mr-4" style="background-color: 
+#fff2f4;">
+<i class="ri-movie-line ri-xl"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Motion Graphics</h4>
+<p class="text-sm text-gray-600">1 years</p>
+</div>
+</div>
+<div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-lg mr-4" style="background-color: 
+#fff2f4;">
+<i class="ri-smartphone-line ri-xl"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Mobile Design</h4>
+<p class="text-sm text-gray-600">3 years</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Work Process Section -->
+<section class="py-20 bg-primary/5">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Creative Process</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">A methodical approach that ensures every project achieves its objectives while maintaining creative excellence.</p>
+      </div>
+
+      <div class="relative">
+        <div
+          class="absolute top-0 bottom-0 left-1/2 -ml-px w-0.5 bg-primary/20"
+        ></div>
+
+        <div class="relative z-10">
+          <div class="flex flex-col md:flex-row items-center mb-12">
+            <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Discovery</h3>
+                <p class="text-gray-700"> I begin by understanding your goals, audience, and vision.
+                    This phase involves research, competitor analysis, and
+                    gathering inspiration to inform the design direction.</p>
+               
+            </div>
+            <div
+              class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl z-10"
+            >
+              1
+            </div>
+            <div class="md:w-1/2 md:pl-12 md:text-left">
+              <!-- <img
+                src="https://readdy.ai/api/search-image?query=creative%2520brainstorming%2520session%2520with%2520mood%2520boards%2C%2520sketches%2C%2520and%2520research%2520materials%2C%2520pastel%2520pink%2520color%2520scheme%2C%2520designer%2520workspace%2C%2520professional%2520photography%2C%2520high%2520resolution%2C%2520soft%2520natural%2520lighting&width=500&height=300&seq=9&orientation=landscape"
+                alt="Discovery Phase"
+                class="rounded-lg shadow-md object-top"
+              /> -->
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row-reverse items-center mb-12">
+            <div class="md:w-1/2 md:pl-12 mb-6 md:mb-0 md:text-left">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4"> Concept Development</h3>
+              <p class="text-gray-600">
+                I create initial concepts and sketches based on our discovery
+                findings. This is where ideas begin to take shape and the
+                creative direction starts to bloom.
+              </p>
+            </div>
+            <div
+              class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl z-10"
+            >
+              2
+            </div>
+            <div class="md:w-1/2 md:pr-12 md:text-right">
+              <!-- <img
+                src="https://readdy.ai/api/search-image?query=designer%2520sketching%2520concepts%2520and%2520ideas%2C%2520creative%2520process%2C%2520hand-drawn%2520elements%2C%2520pastel%2520pink%2520color%2520scheme%2C%2520professional%2520photography%2C%2520high%2520resolution%2C%2520soft%2520natural%2520lighting%2C%2520workspace%2520with%2520design%2520tools&width=500&height=300&seq=10&orientation=landscape"
+                alt="Concept Development"
+                class="rounded-lg shadow-md object-top"
+              /> -->
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-center mb-12">
+            <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4"> Design Refinement</h3>
+            
+              <p class="text-gray-600">
+                Based on your feedback, I refine the chosen concept,
+                perfecting every detail. Colors, typography, imagery, and
+                layout are all carefully considered and polished.
+              </p>
+            </div>
+            <div
+              class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl z-10"
+            >
+              3
+            </div>
+            <div class="md:w-1/2 md:pl-12 md:text-left">
+              <!-- <img
+                src="https://readdy.ai/api/search-image?query=designer%2520working%2520on%2520computer%2520with%2520design%2520software%2C%2520refining%2520website%2520layout%2C%2520pastel%2520pink%2520color%2520scheme%2C%2520professional%2520photography%2C%2520high%2520resolution%2C%2520soft%2520natural%2520lighting%2C%2520creative%2520workspace%2520with%2520plants&width=500&height=300&seq=11&orientation=landscape"
+                alt="Design Refinement"
+                class="rounded-lg shadow-md object-top"
+              /> -->
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row-reverse items-center">
+            <div class="md:w-1/2 md:pl-12 mb-6 md:mb-0 md:text-left">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">  Implementation</h3>
+               
+              <p class="text-gray-600">
+                The final design is prepared for launch. Whether it's a
+                website, brand identity, or illustration, I ensure everything
+                is perfectly executed and ready to make an impact.
+              </p>
+            </div>
+            <div
+              class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl z-10"
+            >
+              4
+            </div>
+            <div class="md:w-1/2 md:pr-12 md:text-right">
+              <!-- <img
+                src="https://readdy.ai/api/search-image?query=final%2520design%2520presentation%2520with%2520multiple%2520screens%2520showing%2520completed%2520website%2C%2520pastel%2520pink%2520color%2520scheme%2C%2520professional%2520photography%2C%2520high%2520resolution%2C%2520soft%2520natural%2520lighting%2C%2520elegant%2520workspace%2520with%2520finished%2520design%2520materials&width=500&height=300&seq=12&orientation=landscape"
+                alt="Implementation"
+                class="rounded-lg shadow-md object-top"
+              /> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-20">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row">
+<div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-6">Get In Touch</h2>
+<p class="text-gray-700 mb-8">Interested in working together? Contact me below!</p>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-4 mt-1" style="background-color: #fff2f4;">
+<i class="ri-mail-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 mb-1">Email</h4>
+<p class="text-gray-700">sheylavp04@gmail.com</p>
+</div>
+</div>
+
+
+
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-4 mt-1" style="background-color: #fff2f4;">
+<i class="ri-map-pin-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 mb-1" >Location</h4>
+<p class="text-gray-700">New York City, NY</p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h4 class="font-medium text-gray-900 mb-4">Connect With Me</h4>
+<div class="flex space-x-4">
+<a href="https://www.linkedin.com/in/sheylavperez/" class="w-10 h-10 flex items-center justify-center bg-gray-100 text-gray-700 rounded-full hover:bg-primary hover:text-white transition">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 text-gray-700 rounded-full hover:bg-primary hover:text-white transition"  >
+<i class="ri-instagram-fill ri-lg"></i>
+</a>
+</div>
+</div>
+</div>
+
+
+<div class="md:w-1/2">
+    <div class="bg-white p-8 rounded-lg shadow-sm">
+      <img 
+        src="assets/img/portfolio/non-art/tree.jpg" 
+        class="w-full h-80 object-cover rounded-lg" 
+        alt="Tree Image"
+      >
+    </div>
+  </div>
+  
+</div>
+</section>
+<!-- Footer -->
+<footer section class="py-20 bg-primary/5">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center mb-8">
+    <a href="#" class="text-2xl font-['Pacifico'] text-white mb-6 md:mb-0" style="color: #d43076;">
+        Sheyla Perez
+      </a>
+<div class="flex flex-wrap justify-center gap-6">
+<a href="#" class="text-gray-700 hover:text-primary font-medium transition">Home</a>
+<a href="#portfolio" class="text-gray-700 hover:text-primary font-medium transition">Portfolio</a>
+<a href="#about" class="text-gray-700 hover:text-primary font-medium transition">About</a>
+<a href="#skills" class="text-gray-700 hover:text-primary font-medium transition">Skills</a>
+<a href="#process" class="text-gray-700 hover:text-primary font-medium transition">Process</a>
+<a href="#experience" class="text-gray-700 hover:text-primary font-medium transition">Experience</a>
+<a href="#contact" class="text-gray-700 hover:text-primary font-medium transition">Contact</a>
+</div>
+</div>
+<hr class="border-gray-800 mb-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 Sheyla Perez. All rights reserved.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 text-gray-400 rounded-full hover:bg-primary hover:text-white transition">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 text-gray-400 rounded-full hover:bg-primary hover:text-white transition">
+<i class="ri-instagram-fill ri-lg"></i>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Back to Top Button -->
+<a href="#" class="fixed bottom-6 right-6 w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full shadow-lg opacity-0 invisible transition-all duration-300" id="backToTop">
+<i class="ri-arrow-up-line ri-lg"></i>
+</a>
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+  const filterButtons = document.querySelectorAll('.inline-flex button');
+  const projectCards = document.querySelectorAll('.portfolio-item');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      // Update button styles
+      filterButtons.forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-white');
+        btn.classList.add('text-gray-700', 'hover:bg-gray-200');
+      });
+      this.classList.remove('text-gray-700', 'hover:bg-gray-200');
+      this.classList.add('bg-primary', 'text-white');
+
+      // Get selected category from the data attribute
+      const selectedCategory = this.getAttribute('data-category');
+
+      // Show/hide projects based on category
+      projectCards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category');
+        if (selectedCategory === 'All' || selectedCategory === cardCategory) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+// Back to Top Button
+const backToTopButton = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+if (window.pageYOffset > 300) {
+backToTopButton.classList.remove('opacity-0', 'invisible');
+backToTopButton.classList.add('opacity-100', 'visible');
+} else {
+backToTopButton.classList.remove('opacity-100', 'visible');
+backToTopButton.classList.add('opacity-0', 'invisible');
+}
+});
+backToTopButton.addEventListener('click', function(e) {
+e.preventDefault();
+window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+});
+document.addEventListener('DOMContentLoaded', function() {
+// Mobile Menu Toggle (simplified version)
+const menuButton = document.querySelector('.md\\:hidden');
+const mobileNav = document.createElement('div');
+mobileNav.className = 'fixed inset-0 bg-white z-50 flex flex-col p-6 transform translate-x-full transition-transform duration-300 ease-in-out';
+mobileNav.innerHTML = `
+<div class="flex justify-between items-center mb-8">
+<a href="#" class="text-2xl font-['Pacifico'] text-primary">Alex Morgan</a>
+<button class="w-10 h-10 flex items-center justify-center text-gray-700">
+<i class="ri-close-line ri-lg"></i>
+</button>
+</div>
+<nav class="flex flex-col space-y-6">
+<a href="#portfolio" class="text-gray-700 hover:text-primary font-medium transition font-medium text-lg">Portfolio</a>
+<a href="#about" class="text-gray-700 hover:text-primary font-medium transition">About</a>
+<a href="#skills" class="text-gray-700 hover:text-primary font-medium transition">Skills</a>
+<a href="#process" class="text-gray-900 font-medium text-lg">Process</a>
+<a href="#experience" class="text-gray-900 font-medium text-lg">Experience</a>
+<a href="#contact" class="text-gray-900 font-medium text-lg">Contact</a>
+</nav>
+`;
+document.body.appendChild(mobileNav);
+menuButton.addEventListener('click', function() {
+mobileNav.classList.remove('translate-x-full');
+document.body.classList.add('overflow-hidden');
+});
+const closeButton = mobileNav.querySelector('button');
+closeButton.addEventListener('click', function() {
+mobileNav.classList.add('translate-x-full');
+document.body.classList.remove('overflow-hidden');
+});
+const mobileLinks = mobileNav.querySelectorAll('a');
+mobileLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileNav.classList.add('translate-x-full');
+document.body.classList.remove('overflow-hidden');
+});
+});
+});
+document.addEventListener('DOMContentLoaded', function() {
+// Portfolio Filter (simplified version)
+const filterButtons = document.querySelectorAll('.inline-flex button');
+filterButtons.forEach(button => {
+button.addEventListener('click', function() {
+// Remove active class from all buttons
+filterButtons.forEach(btn => {
+btn.classList.remove('bg-primary', 'text-white');
+btn.classList.add('text-gray-700', 'hover:bg-gray-200');
+});
+// Add active class to clicked button
+this.classList.remove('text-gray-700', 'hover:bg-gray-200');
+this.classList.add('bg-primary', 'text-white');
+// In a real implementation, you would filter the portfolio items here
+});
+});
+});
+</script>
+</body>
+</html>

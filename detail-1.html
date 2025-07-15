@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artisan Coffee Rebrand - Case Study | Alex Morgan</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#10b981'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+  font-family: 'Inter', sans-serif;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.image-gallery-item:hover .image-overlay {
+  opacity: 1;
+}
+.process-step::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  height: 40px;
+  width: 2px;
+  background-color: #e5e7eb;
+}
+.process-step:first-child::before {
+  display: none;
+}
+.color-swatch {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header Section -->
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+<div class="container mx-auto px-6 py-4 flex items-center justify-between">
+<a href="#" class="text-2xl font-['Pacifico']" style="color: #d43076;">Sheyla Perez</a>
+
+    <nav class="hidden md:flex items-center space-x-8">
+      <a href="#overview" class="text-gray-700 hover:text-primary font-medium transition">Overview</a>
+      <a href="#process" class="text-gray-700 hover:text-primary font-medium transition">Process</a>
+      <a href="#results" class="text-gray-700 hover:text-primary font-medium transition">Results</a>
+      <a href="#gallery" class="text-gray-700 hover:text-primary font-medium transition">Gallery</a>
+      <a href="#related" class="text-gray-700 hover:text-primary font-medium transition">Related</a>
+    </nav>
+    <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700">
+      <i class="ri-menu-line ri-lg"></i>
+    </button>
+  </div>
+</header>
+
+<!-- Case Study Navigation -->
+<div class="bg-gray-50 border-b border-gray-200">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/1e52cf7b-3a4f-4570-b659-6addd81df30a" data-readdy="true" class="flex items-center text-gray-700 hover:text-primary transition">
+      <i class="ri-arrow-left-line ri-lg mr-2"></i>
+      Back to Portfolio
+    </a>
+    <div class="flex items-center space-x-4">
+      <a href="#" class="flex items-center text-gray-700 hover:text-primary transition">
+        <i class="ri-arrow-left-line ri-lg mr-1"></i>
+        <span class="hidden sm:inline">Previous</span>
+      </a>
+      <a href="#" class="flex items-center text-gray-700 hover:text-primary transition">
+        <span class="hidden sm:inline">Next</span>
+        <i class="ri-arrow-right-line ri-lg ml-1"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<section class="relative h-[70vh] flex items-center">
+ <div style="background-image: url('assets/img/graphic-design/truck/truck.jpg'); background-repeat: no-repeat; background-size: cover;" class="absolute inset-0 bg-center"></div>
+
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="max-w-3xl">
+      <div class="flex flex-wrap gap-3 mb-6">
+        <span class="bg-white bg-opacity-20 text-white px-4 py-1 rounded-full text-sm backdrop-blur-sm">Brand Identity</span>
+        <span class="bg-white bg-opacity-20 text-white px-4 py-1 rounded-full text-sm backdrop-blur-sm">Packaging Design</span>
+        <span class="bg-white bg-opacity-20 text-white px-4 py-1 rounded-full text-sm backdrop-blur-sm">Print Materials</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Sazon Villa Taqueria Rebrand</h1>
+      <p class="text-xl text-white mb-8 max-w-2xl">A complete brand identity redesign for an authentic Mexican taqueria, elevating its local presence and connecting with a new generation of food lovers through bold flavors and inviting hospitality.</p>
+      <div class="flex flex-wrap gap-8 text-white">
+        <div>
+          <p class="text-sm uppercase tracking-wider opacity-75 mb-1">Client</p>
+          <p class="font-medium">Sazon Villa Taqueria Co.</p>
+        </div>
+        <div>
+          <p class="text-sm uppercase tracking-wider opacity-75 mb-1">Timeline</p>
+          <p class="font-medium">3 Months</p>
+        </div>
+        <div>
+          <p class="text-sm uppercase tracking-wider opacity-75 mb-1">Role</p>
+          <p class="font-medium">Designer</p>
+        </div>
+        <div>
+          <p class="text-sm uppercase tracking-wider opacity-75 mb-1">Year</p>
+          <p class="font-medium">2024</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project Overview Section -->
+<section id="overview" class="py-20">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col lg:flex-row gap-16">
+      <div class="lg:w-2/3">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">Project Overview</h2>
+        
+        <div class="prose prose-lg max-w-none text-gray-700">
+          <p class="mb-6">Sazon Villa Taqueria approached me with a challenge: their brand identity had remained unchanged for years, while the culinary landscape and the expectations of modern diners had evolved significantly. Despite offering delicious, authentic Mexican cuisine, their visual identity no longer reflected the quality of their food or connected with a new generation of customers.</p>
+          
+          <p class="mb-6">The business needed a comprehensive rebrand that would honor its cultural roots while positioning it for growth in a highly competitive food scene. The goal was to create a vibrant, contemporary identity system that would resonate with both loyal regulars and new guests seeking an elevated, flavorful dining experience.</p>
+          
+          <h3 class="text-xl font-bold text-gray-900 mt-10 mb-4">The Challenge</h3>
+          
+          <ul class="list-disc pl-6 space-y-2 mb-6">
+            <li>Modernize the brand while honoring its authentic Mexican roots and culinary heritage</li>
+            <li>Create a flexible visual identity system that works across the food truck, social media, and promotional materials</li>
+            <li>Design bold, eye-catching visuals that capture attention in the fast-paced, visually competitive streets of New York City</li>
+            <li>Ensure consistency between the truck’s physical design and its digital presence, including menus, website, and social platforms</li>
+            <li>Position the brand to connect with NYC’s younger, trend-conscious food scene without alienating longtime loyal customers</li>
+          </ul>
+          
+          <h3 class="text-xl font-bold text-gray-900 mt-10 mb-4">Project Objectives</h3>
+          
+          <ol class="list-decimal pl-6 space-y-2 mb-6">
+            <li>Develop a refreshed brand identity that reflects the quality, warmth, and authenticity of Sazon Villa Taqueria’s Mexican cuisine</li>
+            <li>Increase brand visibility and customer engagement across high-traffic areas of New York City</li>
+            <li>Design a distinctive truck wrap and signage system that stands out in a competitive urban food scene</li>
+
+          </ol>
+        </div>
+      </div>
+      
+      <div class="lg:w-1/3">
+        <div class="bg-gray-50 rounded-lg p-8">
+          <h3 class="text-xl font-bold text-gray-900 mb-6">Client Background</h3>
+          <p class="text-gray-700 mb-6">Juan, born in Mexico City and raised in Puebla, moved to the USA at sixteen. Starting as a dishwasher, he worked his way up in the restaurant industry and gained experience with top NYC caterers before launching his own food truck to share authentic Mexican flavors.</p>
+          
+          <h4 class="font-medium text-gray-900 mb-3">Services Provided</h4>
+          <ul class="space-y-2 mb-8">
+            <li class="flex items-center">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mr-3">
+                <i class="ri-check-line"></i>
+              </div>
+              <span class="text-gray-700">Brand Strategy</span>
+            </li>
+            <li class="flex items-center">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mr-3">
+                <i class="ri-check-line"></i>
+              </div>
+              <span class="text-gray-700">Logo Design</span>
+            </li>
+            <li class="flex items-center">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mr-3">
+                <i class="ri-check-line"></i>
+              </div>
+              <span class="text-gray-700">Packaging System</span>
+            </li>
+            <li class="flex items-center">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mr-3">
+                <i class="ri-check-line"></i>
+              </div>
+              <span class="text-gray-700">Brand Guidelines</span>
+            </li>
+            <li class="flex items-center">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mr-3">
+                <i class="ri-check-line"></i>
+              </div>
+              <span class="text-gray-700">Marketing Collateral</span>
+            </li>
+            <li class="flex items-center">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mr-3">
+                <i class="ri-check-line"></i>
+              </div>
+              <span class="text-gray-700">Digital Assets</span>
+            </li>
+          </ul>
+          
+          <!-- <a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+            Visit Client Website
+            <i class="ri-external-link-line ml-2"></i>
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Design Process Section -->
+<section id="process" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-gray-900 text-center mb-16">Design Process</h2>
+    
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Process Step 1 -->
+        <div class="process-step relative bg-white p-8 rounded-lg shadow-sm">
+          <div class="w-14 h-14 flex items-center justify-center bg-primary text-white rounded-full text-xl font-bold mb-6">1</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Research & Discovery</h3>
+          <p class="text-gray-700 mb-6">Conducted market analysis, competitor research, and customer interviews to understand brand perception and identify opportunities.</p>
+          <img src="https://readdy.ai/api/search-image?query=designer%2520conducting%2520coffee%2520brand%2520research%2520with%2520mood%2520boards%252C%2520competitor%2520analysis%2520documents%252C%2520and%2520market%2520research%2520materials%2520spread%2520on%2520desk%252C%2520professional%2520workspace%252C%2520creative%2520process%252C%2520design%2520thinking&width=400&height=300&seq=11&orientation=landscape" alt="Research phase" class="w-full h-48 object-cover object-top rounded">
+        </div>
+        
+        <!-- Process Step 2 -->
+        <div class="process-step relative bg-white p-8 rounded-lg shadow-sm">
+          <div class="w-14 h-14 flex items-center justify-center bg-primary text-white rounded-full text-xl font-bold mb-6">2</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Strategy & Concept</h3>
+          <p class="text-gray-700 mb-6">Developed brand positioning strategy and explored multiple creative directions through sketching and concept development.</p>
+          <img src="https://readdy.ai/api/search-image?query=coffee%2520brand%2520logo%2520sketches%2520and%2520concept%2520development%2520on%2520designer%2527s%2520desk%252C%2520multiple%2520iterations%252C%2520pencil%2520drawings%252C%2520creative%2520process%252C%2520brand%2520identity%2520exploration%252C%2520professional%2520design%2520work&width=400&height=300&seq=12&orientation=landscape" alt="Concept development" class="w-full h-48 object-cover object-top rounded">
+        </div>
+        
+        <!-- Process Step 3 -->
+        <div class="process-step relative bg-white p-8 rounded-lg shadow-sm">
+          <div class="w-14 h-14 flex items-center justify-center bg-primary text-white rounded-full text-xl font-bold mb-6">3</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Logo & Identity</h3>
+          <p class="text-gray-700 mb-6">Refined the selected concept into a comprehensive visual identity with logo variations, typography, and color palette.</p>
+          <img src="https://readdy.ai/api/search-image?query=coffee%2520brand%2520logo%2520design%2520presentation%2520with%2520variations%252C%2520color%2520palette%252C%2520typography%2520selections%252C%2520professional%2520brand%2520identity%2520presentation%252C%2520clean%2520layout%252C%2520design%2520process&width=400&height=300&seq=13&orientation=landscape" alt="Logo development" class="w-full h-48 object-cover object-top rounded">
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <!-- Process Step 4 -->
+        <div class="process-step relative bg-white p-8 rounded-lg shadow-sm">
+          <div class="w-14 h-14 flex items-center justify-center bg-primary text-white rounded-full text-xl font-bold mb-6">4</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Packaging System</h3>
+          <p class="text-gray-700 mb-6">Created a flexible packaging system that maintains brand consistency while clearly differentiating between product varieties.</p>
+          <div class="grid grid-cols-2 gap-4">
+            <img src="https://readdy.ai/api/search-image?query=coffee%2520packaging%2520design%2520process%2520showing%2520early%2520mockups%2520and%2520iterations%252C%2520professional%2520design%2520work%252C%2520packaging%2520prototypes%252C%2520creative%2520development&width=300&height=200&seq=14&orientation=landscape" alt="Packaging development" class="w-full h-32 object-cover object-top rounded">
+            <img src="https://readdy.ai/api/search-image?query=final%2520coffee%2520packaging%2520design%2520with%2520elegant%2520minimalist%2520aesthetic%252C%2520premium%2520coffee%2520bags%252C%2520professional%2520product%2520photography%252C%2520brand%2520identity%2520implementation&width=300&height=200&seq=15&orientation=landscape" alt="Final packaging" class="w-full h-32 object-cover object-top rounded">
+          </div>
+        </div>
+        
+        <!-- Process Step 5 -->
+        <div class="process-step relative bg-white p-8 rounded-lg shadow-sm">
+          <div class="w-14 h-14 flex items-center justify-center bg-primary text-white rounded-full text-xl font-bold mb-6">5</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Brand Applications</h3>
+          <p class="text-gray-700 mb-6">Extended the identity to various touchpoints including stationery, merchandise, digital assets, and retail materials.</p>
+          <div class="grid grid-cols-2 gap-4">
+            <img src="https://readdy.ai/api/search-image?query=coffee%2520brand%2520stationery%2520and%2520business%2520cards%2520with%2520elegant%2520design%252C%2520professional%2520brand%2520materials%252C%2520identity%2520system%2520implementation&width=300&height=200&seq=16&orientation=landscape" alt="Brand stationery" class="w-full h-32 object-cover object-top rounded">
+            <img src="https://readdy.ai/api/search-image?query=coffee%2520brand%2520merchandise%2520including%2520cups%252C%2520tote%2520bags%2520with%2520elegant%2520logo%2520implementation%252C%2520professional%2520product%2520photography%252C%2520brand%2520extension&width=300&height=200&seq=17&orientation=landscape" alt="Brand merchandise" class="w-full h-32 object-cover object-top rounded">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Before & After Comparison -->
+      <div class="mt-20">
+        <h3 class="text-2xl font-bold text-gray-900 text-center mb-10">Before & After</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <div class="bg-white p-4 rounded-lg shadow-sm mb-4">
+              <img src="https://readdy.ai/api/search-image?query=outdated%2520coffee%2520brand%2520packaging%2520with%2520cluttered%2520design%252C%2520generic%2520typography%252C%2520dated%2520aesthetic%252C%2520old%2520coffee%2520packaging%2520before%2520redesign&width=500&height=400&seq=18&orientation=landscape" alt="Before redesign" class="w-full h-64 object-cover object-top rounded">
+            </div>
+            <h4 class="text-xl font-bold text-gray-900 text-center">Before</h4>
+            <ul class="mt-4 space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center text-red-500 mt-1 mr-3">
+                  <i class="ri-close-line"></i>
+                </div>
+                <span>Cluttered design with poor hierarchy</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center text-red-500 mt-1 mr-3">
+                  <i class="ri-close-line"></i>
+                </div>
+                <span>Generic typography lacking personality</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center text-red-500 mt-1 mr-3">
+                  <i class="ri-close-line"></i>
+                </div>
+                <span>Inconsistent application across products</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center text-red-500 mt-1 mr-3">
+                  <i class="ri-close-line"></i>
+                </div>
+                <span>Failed to communicate premium quality</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <div class="bg-white p-4 rounded-lg shadow-sm mb-4">
+              <img src="https://readdy.ai/api/search-image?query=modern%2520elegant%2520coffee%2520packaging%2520with%2520minimalist%2520design%252C%2520premium%2520aesthetic%252C%2520sophisticated%2520typography%252C%2520high-end%2520coffee%2520brand%2520identity%252C%2520professional%2520product%2520photography&width=500&height=400&seq=19&orientation=landscape" alt="After redesign" class="w-full h-64 object-cover object-top rounded">
+            </div>
+            <h4 class="text-xl font-bold text-gray-900 text-center">After</h4>
+            <ul class="mt-4 space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center text-green-500 mt-1 mr-3">
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Clean, sophisticated design with clear hierarchy</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center text-green-500 mt-1 mr-3">
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Custom typography reflecting brand personality</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center text-green-500 mt-1 mr-3">
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Cohesive system across all product lines</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center text-green-500 mt-1 mr-3">
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Clearly communicates premium positioning</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Brand Elements Section -->
+<section class="py-20">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-gray-900 text-center mb-16">Key Brand Elements</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <!-- Logo -->
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-6">Logo Design</h3>
+        <div class="bg-white p-6 rounded-lg shadow-sm mb-6">
+          <img src="https://readdy.ai/api/search-image?query=elegant%2520minimalist%2520coffee%2520brand%2520logo%2520design%2520with%2520clean%2520typography%2520and%2520simple%2520icon%252C%2520professional%2520logo%2520presentation%2520on%2520white%2520background%252C%2520premium%2520brand%2520identity&width=400&height=300&seq=20&orientation=landscape" alt="Logo design" class="w-full h-auto rounded">
+        </div>
+        <p class="text-gray-700">The new logo combines a minimalist coffee bean icon with custom letterforms, creating a mark that is both distinctive and timeless. The logo system includes horizontal, vertical, and icon-only variations for different applications.</p>
+      </div>
+      
+      <!-- Typography -->
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-6">Typography</h3>
+        <div class="bg-white p-6 rounded-lg shadow-sm mb-6">
+          <img src="https://readdy.ai/api/search-image?query=professional%2520typography%2520presentation%2520for%2520coffee%2520brand%2520showing%2520font%2520hierarchy%252C%2520type%2520specimens%252C%2520elegant%2520font%2520pairing%252C%2520clean%2520design%2520layout&width=400&height=300&seq=21&orientation=landscape" alt="Typography system" class="w-full h-auto rounded">
+        </div>
+        <p class="text-gray-700">A sophisticated type system pairs a modern serif for headlines with a clean sans-serif for body text. This combination creates a perfect balance between tradition and contemporary style, enhancing readability across all touchpoints.</p>
+      </div>
+      
+      <!-- Color Palette -->
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-6">Color Palette</h3>
+        <div class="bg-white p-6 rounded-lg shadow-sm mb-6">
+          <div class="grid grid-cols-2 gap-4 mb-4">
+            <div>
+              <div class="color-swatch mb-2" style="background-color: #2C1A0E;"></div>
+              <p class="text-sm text-gray-700">Deep Roast</p>
+            </div>
+            <div>
+              <div class="color-swatch mb-2" style="background-color: #8B5A2B;"></div>
+              <p class="text-sm text-gray-700">Bean Brown</p>
+            </div>
+            <div>
+              <div class="color-swatch mb-2" style="background-color: #D4C19C;"></div>
+              <p class="text-sm text-gray-700">Crema Beige</p>
+            </div>
+            <div>
+              <div class="color-swatch mb-2" style="background-color: #F9F6F0;"></div>
+              <p class="text-sm text-gray-700">Paper White</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-700">The color palette draws inspiration from the coffee-making process, from rich bean browns to subtle cream tones. Accent colors for each product line help customers identify different coffee varieties at a glance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Results Section -->
+<section id="results" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-gray-900 text-center mb-16">Results & Impact</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto">
+      <div>
+        <div class="grid grid-cols-2 gap-6 mb-12">
+          <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+            <p class="text-4xl font-bold text-primary mb-2">42%</p>
+            <p class="text-gray-700">Increase in retail sales</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+            <p class="text-4xl font-bold text-primary mb-2">68%</p>
+            <p class="text-gray-700">Improved brand recognition</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+            <p class="text-4xl font-bold text-primary mb-2">3</p>
+            <p class="text-gray-700">Design awards received</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+            <p class="text-4xl font-bold text-primary mb-2">35%</p>
+            <p class="text-gray-700">New customer acquisition</p>
+          </div>
+        </div>
+        
+        <h3 class="text-xl font-bold text-gray-900 mb-6">Key Achievements</h3>
+        <ul class="space-y-4 text-gray-700">
+          <li class="flex items-start">
+            <div class="w-6 h-6 flex items-center justify-center bg-primary text-white rounded-full mr-3 mt-0.5 flex-shrink-0">
+              <i class="ri-check-line"></i>
+            </div>
+            <p>Successfully repositioned the brand in the premium specialty coffee market</p>
+          </li>
+          <li class="flex items-start">
+            <div class="w-6 h-6 flex items-center justify-center bg-primary text-white rounded-full mr-3 mt-0.5 flex-shrink-0">
+              <i class="ri-check-line"></i>
+            </div>
+            <p>Expanded distribution to high-end retailers and specialty stores</p>
+          </li>
+          <li class="flex items-start">
+            <div class="w-6 h-6 flex items-center justify-center bg-primary text-white rounded-full mr-3 mt-0.5 flex-shrink-0">
+              <i class="ri-check-line"></i>
+            </div>
+            <p>Featured in multiple design publications including Communication Arts and Brand New</p>
+          </li>
+          <li class="flex items-start">
+            <div class="w-6 h-6 flex items-center justify-center bg-primary text-white rounded-full mr-3 mt-0.5 flex-shrink-0">
+              <i class="ri-check-line"></i>
+            </div>
+            <p>Increased social media engagement by 215% in the first three months</p>
+          </li>
+        </ul>
+      </div>
+      
+      <div>
+        <div class="bg-white p-8 rounded-lg shadow-sm mb-10">
+          <div class="flex items-center mb-6">
+            <div class="w-16 h-16 mr-6">
+              <img src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520coffee%2520company%2520CEO%252C%2520middle-aged%2520man%2520with%2520friendly%2520expression%252C%2520business%2520casual%2520attire%252C%2520neutral%2520background%252C%2520high-quality%2520portrait&width=200&height=200&seq=22&orientation=squarish" alt="Client portrait" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900">James Richardson</h4>
+              <p class="text-gray-600">CEO, Artisan Coffee Co.</p>
+            </div>
+          </div>
+          
+          <blockquote class="text-gray-700 italic mb-6">
+            "Alex's rebrand of our company has been transformative. Not only did he create a beautiful visual identity that perfectly captures our brand essence, but he also developed a strategic system that has significantly improved our market position. The attention to detail and thoughtful approach to every element of our brand has resulted in packaging that truly stands out on shelves and resonates with our customers."
+          </blockquote>
+          
+          <div class="flex">
+            <div class="w-6 h-6 flex items-center justify-center text-yellow-400">
+              <i class="ri-star-fill"></i>
+            </div>
+            <div class="w-6 h-6 flex items-center justify-center text-yellow-400">
+              <i class="ri-star-fill"></i>
+            </div>
+            <div class="w-6 h-6 flex items-center justify-center text-yellow-400">
+              <i class="ri-star-fill"></i>
+            </div>
+            <div class="w-6 h-6 flex items-center justify-center text-yellow-400">
+              <i class="ri-star-fill"></i>
+            </div>
+            <div class="w-6 h-6 flex items-center justify-center text-yellow-400">
+              <i class="ri-star-fill"></i>
+            </div>
+          </div>
+        </div>
+        
+        <h3 class="text-xl font-bold text-gray-900 mb-6">Learnings & Insights</h3>
+        <p class="text-gray-700 mb-6">This project reinforced the importance of balancing heritage with innovation when rebranding an established company. By preserving key brand equities while introducing contemporary design elements, we were able to attract new customers without alienating the existing customer base.</p>
+        <p class="text-gray-700">The development of a comprehensive packaging system that scales across multiple product lines demonstrated how thoughtful design systems can solve complex business challenges while maintaining visual coherence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image Gallery Section -->
+<section id="gallery" class="py-20">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-gray-900 text-center mb-16">Project Gallery</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Gallery Item 1 -->
+      <div class="image-gallery-item relative group">
+        <img src="https://readdy.ai/api/search-image?query=elegant%2520coffee%2520packaging%2520design%2520with%2520minimalist%2520aesthetic%252C%2520premium%2520coffee%2520bags%2520with%2520modern%2520branding%252C%2520professional%2520product%2520photography%2520on%2520neutral%2520background&width=600&height=600&seq=23&orientation=squarish" alt="Coffee packaging" class="w-full h-80 object-cover object-top rounded-lg shadow-sm">
+        <div class="image-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center opacity-0 transition-opacity duration-300 rounded-lg">
+          <div class="text-center p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Premium Packaging</h3>
+            <p class="text-white text-sm">Coffee bag design for signature blend</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Gallery Item 2 -->
+      <div class="image-gallery-item relative group">
+        <img src="https://readdy.ai/api/search-image?query=coffee%2520brand%2520stationery%2520set%2520with%2520business%2520cards%252C%2520letterhead%252C%2520and%2520envelopes%2520featuring%2520elegant%2520minimalist%2520design%252C%2520professional%2520brand%2520identity%2520materials%2520on%2520neutral%2520background&width=600&height=600&seq=24&orientation=squarish" alt="Brand stationery" class="w-full h-80 object-cover object-top rounded-lg shadow-sm">
+        <div class="image-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center opacity-0 transition-opacity duration-300 rounded-lg">
+          <div class="text-center p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Stationery System</h3>
+            <p class="text-white text-sm">Business cards, letterhead, and envelopes</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Gallery Item 3 -->
+      <div class="image-gallery-item relative group">
+        <img src="https://readdy.ai/api/search-image?query=coffee%2520shop%2520interior%2520with%2520brand%2520identity%2520implementation%252C%2520signage%252C%2520menus%252C%2520and%2520packaging%2520display%252C%2520elegant%2520retail%2520environment%252C%2520professional%2520interior%2520photography&width=600&height=600&seq=25&orientation=squarish" alt="Retail environment" class="w-full h-80 object-cover object-top rounded-lg shadow-sm">
+        <div class="image-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center opacity-0 transition-opacity duration-300 rounded-lg">
+          <div class="text-center p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Retail Experience</h3>
+            <p class="text-white text-sm">In-store brand implementation</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Gallery Item 4 -->
+      <div class="image-gallery-item relative group">
+        <img src="https://readdy.ai/api/search-image?query=coffee%2520brand%2520merchandise%2520including%2520custom%2520mugs%252C%2520tote%2520bags%252C%2520and%2520apparel%2520with%2520elegant%2520logo%2520implementation%252C%2520professional%2520product%2520photography%2520on%2520neutral%2520background&width=600&height=600&seq=26&orientation=squarish" alt="Brand merchandise" class="w-full h-80 object-cover object-top rounded-lg shadow-sm">
+        <div class="image-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center opacity-0 transition-opacity duration-300 rounded-lg">
+          <div class="text-center p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Merchandise Collection</h3>
+            <p class="text-white text-sm">Branded products and apparel</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Gallery Item 5 -->
+      <div class="image-gallery-item relative group">
+        <img src="https://readdy.ai/api/search-image?query=coffee%2520brand%2520website%2520design%2520on%2520multiple%2520devices%252C%2520responsive%2520web%2520design%2520with%2520elegant%2520aesthetic%252C%2520professional%2520digital%2520mockups%252C%2520clean%2520user%2520interface&width=600&height=600&seq=27&orientation=squarish" alt="Digital presence" class="w-full h-80 object-cover object-top rounded-lg shadow-sm">
+        <div class="image-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center opacity-0 transition-opacity duration-300 rounded-lg">
+          <div class="text-center p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Digital Presence</h3>
+            <p class="text-white text-sm">Website and social media design</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Gallery Item 6 -->
+      <div class="image-gallery-item relative group">
+        <img src="https://readdy.ai/api/search-image?query=coffee%2520brand%2520guidelines%2520book%2520open%2520to%2520show%2520professional%2520brand%2520manual%2520with%2520logo%2520usage%252C%2520typography%252C%2520and%2520color%2520specifications%252C%2520elegant%2520design%2520documentation&width=600&height=600&seq=28&orientation=squarish" alt="Brand guidelines" class="w-full h-80 object-cover object-top rounded-lg shadow-sm">
+        <div class="image-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center opacity-0 transition-opacity duration-300 rounded-lg">
+          <div class="text-center p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Brand Guidelines</h3>
+            <p class="text-white text-sm">Comprehensive brand manual</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Related Projects Section -->
+<section id="related" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-gray-900 text-center mb-16">Related Projects</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Related Project 1 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+        <div class="relative">
+          <img src="https://readdy.ai/api/search-image?query=modern%2520mobile%2520app%2520UI%2520design%2520for%2520finance%2520application%252C%2520showing%2520multiple%2520screens%2520with%2520clean%2520interface%252C%2520data%2520visualization%252C%2520transaction%2520history%252C%2520elegant%2520color%2520scheme%252C%2520professional%2520UI%252FUX%2520design%2520on%2520smartphone%2520mockups&width=600&height=400&seq=4&orientation=landscape" alt="FinTech Mobile App" class="w-full h-56 object-cover object-top">
+          <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">FinTech Mobile App</h3>
+          <p class="text-gray-700 mb-4">UI/UX design for innovative financial technology platform</p>
+          <a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/e96df375-33d4-43d6-807f-6e62111c244f" data-readdy="true" class="inline-flex items-center text-primary font-medium hover:underline">
+            View Case Study
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Related Project 2 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+        <div class="relative">
+          <img src="https://readdy.ai/api/search-image?query=creative%2520magazine%2520layout%2520design%2520with%2520modern%2520typography%252C%2520editorial%2520spreads%252C%2520fashion%2520photography%252C%2520elegant%2520grid%2520system%252C%2520professional%2520print%2520design%252C%2520high-end%2520publication%2520layout%252C%2520clean%2520aesthetic%252C%2520artistic%2520magazine%2520pages&width=600&height=400&seq=5&orientation=landscape" alt="Vogue Editorial Design" class="w-full h-56 object-cover object-top">
+          <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Vogue Editorial Design</h3>
+          <p class="text-gray-700 mb-4">Print layout and typography for special edition magazine</p>
+          <a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/e96df375-33d4-43d6-807f-6e62111c244f" data-readdy="true" class="inline-flex items-center text-primary font-medium hover:underline">
+            View Case Study
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Related Project 3 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+        <div class="relative">
+          <img src="https://readdy.ai/api/search-image?query=modern%2520packaging%2520design%2520for%2520eco-friendly%2520cosmetics%2520brand%252C%2520featuring%2520sustainable%2520materials%252C%2520minimalist%2520design%2520aesthetic%252C%2520elegant%2520typography%252C%2520clean%2520product%2520photography%252C%2520professional%2520packaging%2520mockups%2520on%2520neutral%2520background&width=600&height=400&seq=6&orientation=landscape" alt="Eco Cosmetics Packaging" class="w-full h-56 object-cover object-top">
+          <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Eco Cosmetics Packaging</h3>
+          <p class="text-gray-700 mb-4">Sustainable packaging design for organic beauty brand</p>
+          <a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/e96df375-33d4-43d6-807f-6e62111c244f" data-readdy="true" class="inline-flex items-center text-primary font-medium hover:underline">
+            View Case Study
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-primary bg-opacity-10">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">Ready to Transform Your Brand?</h2>
+    <p class="text-gray-700 max-w-2xl mx-auto mb-8">Let's collaborate to create a distinctive visual identity that elevates your brand and connects with your audience.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/1e52cf7b-3a4f-4570-b659-6addd81df30a" data-readdy="true" class="bg-white border-2 border-primary text-primary px-6 py-3 font-medium !rounded-button whitespace-nowrap hover:bg-primary hover:text-white transition">View All Projects</a>
+      <a href="#contact" class="bg-primary text-white px-6 py-3 font-medium !rounded-button whitespace-nowrap hover:bg-blue-600 transition">Start a Project</a>
+    </div>
+  </div>
+</section>
+
+<!-- Project Navigation Footer -->
+<section class="py-12 border-t border-gray-200">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col md:flex-row items-center justify-between">
+      <a href="#" class="flex items-center mb-6 md:mb-0 group">
+        <div class="w-16 h-16 rounded-lg overflow-hidden mr-4 flex-shrink-0">
+          <img src="https://readdy.ai/api/search-image?query=modern%2520mobile%2520app%2520UI%2520design%2520for%2520finance%2520application%252C%2520showing%2520multiple%2520screens%2520with%2520clean%2520interface%252C%2520data%2520visualization%252C%2520transaction%2520history%252C%2520elegant%2520color%2520scheme%252C%2520professional%2520UI%252FUX%2520design%2520on%2520smartphone%2520mockups&width=200&height=200&seq=29&orientation=squarish" alt="Previous project" class="w-full h-full object-cover object-top">
+        </div>
+        <div class="text-right">
+          <p class="text-sm text-gray-500 mb-1">Previous Project</p>
+          <p class="font-medium text-gray-900 group-hover:text-primary transition">FinTech Mobile App</p>
+        </div>
+      </a>
+      
+      <a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/1e52cf7b-3a4f-4570-b659-6addd81df30a" data-readdy="true" class="flex items-center justify-center w-12 h-12 border-2 border-gray-200 rounded-full hover:border-primary transition">
+        <i class="ri-apps-line ri-lg text-gray-700 hover:text-primary"></i>
+      </a>
+      
+      <a href="#" class="flex items-center mt-6 md:mt-0 group">
+        <div class="text-left">
+          <p class="text-sm text-gray-500 mb-1">Next Project</p>
+          <p class="font-medium text-gray-900 group-hover:text-primary transition">Vogue Editorial Design</p>
+        </div>
+        <div class="w-16 h-16 rounded-lg overflow-hidden ml-4 flex-shrink-0">
+          <img src="https://readdy.ai/api/search-image?query=creative%2520magazine%2520layout%2520design%2520with%2520modern%2520typography%252C%2520editorial%2520spreads%252C%2520fashion%2520photography%252C%2520elegant%2520grid%2520system%252C%2520professional%2520print%2520design%252C%2520high-end%2520publication%2520layout%252C%2520clean%2520aesthetic%252C%2520artistic%2520magazine%2520pages&width=200&height=200&seq=30&orientation=squarish" alt="Next project" class="w-full h-full object-cover object-top">
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+      <a href="#" class="text-2xl font-['Pacifico'] text-white mb-6 md:mb-0">Alex Morgan</a>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/1e52cf7b-3a4f-4570-b659-6addd81df30a" data-readdy="true" class="text-gray-300 hover:text-white transition">Home</a>
+        <a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/1e52cf7b-3a4f-4570-b659-6addd81df30a#portfolio" data-readdy="true" class="text-gray-300 hover:text-white transition">Portfolio</a>
+        <a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/1e52cf7b-3a4f-4570-b659-6addd81df30a#about" data-readdy="true" class="text-gray-300 hover:text-white transition">About</a>
+        <a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/1e52cf7b-3a4f-4570-b659-6addd81df30a#skills" data-readdy="true" class="text-gray-300 hover:text-white transition">Skills</a>
+        <a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/1e52cf7b-3a4f-4570-b659-6addd81df30a#process" data-readdy="true" class="text-gray-300 hover:text-white transition">Process</a>
+        <a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/1e52cf7b-3a4f-4570-b659-6addd81df30a#experience" data-readdy="true" class="text-gray-300 hover:text-white transition">Experience</a>
+        <a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/1e52cf7b-3a4f-4570-b659-6addd81df30a#contact" data-readdy="true" class="text-gray-300 hover:text-white transition">Contact</a>
+      </div>
+    </div>
+    <hr class="border-gray-800 mb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 Alex Morgan. All rights reserved.</p>
+      <div class="flex space-x-4">
+        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 text-gray-400 rounded-full hover:bg-primary hover:text-white transition">
+          <i class="ri-linkedin-fill ri-lg"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 text-gray-400 rounded-full hover:bg-primary hover:text-white transition">
+          <i class="ri-behance-fill ri-lg"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 text-gray-400 rounded-full hover:bg-primary hover:text-white transition">
+          <i class="ri-dribbble-fill ri-lg"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 text-gray-400 rounded-full hover:bg-primary hover:text-white transition">
+          <i class="ri-instagram-fill ri-lg"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top Button -->
+<a href="#" class="fixed bottom-6 right-6 w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full shadow-lg opacity-0 invisible transition-all duration-300" id="backToTop">
+  <i class="ri-arrow-up-line ri-lg"></i>
+</a>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Back to Top Button
+  const backToTopButton = document.getElementById('backToTop');
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+      backToTopButton.classList.remove('opacity-0', 'invisible');
+      backToTopButton.classList.add('opacity-100', 'visible');
+    } else {
+      backToTopButton.classList.remove('opacity-100', 'visible');
+      backToTopButton.classList.add('opacity-0', 'invisible');
+    }
+  });
+  
+  backToTopButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile Menu Toggle
+  const menuButton = document.querySelector('.md\\:hidden');
+  const mobileNav = document.createElement('div');
+  mobileNav.className = 'fixed inset-0 bg-white z-50 flex flex-col p-6 transform translate-x-full transition-transform duration-300 ease-in-out';
+  mobileNav.innerHTML = `
+    <div class="flex justify-between items-center mb-8">
+      <a href="#" class="text-2xl font-['Pacifico'] text-primary">Alex Morgan</a>
+      <button class="w-10 h-10 flex items-center justify-center text-gray-700">
+        <i class="ri-close-line ri-lg"></i>
+      </button>
+    </div>
+    <nav class="flex flex-col space-y-6">
+      <a href="#overview" class="text-gray-900 font-medium text-lg">Overview</a>
+      <a href="#process" class="text-gray-900 font-medium text-lg">Process</a>
+      <a href="#results" class="text-gray-900 font-medium text-lg">Results</a>
+      <a href="#gallery" class="text-gray-900 font-medium text-lg">Gallery</a>
+      <a href="#related" class="text-gray-900 font-medium text-lg">Related</a>
+      <a href="https://readdy.ai/home/ac4f9fa2-2fb4-4dda-9d7d-b3989c39f9dc/1e52cf7b-3a4f-4570-b659-6addd81df30a" data-readdy="true" class="text-gray-900 font-medium text-lg">Back to Portfolio</a>
+    </nav>
+  `;
+  document.body.appendChild(mobileNav);
+  
+  menuButton.addEventListener('click', function() {
+    mobileNav.classList.remove('translate-x-full');
+    document.body.classList.add('overflow-hidden');
+  });
+  
+  const closeButton = mobileNav.querySelector('button');
+  closeButton.addEventListener('click', function() {
+    mobileNav.classList.add('translate-x-full');
+    document.body.classList.remove('overflow-hidden');
+  });
+  
+  const mobileLinks = mobileNav.querySelectorAll('a');
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      mobileNav.classList.add('translate-x-full');
+      document.body.classList.remove('overflow-hidden');
+    });
+  });
+});
+</script>
+</body>
+</html>
