@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sazon Villa Taqueria Rebrand - Case Study | Sheyla Perez</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#10b981'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+  font-family: 'Inter', sans-serif;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.image-gallery-item:hover .image-overlay {
+  opacity: 1;
+}
+.process-step::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  height: 40px;
+  width: 2px;
+  background-color: #e5e7eb;
+}
+.process-step:first-child::before {
+  display: none;
+}
+.color-swatch {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header Section -->
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+<div class="container mx-auto px-6 py-4 flex items-center justify-between">
+<a href="#" class="text-2xl font-['Pacifico']" style="color: #d43076;">Sheyla Perez</a>
+
+    <nav class="hidden md:flex items-center space-x-8">
+      <a href="#overview" class="text-gray-700 hover:text-primary font-medium transition">Overview</a>
+      <a href="#process" class="text-gray-700 hover:text-primary font-medium transition">Process</a>
+      <a href="#results" class="text-gray-700 hover:text-primary font-medium transition">Results</a>
+      <a href="#gallery" class="text-gray-700 hover:text-primary font-medium transition">Gallery</a>
+      <a href="#related" class="text-gray-700 hover:text-primary font-medium transition">Related</a>
+    </nav>
+    <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700">
+      <i class="ri-menu-line ri-lg"></i>
+    </button>
+  </div>
+</header>
+
+<!-- Case Study Navigation -->
+<div class="bg-gray-50 border-b border-gray-200">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="designhomepage.html" data-readdy="true" class="flex items-center text-gray-700 hover:text-primary transition">
+      <i class="ri-arrow-left-line ri-lg mr-2"></i>
+      Back to Portfolio
+    </a>
+    <div class="flex items-center space-x-4">
+      <a href="#" class="flex items-center text-gray-700 hover:text-primary transition">
+        <i class="ri-arrow-left-line ri-lg mr-1"></i>
+        <span class="hidden sm:inline">Previous</span>
+      </a>
+      <a href="#" class="flex items-center text-gray-700 hover:text-primary transition">
+        <span class="hidden sm:inline">Next</span>
+        <i class="ri-arrow-right-line ri-lg ml-1"></i>
+      </a>
+    </div>
+  </div>
+</div>
+  
+
+    <!-- Hero Section -->
+    <section class="relative">
+
+  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="h-[500px] md:h-[600px] w-full overflow-hidden">
+            <img src="assets/img/graphic-design/website-careerday/Website-careerday.png" alt="E-commerce Platform Redesign" class="w-full h-full object-cover object-top">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        </div>
+        <div class="container mx-auto px-6 absolute bottom-0 left-0 right-0 pb-12 text-white">
+            <div class="max-w-3xl">
+                <div class="flex flex-wrap gap-2 mb-4">
+                 
+                    <span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium">UX/UI Design</span>
+                    <span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium">Web Development</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Career Service Website Design</h1>
+                <p class="text-lg md:text-xl mb-6 text-gray-100">A platform where students discover jobs through interactive activities and personalized guidance, helping them find passions and make confident career decisions.</p>
+                <div class="flex flex-wrap gap-8 text-sm">
+                    <div>
+                        <p class="text-gray-300 mb-1">Client</p>
+                        <p class="font-medium">Queens College, CITY </p>
+                    </div>
+                    <div>
+                        <p class="text-gray-300 mb-1">Timeline</p>
+                        <p class="font-medium">4 Months</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-300 mb-1">Services</p>
+                        <p class="font-medium">UX Research, UI Design, Development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12">
+                <div class="md:col-span-4">
+                    <h2 class="text-2xl font-bold mb-6">Project Overview</h2>
+                </div>
+                <div class="md:col-span-8">
+                    <p class="text-gray-700 mb-6 text-lg">As a first-generation college student, I understood the confusion many students face when trying to choose a major or career path. This inspired me to lead the design and development of a Career Services website for Queens College — a platform that simplifies career exploration through engaging, interactive features.
+
+I worked with a team of five to build the product from the ground up, collaborating closely with engineers and student advisors. Our goal was to make career information more accessible, especially for students from underrepresented backgrounds. 
+
+.</p>
+                    <p class="text-gray-700 mb-6 text-lg">The site empowers students to explore careers aligned with their strengths and interests through personalized guidance, job simulations, and dynamic tools.
+
+The result is an inclusive, student-centered experience that supports informed, confident decision-making about the future.</p>
+                
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
+                        <div class="text-center">
+                            <p class="text-4xl font-bold text-primary mb-2">43%</p>
+                            <p class="text-gray-600">Increase in Sales</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-4xl font-bold text-primary mb-2">67%</p>
+                            <p class="text-gray-600">Mobile Conversion</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-4xl font-bold text-primary mb-2">28%</p>
+                            <p class="text-gray-600">Cart Abandonment</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-4xl font-bold text-primary mb-2">4.8/5</p>
+                            <p class="text-gray-600">User Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenge & Solution -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-2xl font-bold mb-6">The Challenge</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center bg-red-100 rounded-full mt-1 mr-3">
+                                <i class="ri-close-line text-red-500"></i>
+                            </div>
+                            <p class="text-gray-700">Outdated user interface with confusing navigation and product categorization</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center bg-red-100 rounded-full mt-1 mr-3">
+                                <i class="ri-close-line text-red-500"></i>
+                            </div>
+                            <p class="text-gray-700">Poor mobile experience with high bounce rates on smartphones</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center bg-red-100 rounded-full mt-1 mr-3">
+                                <i class="ri-close-line text-red-500"></i>
+                            </div>
+                            <p class="text-gray-700">Complex checkout process leading to 72% cart abandonment</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center bg-red-100 rounded-full mt-1 mr-3">
+                                <i class="ri-close-line text-red-500"></i>
+                            </div>
+                            <p class="text-gray-700">Limited product filtering and search capabilities</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center bg-red-100 rounded-full mt-1 mr-3">
+                                <i class="ri-close-line text-red-500"></i>
+                            </div>
+                            <p class="text-gray-700">Inefficient inventory management system for store administrators</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-6">Our Solution</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mt-1 mr-3">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            <p class="text-gray-700">Complete UX redesign with intuitive category structure and navigation</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mt-1 mr-3">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            <p class="text-gray-700">Mobile-first responsive design with optimized product browsing</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mt-1 mr-3">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            <p class="text-gray-700">Streamlined 2-step checkout process with multiple payment options</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mt-1 mr-3">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            <p class="text-gray-700">Advanced filtering system with AI-powered product recommendations</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mt-1 mr-3">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            <p class="text-gray-700">Custom admin dashboard with real-time analytics and inventory tracking</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Our Process</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+                        <i class="ri-search-line text-primary ri-lg"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Research</h3>
+                    <p class="text-gray-600 mb-4">We conducted extensive user interviews, competitive analysis, and usability testing of the existing platform to identify pain points.</p>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-arrow-right-s-line text-primary"></i>
+                            </div>
+                            <span>User interviews with 24 customers</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-arrow-right-s-line text-primary"></i>
+                            </div>
+                            <span>Heatmap analysis of existing site</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-arrow-right-s-line text-primary"></i>
+                            </div>
+                            <span>Competitive analysis of 8 retailers</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+                        <i class="ri-draft-line text-primary ri-lg"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Strategy</h3>
+                    <p class="text-gray-600 mb-4">Based on research insights, we developed a comprehensive strategy focusing on user experience and conversion optimization.</p>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-arrow-right-s-line text-primary"></i>
+                            </div>
+                            <span>User personas development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-arrow-right-s-line text-primary"></i>
+                            </div>
+                            <span>Customer journey mapping</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-arrow-right-s-line text-primary"></i>
+                            </div>
+                            <span>Information architecture redesign</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+                        <i class="ri-paint-brush-line text-primary ri-lg"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Design</h3>
+                    <p class="text-gray-600 mb-4">We created wireframes and high-fidelity prototypes with a focus on simplicity, visual hierarchy, and conversion optimization.</p>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-arrow-right-s-line text-primary"></i>
+                            </div>
+                            <span>Low-fidelity wireframing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-arrow-right-s-line text-primary"></i>
+                            </div>
+                            <span>Interactive prototyping</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-arrow-right-s-line text-primary"></i>
+                            </div>
+                            <span>Visual design system creation</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+                        <i class="ri-code-s-slash-line text-primary ri-lg"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Development</h3>
+                    <p class="text-gray-600 mb-4">We built a custom e-commerce solution with a focus on performance, security, and scalability for future growth.</p>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-arrow-right-s-line text-primary"></i>
+                            </div>
+                            <span>Frontend development with React</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-arrow-right-s-line text-primary"></i>
+                            </div>
+                            <span>Backend API development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-arrow-right-s-line text-primary"></i>
+                            </div>
+                            <span>Integration testing and deployment</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Gallery -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Project Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                    <img src="https://readdy.ai/api/search-image?query=modern%20e-commerce%20website%20homepage%20with%20beautiful%20hero%20section%2C%20product%20categories%2C%20featured%20items%2C%20clean%20modern%20design%2C%20professional%20quality%2C%20ultra-detailed%2C%20soft%20lighting%2C%20white%20background%20with%20blue%20accents&width=800&height=600&seq=2&orientation=landscape" alt="E-commerce Homepage" class="w-full h-full object-cover object-top rounded-lg shadow-sm">
+                </div>
+                <div>
+                    <img src="https://readdy.ai/api/search-image?query=e-commerce%20product%20detail%20page%20with%20high-quality%20product%20images%2C%20description%2C%20specifications%2C%20add%20to%20cart%20button%2C%20related%20products%2C%20clean%20modern%20design%2C%20professional%20quality%2C%20ultra-detailed%2C%20soft%20lighting%2C%20white%20background%20with%20blue%20accents&width=800&height=600&seq=3&orientation=landscape" alt="Product Detail Page" class="w-full h-full object-cover object-top rounded-lg shadow-sm">
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                    <img src="https://readdy.ai/api/search-image?query=e-commerce%20mobile%20app%20interface%20showing%20product%20browsing%2C%20clean%20modern%20design%2C%20professional%20quality%2C%20ultra-detailed%2C%20soft%20lighting%2C%20white%20background%20with%20blue%20accents&width=600&height=800&seq=4&orientation=portrait" alt="Mobile App Interface" class="w-full h-full object-cover object-top rounded-lg shadow-sm">
+                </div>
+                <div>
+                    <img src="https://readdy.ai/api/search-image?query=e-commerce%20checkout%20page%20with%20payment%20options%2C%20order%20summary%2C%20shipping%20details%2C%20clean%20modern%20design%2C%20professional%20quality%2C%20ultra-detailed%2C%20soft%20lighting%2C%20white%20background%20with%20blue%20accents&width=600&height=800&seq=5&orientation=portrait" alt="Checkout Process" class="w-full h-full object-cover object-top rounded-lg shadow-sm">
+                </div>
+                <div>
+                    <img src="https://readdy.ai/api/search-image?query=e-commerce%20admin%20dashboard%20with%20analytics%2C%20inventory%20management%2C%20order%20processing%2C%20clean%20modern%20design%2C%20professional%20quality%2C%20ultra-detailed%2C%20soft%20lighting%2C%20white%20background%20with%20blue%20accents&width=600&height=800&seq=6&orientation=portrait" alt="Admin Dashboard" class="w-full h-full object-cover object-top rounded-lg shadow-sm">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Comparison -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Before & After</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <div class="relative mb-4">
+                        <div class="absolute top-3 left-3 bg-red-500 text-white px-3 py-1 text-sm font-medium rounded-full">Before</div>
+                        <img src="https://readdy.ai/api/search-image?query=outdated%20e-commerce%20website%20with%20cluttered%20design%2C%20poor%20layout%2C%20confusing%20navigation%2C%20low%20quality%20images%2C%20old-fashioned%20interface%20from%205%20years%20ago&width=800&height=500&seq=7&orientation=landscape" alt="Before Redesign" class="w-full h-[300px] object-cover object-top rounded-lg shadow-sm">
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-close-line text-red-500"></i>
+                            </div>
+                            <span>Cluttered interface with poor visual hierarchy</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-close-line text-red-500"></i>
+                            </div>
+                            <span>Confusing navigation with too many categories</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-close-line text-red-500"></i>
+                            </div>
+                            <span>Small product images with limited views</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="relative mb-4">
+                        <div class="absolute top-3 left-3 bg-green-500 text-white px-3 py-1 text-sm font-medium rounded-full">After</div>
+                        <img src="https://readdy.ai/api/search-image?query=modern%20e-commerce%20website%20with%20clean%20design%2C%20beautiful%20layout%2C%20intuitive%20navigation%2C%20high%20quality%20product%20images%2C%20contemporary%20interface%20with%20blue%20accent%20colors&width=800&height=500&seq=8&orientation=landscape" alt="After Redesign" class="w-full h-[300px] object-cover object-top rounded-lg shadow-sm">
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            <span>Clean, modern interface with clear visual hierarchy</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            <span>Intuitive navigation with smart categorization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            <span>High-quality product images with zoom and 360° views</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Details -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Technical Details</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Technologies Used</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+                                <i class="ri-reactjs-line text-blue-600"></i>
+                            </div>
+                            <span class="text-gray-700">React.js Frontend</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-green-100 rounded-full mr-3">
+                                <i class="ri-nodejs-line text-green-600"></i>
+                            </div>
+                            <span class="text-gray-700">Node.js Backend</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+                                <i class="ri-database-2-line text-blue-600"></i>
+                            </div>
+                            <span class="text-gray-700">MongoDB Database</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-purple-100 rounded-full mr-3">
+                                <i class="ri-shopping-cart-line text-purple-600"></i>
+                            </div>
+                            <span class="text-gray-700">Stripe Payment Gateway</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-red-100 rounded-full mr-3">
+                                <i class="ri-cloud-line text-red-600"></i>
+                            </div>
+                            <span class="text-gray-700">AWS Cloud Infrastructure</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Project Team</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full mr-3">
+                                <i class="ri-user-line text-gray-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-700">Emily Richardson</p>
+                                <p class="text-gray-500 text-sm">Project Manager</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full mr-3">
+                                <i class="ri-user-line text-gray-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-700">Michael Chen</p>
+                                <p class="text-gray-500 text-sm">UX Researcher</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full mr-3">
+                                <i class="ri-user-line text-gray-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-700">Sophia Martinez</p>
+                                <p class="text-gray-500 text-sm">UI Designer</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full mr-3">
+                                <i class="ri-user-line text-gray-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-700">James Wilson</p>
+                                <p class="text-gray-500 text-sm">Frontend Developer</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full mr-3">
+                                <i class="ri-user-line text-gray-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-700">Olivia Taylor</p>
+                                <p class="text-gray-500 text-sm">Backend Developer</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Project Timeline</h3>
+                    <div class="space-y-4">
+                        <div class="relative pl-8">
+                            <div class="absolute left-0 top-0 w-4 h-4 bg-primary rounded-full"></div>
+                            <div class="absolute left-2 top-4 w-[1px] h-[calc(100%-16px)] bg-gray-200"></div>
+                            <p class="font-medium">Week 1-2</p>
+                            <p class="text-gray-600 text-sm">Research & Discovery</p>
+                        </div>
+                        <div class="relative pl-8">
+                            <div class="absolute left-0 top-0 w-4 h-4 bg-primary rounded-full"></div>
+                            <div class="absolute left-2 top-4 w-[1px] h-[calc(100%-16px)] bg-gray-200"></div>
+                            <p class="font-medium">Week 3-4</p>
+                            <p class="text-gray-600 text-sm">Strategy & Planning</p>
+                        </div>
+                        <div class="relative pl-8">
+                            <div class="absolute left-0 top-0 w-4 h-4 bg-primary rounded-full"></div>
+                            <div class="absolute left-2 top-4 w-[1px] h-[calc(100%-16px)] bg-gray-200"></div>
+                            <p class="font-medium">Week 5-8</p>
+                            <p class="text-gray-600 text-sm">UX/UI Design</p>
+                        </div>
+                        <div class="relative pl-8">
+                            <div class="absolute left-0 top-0 w-4 h-4 bg-primary rounded-full"></div>
+                            <div class="absolute left-2 top-4 w-[1px] h-[calc(100%-16px)] bg-gray-200"></div>
+                            <p class="font-medium">Week 9-14</p>
+                            <p class="text-gray-600 text-sm">Development</p>
+                        </div>
+                        <div class="relative pl-8">
+                            <div class="absolute left-0 top-0 w-4 h-4 bg-primary rounded-full"></div>
+                            <p class="font-medium">Week 15-16</p>
+                            <p class="text-gray-600 text-sm">Testing & Launch</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonial -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-gray-50 p-8 md:p-12 rounded-lg shadow-sm">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/3">
+                        <img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20female%20retail%20executive%2C%2040s%2C%20business%20attire%2C%20neutral%20background%2C%20professional%20lighting%2C%20high%20quality%20portrait&width=400&height=400&seq=9&orientation=squarish" alt="Client Portrait" class="w-24 h-24 rounded-full object-cover object-top mb-4">
+                        <h3 class="text-xl font-semibold">Rebecca Johnson</h3>
+                        <p class="text-gray-600 mb-2">Chief Digital Officer</p>
+                        <p class="text-gray-600 mb-4">FashionFusion Retail</p>
+                        <div class="flex">
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <i class="ri-double-quotes-l text-4xl text-primary/20"></i>
+                        <p class="text-gray-700 text-lg mb-6">The team delivered an exceptional e-commerce platform that has transformed our business. Not only did they create a beautiful, intuitive interface that our customers love, but they also provided us with powerful backend tools that have streamlined our operations.</p>
+                        <p class="text-gray-700 text-lg">The results speak for themselves – a 43% increase in sales within three months of launch and a significant reduction in customer service inquiries. Their attention to detail and commitment to understanding our business needs made all the difference. I couldn't recommend them more highly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outcomes -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Project Outcomes</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <div id="chart" class="w-full h-[400px] bg-white rounded-lg shadow-sm"></div>
+                </div>
+                <div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm h-full">
+                        <h3 class="text-xl font-semibold mb-6">Key Results</h3>
+                        <ul class="space-y-6">
+                            <li class="flex">
+                                <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-lg mr-4">
+                                    <i class="ri-shopping-cart-2-line text-blue-600 ri-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-lg">43% Increase in Sales</p>
+                                    <p class="text-gray-600">Overall revenue growth within first quarter after launch</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-lg mr-4">
+                                    <i class="ri-smartphone-line text-green-600 ri-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-lg">67% Mobile Conversion Rate</p>
+                                    <p class="text-gray-600">Up from 23% on the previous platform</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="w-12 h-12 flex items-center justify-center bg-purple-100 rounded-lg mr-4">
+                                    <i class="ri-time-line text-purple-600 ri-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-lg">28% Cart Abandonment</p>
+                                    <p class="text-gray-600">Down from 72% on the previous platform</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="w-12 h-12 flex items-center justify-center bg-yellow-100 rounded-lg mr-4">
+                                    <i class="ri-customer-service-2-line text-yellow-600 ri-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-lg">38% Reduction in Support Tickets</p>
+                                    <p class="text-gray-600">Due to improved UX and self-service features</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Projects -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Related Projects</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=luxury%20fashion%20brand%20website%20design%2C%20high-end%20clothing%20website%2C%20elegant%20interface%2C%20professional%20quality%2C%20ultra-detailed%2C%20soft%20lighting&width=600&height=400&seq=10&orientation=landscape" alt="Luxury Fashion Brand Website" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-3">
+
+                            <span class="bg-gray-200 px-2 py-1 rounded-full text-xs font-medium text-gray-700">Luxury</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Luxury Fashion Brand Website</h3>
+                        <p class="text-gray-600 mb-4">A high-end fashion retailer website with immersive product experiences and personalized shopping.</p>
+                        <a href="https://readdy.ai/home/210b82ba-9271-4950-a54c-f51036020efd/fecb9047-4e63-4a9f-9655-43633ac3da7c" data-readdy="true" class="text-primary font-medium flex items-center">
+                            View Project
+                            <i class="ri-arrow-right-line ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=mobile%20app%20for%20grocery%20shopping%2C%20food%20delivery%20app%20interface%2C%20product%20listings%2C%20shopping%20cart%2C%20clean%20modern%20design%2C%20professional%20quality%2C%20ultra-detailed%2C%20soft%20lighting&width=600&height=400&seq=11&orientation=landscape" alt="Grocery Delivery App" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-gray-200 px-2 py-1 rounded-full text-xs font-medium text-gray-700">Mobile App</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded-full text-xs font-medium text-gray-700">Grocery</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Grocery Delivery App</h3>
+                        <p class="text-gray-600 mb-4">A mobile application for on-demand grocery shopping with real-time delivery tracking.</p>
+                        <a href="https://readdy.ai/home/210b82ba-9271-4950-a54c-f51036020efd/fecb9047-4e63-4a9f-9655-43633ac3da7c" data-readdy="true" class="text-primary font-medium flex items-center">
+                            View Project
+                            <i class="ri-arrow-right-line ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=b2b%20marketplace%20platform%2C%20business%20to%20business%20e-commerce%2C%20supplier%20directory%2C%20procurement%20system%2C%20clean%20modern%20design%2C%20professional%20quality%2C%20ultra-detailed%2C%20soft%20lighting&width=600&height=400&seq=12&orientation=landscape" alt="B2B Marketplace Platform" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-gray-200 px-2 py-1 rounded-full text-xs font-medium text-gray-700">B2B</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded-full text-xs font-medium text-gray-700">Marketplace</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">B2B Marketplace Platform</h3>
+                        <p class="text-gray-600 mb-4">A comprehensive platform connecting suppliers and buyers with integrated procurement tools.</p>
+                        <a href="https://readdy.ai/home/210b82ba-9271-4950-a54c-f51036020efd/fecb9047-4e63-4a9f-9655-43633ac3da7c" data-readdy="true" class="text-primary font-medium flex items-center">
+                            View Project
+                            <i class="ri-arrow-right-line ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary/5">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Digital Experience?</h2>
+                <p class="text-gray-700 text-lg mb-8">Let's discuss how we can help your business achieve similar results with a custom-tailored digital solution.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-medium">Start a Project</button>
+                    <a href="https://readdy.ai/home/210b82ba-9271-4950-a54c-f51036020efd/fecb9047-4e63-4a9f-9655-43633ac3da7c" data-readdy="true" class="bg-white border border-gray-300 text-gray-700 px-6 py-3 !rounded-button whitespace-nowrap font-medium">Back to Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <a href="#" class="text-2xl font-['Pacifico'] text-white mb-4 inline-block">logo</a>
+                    <p class="text-gray-400 mb-6">Creating exceptional digital experiences that drive business growth.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-facebook-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white">UX/UI Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Web Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">E-commerce Solutions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Mobile Applications</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="https://readdy.ai/home/210b82ba-9271-4950-a54c-f51036020efd/fecb9047-4e63-4a9f-9655-43633ac3da7c" data-readdy="true" class="text-gray-400 hover:text-white">Portfolio</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="ri-map-pin-line mt-1 mr-2"></i>
+                            <span>123 Design Street, Creative City, CA 94103</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-mail-line mr-2"></i>
+                            <span>hello@designstudio.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-phone-line mr-2"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Design Studio. All rights reserved.</p>
+                <div class="flex space-x-6 text-sm text-gray-400">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                    <a href="#" class="hover:text-white">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+
+    <script id="sticky-header-script">
+        document.addEventListener('DOMContentLoaded', function() {
+            const stickyHeader = document.querySelector('.sticky-header');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    stickyHeader.classList.add('visible');
+                } else {
+                    stickyHeader.classList.remove('visible');
+                }
+            });
+        });
+    </script>
+
+    <script id="chart-script">
+        document.addEventListener('DOMContentLoaded', function() {
+            const chartDom = document.getElementById('chart');
+            const myChart = echarts.init(chartDom);
+            
+            const option = {
+                animation: false,
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                    textStyle: {
+                        color: '#1f2937'
+                    }
+                },
+                legend: {
+                    data: ['Previous Platform', 'New Platform'],
+                    textStyle: {
+                        color: '#1f2937'
+                    }
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: ['Month 1', 'Month 2', 'Month 3', 'Month 4', 'Month 5', 'Month 6'],
+                    axisLine: {
+                        lineStyle: {
+                            color: '#d1d5db'
+                        }
+                    },
+                    axisLabel: {
+                        color: '#1f2937'
+                    }
+                },
+                yAxis: {
+                    type: 'value',
+                    name: 'Sales ($)',
+                    nameTextStyle: {
+                        color: '#1f2937'
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            color: '#d1d5db'
+                        }
+                    },
+                    axisLabel: {
+                        color: '#1f2937'
+                    },
+                    splitLine: {
+                        lineStyle: {
+                            color: '#e5e7eb'
+                        }
+                    }
+                },
+                series: [
+                    {
+                        name: 'Previous Platform',
+                        type: 'line',
+                        stack: 'Total',
+                        smooth: true,
+                        lineStyle: {
+                            width: 3,
+                            color: 'rgba(252, 141, 98, 1)'
+                        },
+                        areaStyle: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                {
+                                    offset: 0,
+                                    color: 'rgba(252, 141, 98, 0.2)'
+                                },
+                                {
+                                    offset: 1,
+                                    color: 'rgba(252, 141, 98, 0.05)'
+                                }
+                            ])
+                        },
+                        emphasis: {
+                            focus: 'series'
+                        },
+                        data: [45000, 48000, 52000, 49000, 53000, 56000]
+                    },
+                    {
+                        name: 'New Platform',
+                        type: 'line',
+                        stack: 'Total',
+                        smooth: true,
+                        lineStyle: {
+                            width: 3,
+                            color: 'rgba(87, 181, 231, 1)'
+                        },
+                        areaStyle: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                {
+                                    offset: 0,
+                                    color: 'rgba(87, 181, 231, 0.2)'
+                                },
+                                {
+                                    offset: 1,
+                                    color: 'rgba(87, 181, 231, 0.05)'
+                                }
+                            ])
+                        },
+                        emphasis: {
+                            focus: 'series'
+                        },
+                        data: [56000, 68000, 75000, 82000, 89000, 98000]
+                    }
+                ]
+            };
+            
+            myChart.setOption(option);
+            
+            window.addEventListener('resize', function() {
+                myChart.resize();
+            });
+        });
+    </script>
+</body>
+</html>
