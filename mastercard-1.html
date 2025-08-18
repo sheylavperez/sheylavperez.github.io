@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sheyla Perez - UX Designer and Web Developer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&subset=cyrillic" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Anek+Bangla:wght@100..800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/img/portfolio/non-art/sheyla-right1.png">
+</head>
+
+<style>
+  /*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+/* Portfolio Section Styling */
+#portfolio-details {
+  padding: 20px 0;
+  background: linear-gradient(180deg, #f2f6f9 0%, #f2f6f9 100%);
+}
+
+.portfolio-description {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+strong {
+  font-weight: bold;
+}
+.highlight {
+    color: #d43076;
+    font-weight: bold;
+  }
+
+
+.portfolio-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.portfolio-info ul li {
+
+  margin-bottom: 8px;
+}
+
+
+/* Portfolio Description */
+.portfolio-description {
+  margin-top: 30px;
+}
+
+
+.portfolio-description p {
+  line-height: 1.6;
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+  /* Stack the columns vertically on medium screens */
+  .portfolio-details .row {
+    flex-direction: column;
+ 
+  }
+
+  .col-lg-8,
+  .col-lg-4 {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+ 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .persona-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.indent{
+
+  margin: 10px 80px; /* Corrected syntax */
+  
+
+}
+
+
+.bold-p {
+  font-size: 18px;
+}
+/* Background hero section */
+.portfolio-hero {
+  position: relative;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: 'Poppins', sans-serif; /* Change to your chosen font */
+}
+
+.portfolio-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 6, 6, 0.641);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+/* Tags */
+.project-tags span {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Title & Subtitle */
+.project-title {
+
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.project-subtitle {
+
+  max-width: 750px;
+}
+
+/* Meta Info */
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.project-meta div {
+  flex: 1 1 200px;
+  margin-right: 1.5rem;
+}
+
+.project-meta h2 {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+ 
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+
+.project-overview {
+  padding: 60px 20px;
+  
+  background: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.overview-content {
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+
+.overview-content h2 {
+
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.overview-content p {
+ 
+  line-height: 1.6;
+
+  margin-bottom: 15px;
+}
+
+.metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.metric {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.metric h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d43076; /* Tailwind blue-500 */
+  margin-bottom: 5px;
+}
+
+.metric p {
+  font-size: 0.95rem;
+  color: #6B7280; /* Tailwind gray-500 */
+}
+
+
+
+
+
+/* Portfolio Details Section */
+#portfolio-details {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f8f9fa;
+}
+
+.portfolio-description {
+  display: flex;
+  gap: 2rem;
+  max-width: 1100px;  /* same max width as other containers */
+  margin: 40px auto 0 auto; /* top margin, centered horizontally */
+  padding: 0 20px; /* horizontal padding on smaller screens */
+  box-sizing: border-box;
+}
+
+.challenge-column,
+.solution-column {
+  flex: 1;
+  padding: 0 10px; /* some padding inside each column */
+}
+
+.challenge-column h2,
+.solution-column h2 {
+  margin-bottom: 20px;
+}
+
+.challenge-column ul,
+.solution-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.challenge-column li,
+.solution-column li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+ 
+
+}
+
+.challenge-icon,
+.solution-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.challenge-icon {
+  background-color: lab(95.04% 7.97 -4.2);
+  color: #d43076;
+}
+
+.solution-icon {
+  background-color: #e6fff2;
+  color: #52c41a;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .portfolio-description {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .challenge-column,
+  .solution-column {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+}
+
+
+.process-section {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-card {
+  background-color: #f9fbff;
+  padding: 32px;
+  border-radius: 20px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-4px);
+}
+
+.process-image {
+  width: 300px;
+ 
+  margin-bottom: 24px;
+}
+
+.process-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.process-description {
+
+  margin-bottom: 20px;
+  
+}
+
+.process-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.process-list li {
+  padding-left: 18px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.process-list li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: #3b82f6;
+  font-size: 18px;
+}
+
+
+/**/
+
+.gallery-section {
+  padding: 80px 20px;
+background-color: #ffffff;
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 60px;
+   text-align: center;
+}
+
+/* Layout for 2 image blocks + arrow */
+.gallery-process {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.gallery-block {
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 16px;
+
+  padding: 20px;
+  text-align: left;
+  flex: 1;
+  min-width: 300px;
+}
+
+.gallery-block img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+
+
+/* Arrow style */
+.gallery-arrow {
+  font-size: 40px;
+  color: #d43076;
+  flex-shrink: 0;
+}
+
+/* Match image styling from screenshot */
+.before-after-img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: contain;
+  max-height: 600px;
+}
+
+/* Remove bullets and spacing */
+.comparison-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.comparison-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+
+}
+
+/* Tweak icon alignment */
+.challenge-icon,
+.solution-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.challenge-icon {
+  background-color: #ffe6ea;
+  color: #d43076;
+}
+
+.solution-icon {
+  background-color: #e6fff2;
+  color: #2ecc71;
+}
+
+
+.project-outcomes-section .portfolio-description {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.outcomes-column, .lessons-column {
+  flex: 1;
+  min-width: 280px;
+}
+
+.outcomes-column h2,
+.lessons-column h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.outcomes-column ul,
+.lessons-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.outcomes-column li,
+.lessons-column li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.outcome-icon, .lessons-icon {
+  flex-shrink: 0;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.outcome-icon {
+  color: #274dae; 
+}
+
+.lessons-icon {
+  color: #d43076;
+}
+
+/* CSS */
+
+/* Section styling */
+
+.project-gallery-section {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-heading {
+  margin-bottom: 30px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Specific styling for the spanning element */
+.item-full-width {
+  grid-column: 1 / -1; /* This makes the item span from the first column to the last */
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: 1fr; /* On smaller screens, stack all items in a single column */
+  }
+}
+
+.project-description {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 0.95rem;
+
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.project-description h3 {
+  margin-bottom: 6px;
+ 
+
+}
+
+</style>
+<body>
+
+
+  <!-- ======= Header ======= -->
+    
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">Sheyla Perez</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="https://docs.google.com/document/d/1zp18QChkY56p6wauaLAGm-lhelFWdxildtoISNtxIEw/edit?usp=sharing" target="_blank">Resume</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+
+    <!-- Portfolio Details Section -->
+<section id="sazon-villa" class="portfolio-hero" style="background-image: url('assets/img/portfolio/mastercardfigma/mastercard-header.png'); ">
+  <div class="overlay"></div>
+  <div class="hero-content container">
+    
+    <!-- Tags -->
+    <div class="project-tags mb-3">
+      <span>UX/UI Design</span>
+      <span>User Research</span>
+      <span>Fintech</span>
+        <span>B2B</span>
+    </div>
+
+    <!-- Title & Subtitle -->
+    <h1 class="project-title">Boosted Bank Confidence by 5% via Merchant Background Checks</h1>
+    <p class="project-subtitle">
+      Helped banks make secure, informed decisions by providing merchant background checks, crypto insights, profiles, and fraud reports. 
+    </p>
+
+    <!-- Meta Info -->
+    <div class="project-meta mt-4">
+      <div>
+        <h2>Company</h2>
+        <p>Mastercard</p>
+      </div>
+      <div>
+        <h2>Timeline</h2>
+        <p>6 Months</p>
+      </div>
+      <div>
+        <h2>Role</h2>
+        <p>User Research/UX Designer</p>
+      </div>
+      <div>
+        <h2>Year</h2>
+        <p>2024</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="project-overview">
+  <div class="container">
+    <div class="overview-content">
+      <h2>Project Overview</h2>
+      <p>Banks often face challenges when assessing potential merchants for partnerships. An internal survey revealed that bankers struggled to quickly evaluate merchant credibility, leading to delayed decisions and increased risk. The platform needed to provide clear, actionable insights on merchant backgrounds, crypto activity, portfolio history, and fraud reports.</p>
+
+      <br>
+      <p>The redesigned dashboard aimed to:</p>
+      <ol>
+        <li>Give banks a clear, consolidated view of merchant backgrounds</li>
+        <li>Reduce time spent analyzing multiple data sources</li>
+        <li>Increase confidence in partnership decisions</li>
+      </ol>
+
+
+     
+    </div>
+
+    <div class="metrics">
+      <div class="metric">
+        <h3>6%</h3>
+        <p>Increase in Bank Confidence</p>
+      </div>
+      <div class="metric">
+        <h3>3</h3>
+        <p>Dashboards Created</p>
+      </div>
+      <div class="metric">
+        <h3>50%</h3>
+        <p>Faster Decision-Making</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section id="portfolio-details" class="portfolio-details py-5">
+  <div class="container mt-5">
+    <div class="portfolio-description">
+      <div class="challenge-column">
+        <h2>The Challenge</h2>
+        <ul>
+          <li><div class="challenge-icon">✕</div> Difficulty for banks to quickly assess merchant credibility</li>
+          <li><div class="challenge-icon">✕</div> Fragmented and complex data sources (background, crypto, portfolios, fraud)</li>
+          <li><div class="challenge-icon">✕</div> Low trust in automated insights</li>
+          <li><div class="challenge-icon">✕</div> Lack of onboarding/support for transitioning to the new page</li>
+         
+        </ul>
+      </div>
+      <div class="solution-column">
+        <h2>The Solution</h2>
+        <ul>
+          <li><div class="solution-icon">✓</div> Designed dashboard focused on banks’ decision-making needs</li>
+          <li><div class="solution-icon">✓</div> Consolidated merchant background checks, crypto insights, profiles, and fraud reports</li>
+          <li><div class="solution-icon">✓</div> Onboarding and in-product guidance to ease the transition</li>
+          <li><div class="solution-icon">✓</div> Simplify copy and reduce cognitive load for better usability</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="process-section">
+  <h2 class="section-title">The Process</h2>
+  <div class="process-grid">
+
+    <div class="process-card">
+      <img src="assets/img/portfolio/mastercardfigma/comment.png" alt="Step 1" class="process-image">
+      <div class="process-title">Research</div>
+      <div class="process-description">Interviewed 12 banking users to understand pain points, map workflows, and assess trust in merchant data.</div>
+      <ul class="process-list">
+        <li>Collected feedback on dashboard usability and clarity</li>
+        <li>Mapped workflows for merchant evaluation</li>
+        <li>Identified key data points for decision-making</li>
+      </ul>
+    </div>
+
+    <div class="process-card">
+      <img src="assets/img/portfolio/mastercardfigma/risk.png" alt="Step 2" class="process-image">
+      <div class="process-title">Strategy</div>
+      <div class="process-description">Used research insights to prioritize data points and design a dashboard layout highlighting high-risk flags and actionable insights.</div>
+      <ul class="process-list">
+        <li>Prioritize merchant background, crypto activity, portfolio, and fraud reports</li>
+        <li>Plan onboarding and training materials for bank users</li>
+        <li>Define success metrics for trust and decision-making speed</li>
+      </ul>
+    </div>
+
+    <div class="process-card">
+      <img src="assets/img/portfolio/mastercardfigma/brainstorm.png" alt="Step 3" class="process-image">
+      <div class="process-title">Design</div>
+      <div class="process-description">Created wireframes and high-fidelity prototypes in Figma, focusing on clarity, hierarchy, and actionable insights for banking decisions.</div>
+      <ul class="process-list">
+        <li>Organized information: Background, Crypto, PortfolioPost, Fraud Reports</li>
+        <li>Interactive dashboard elements for faster evaluation</li>
+        <li>Simplified layout reducing cognitive load for bank users</li>
+      </ul>
+    </div>
+
+    <div class="process-card">
+      <img src="assets/img/portfolio/mastercardfigma/mastercard-header.png" alt="Step 4" class="process-image">
+      <div class="process-title">Implementation</div>
+      <div class="process-description">Built 2 interactive dashboards, iterated with feedback from 5+ stakeholders, and documented workflows to streamline onboarding.</div>
+      <ul class="process-list">
+        <li>Developed dashboards for merchant insights and risk flags</li>
+        <li>Incorporated stakeholder feedback into iterative design</li>
+        <li>Maintained 12+ Jira documents for guides, workflows, and training</li>
+      </ul>
+    </div>
+
+    <div class="process-card">
+      <img src="assets/img/portfolio/mastercardfigma/Implementation.png" alt="Step 5" class="process-image">
+      <div class="process-title">Evaluation & Iteration</div>
+      <div class="process-description">Monitored usage and feedback to optimize dashboard features, improve decision-making speed, and increase trust in merchant evaluations.</div>
+      <ul class="process-list">
+        <li>Tracked dashboard engagement and decision-making efficiency</li>
+        <li>Refined features based on follow-up interviews</li>
+        <li>Updated onboarding and guidance for new bank users</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<section id="portfolio-details" class="portfolio-details py-5">
+  <section class="project-gallery-section">
+    <h2 class="section-title">Project Gallery</h2>
+    <div class="gallery-container">
+      
+      <!-- Project 1 -->
+      <div class="gallery-item">
+        <img src="assets/img/portfolio/mastercardfigma/Onboard-Risk-Check.png" alt="Project 1: Onboard Risk Check" class="project-image">
+        <div class="project-description">
+          <h4>Onboard Risk Check</h4>
+          <p><strong>Design:</strong> The dashboard's design prioritizes a clean, grid-based layout to present complex merchant data clearly, allowing for rapid scanning and comparison. A minimalist interface and the use of visual cues help to reduce clutter and cognitive load.</p>
+          <p><strong>Reasoning:</strong> This design strategy is intended to boost bank confidence and significantly speed up decision-making by consolidating fragmented information into a single, cohesive view.</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="gallery-item">
+        <img src="assets/img/portfolio/mastercardfigma/cyber-secure.png" alt="Project 2: Cyber Security Dashboard" class="project-image">
+        <div class="project-description">
+          <h4>Cyber Security Dashboard</h4>
+          <p><strong>Design:</strong> This dashboard uses a card-based layout to organize data, with key metrics highlighted at the top. Visualizations like charts provide quick insights, and tables with color-coding are used for detailed information.</p>
+          <p><strong>Reasoning:</strong> The design makes complex data digestible and actionable by reducing cognitive load. Separating information and using visuals allows users to quickly identify key trends, while tables help prioritize the most critical cases efficiently.</p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <!-- <div class="gallery-item item-full-width">
+        <img src="assets/img/portfolio/mastercardfigma/mastercard-header.png" alt="Project 3: Mobile App & Dashboard" class="project-image">
+        <div class="project-description">
+          <h3>Mobile App & Dashboard</h3>
+          <p><strong>Design:</strong> High-fidelity header and navigation flow built for consistency across mobile and desktop.</p>
+          <p><strong>Reasoning:</strong> Stakeholders wanted seamless transitions across devices, so I emphasized scalable typography and reusable UI components.</p>
+        </div>
+      </div> -->
+
+      <!-- Project 4 -->
+      <div class="gallery-item">
+        <img src="assets/img/portfolio/mastercardfigma/Crypo-risk.png" alt="Project 4: Crypto Risk Evaluation" class="project-image">
+        <div class="project-description">
+          <h4>Crypto Risk Evaluation</h4>
+          <p><strong>Design:</strong> This dashboard uses a single-column layout with a large, isolated card for the overall risk score. Information is segmented into distinct sections with a clear "Yes/No" format for key data points.</p>
+          <p><strong>Reasoning:</strong> The design is engineered for rapid risk assessment by placing the most critical metric in a prominent card. Simplifying technical information into a simple "Yes/No" format reduces cognitive load, allowing users to quickly grasp risk factors and make efficient decisions</p>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="gallery-item">
+        <img src="assets/img/portfolio/mastercardfigma/inquiry-details.png" alt="Project 5: Inquiry Details Dashboard" class="project-image">
+        <div class="project-description">
+          <h4>Inquiry Details</h4>
+          <p><strong>Design:</strong> 
+This page uses a simple, single-column layout with a left-hand navigation bar. It presents merchant details in a clean, stacked format, using clear labels and bold headings for key data points.</p>
+          <p><strong>Reasoning:</strong> The design provides a clear, detailed view of information without distractions. The navigation bar improves workflow efficiency, while the stacked layout and bold labels ensure that key details are instantly scannable and easy to verify.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</section>
+
+
+
+
+<!-- <section class="gallery-section">
+  <div class="container">
+    <h2 class="gallery-title">Before & After</h2>
+
+    <div class="gallery-process">
+     
+      <div class="gallery-block">
+        <img class="before-after-img" src="assets/img/portfolio/brainpopfigma/before.png" alt="Before Design">
+        <ul class="comparison-list">
+          <li><div class="challenge-icon">✕</div> Limited visual hierarchy</li>
+          <li><div class="challenge-icon">✕</div> Overwhelming UI with bright, inconsistent colors</li>
+          <li><div class="challenge-icon">✕</div> Lack of teacher guidance</li>
+          <li><div class="challenge-icon">✕</div> No categorization of activities</li>
+        </ul>
+      </div>
+
+  
+      <div class="gallery-arrow">→</div>
+
+
+      <div class="gallery-block">
+        <img class="before-after-img" src="assets/img/portfolio/brainpopfigma/after.png" alt="After Design">
+        <ul class="comparison-list">
+         <li><div class="solution-icon">✓</div>Clear visual hierarchy with focused layout</li>
+         <li><div class="solution-icon">✓</div>Teacher Guide with learning context</li>
+         <li><div class="solution-icon">✓</div> Organized activity categories</li>
+         <li><div class="solution-icon">✓</div> Modern, professional design</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section id="portfolio-details" class="portfolio-details py-5">
+  <div class="container mt-5">
+    <h2 class="gallery-title">Result</h2>
+    <div class="portfolio-description">
+      
+      <!-- Left Column: Project Outcomes -->
+      <div class="outcomes-column">
+        <h2>Project Outcomes</h2>
+        <ul>
+          <li><div class="outcome-icon">★</div> 50% Faster Decision-Making: By consolidating fragmented data onto three new dashboards, the project reduced the time banks needed to assess merchants by 50%.</li>
+          <li><div class="outcome-icon">★</div> 6% Increase in Bank Confidence: The platform's ability to provide secure, actionable insights on merchant backgrounds directly led to a 5% boost in bank confidence.</li>
+
+
+        </ul>
+      </div>
+
+      <!-- Right Column: Lessons Learned -->
+      <div class="lessons-column">
+        <h2>Lessons Learned</h2>
+        <ul>
+          <li><div class="lessons-icon">✦</div> Trust is a Product Feature: Gaining user trust, especially in high-stakes industries, is crucial. It's built through transparent data sources and clear visualizations, not just features.
+
+</li>
+          <li><div class="lessons-icon">✦</div> Simplicity is Strategic: A clean, minimalist design isn't just about aesthetics; it directly impacts key business outcomes by reducing cognitive load and increasing decision speed.</li>
+         
+
+
+
+
+
+
+
+</li>
+       
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+    
+      
+  </main><!-- End #main -->
+
+  <!-- Button Before Footer -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container mt-5">
+    </div>
+  </footer><!-- End Footer -->
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

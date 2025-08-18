@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sheyla Perez - UX Designer and Web Developer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&subset=cyrillic" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Anek+Bangla:wght@100..800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/img/portfolio/non-art/sheyla-right1.png">
+</head>
+
+<style>
+  /*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+/* Portfolio Section Styling */
+#portfolio-details {
+  padding: 20px 0;
+  background: linear-gradient(180deg, #f2f6f9 0%, #f2f6f9 100%);
+}
+
+.portfolio-description {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+strong {
+  font-weight: bold;
+}
+.highlight {
+    color: #d43076;
+    font-weight: bold;
+  }
+
+
+.portfolio-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.portfolio-info ul li {
+
+  margin-bottom: 8px;
+}
+
+
+/* Portfolio Description */
+.portfolio-description {
+  margin-top: 30px;
+}
+
+
+.portfolio-description p {
+  line-height: 1.6;
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+  /* Stack the columns vertically on medium screens */
+  .portfolio-details .row {
+    flex-direction: column;
+ 
+  }
+
+  .col-lg-8,
+  .col-lg-4 {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+ 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .persona-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.indent{
+
+  margin: 10px 80px; /* Corrected syntax */
+  
+
+}
+
+
+.bold-p {
+  font-size: 18px;
+}
+/* Background hero section */
+.portfolio-hero {
+  position: relative;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: 'Poppins', sans-serif; /* Change to your chosen font */
+}
+
+.portfolio-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 6, 6, 0.779);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+/* Tags */
+.project-tags span {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Title & Subtitle */
+.project-title {
+
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.project-subtitle {
+
+  max-width: 750px;
+}
+
+/* Meta Info */
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.project-meta div {
+  flex: 1 1 200px;
+  margin-right: 1.5rem;
+}
+
+.project-meta h2 {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+ 
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+
+.project-overview {
+  padding: 60px 20px;
+  
+  background: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.overview-content {
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+
+.overview-content h2 {
+
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.overview-content p {
+ 
+  line-height: 1.6;
+
+  margin-bottom: 15px;
+}
+
+.metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.metric {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.metric h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d43076; /* Tailwind blue-500 */
+  margin-bottom: 5px;
+}
+
+.metric p {
+  font-size: 0.95rem;
+  color: #6B7280; /* Tailwind gray-500 */
+}
+
+
+
+
+
+/* Portfolio Details Section */
+#portfolio-details {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f8f9fa;
+}
+
+.portfolio-description {
+  display: flex;
+  gap: 2rem;
+  max-width: 1100px;  /* same max width as other containers */
+  margin: 40px auto 0 auto; /* top margin, centered horizontally */
+  padding: 0 20px; /* horizontal padding on smaller screens */
+  box-sizing: border-box;
+}
+
+.challenge-column,
+.solution-column {
+  flex: 1;
+  padding: 0 10px; /* some padding inside each column */
+}
+
+.challenge-column h2,
+.solution-column h2 {
+  margin-bottom: 20px;
+}
+
+.challenge-column ul,
+.solution-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.challenge-column li,
+.solution-column li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+ 
+
+}
+
+.challenge-icon,
+.solution-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.challenge-icon {
+  background-color: lab(95.04% 7.97 -4.2);
+  color: #d43076;
+}
+
+.solution-icon {
+  background-color: #e6fff2;
+  color: #52c41a;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .portfolio-description {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .challenge-column,
+  .solution-column {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+}
+
+
+.process-section {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-card {
+  background-color: #f9fbff;
+  padding: 32px;
+  border-radius: 20px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-4px);
+}
+
+.process-image {
+  width: 300px;
+ 
+  margin-bottom: 24px;
+}
+
+.process-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.process-description {
+
+  margin-bottom: 20px;
+  
+}
+
+.process-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.process-list li {
+  padding-left: 18px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.process-list li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: #3b82f6;
+  font-size: 18px;
+}
+
+
+/**/
+
+.gallery-section {
+  padding: 80px 20px;
+background-color: #ffffff;
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 60px;
+   text-align: center;
+}
+
+/* Layout for 2 image blocks + arrow */
+.gallery-process {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.gallery-block {
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 16px;
+
+  padding: 20px;
+  text-align: left;
+  flex: 1;
+  min-width: 300px;
+}
+
+.gallery-block img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+
+
+/* Arrow style */
+.gallery-arrow {
+  font-size: 40px;
+  color: #d43076;
+  flex-shrink: 0;
+}
+
+/* Match image styling from screenshot */
+.before-after-img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: contain;
+  max-height: 600px;
+}
+
+/* Remove bullets and spacing */
+.comparison-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.comparison-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+
+}
+
+/* Tweak icon alignment */
+.challenge-icon,
+.solution-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.challenge-icon {
+  background-color: #ffe6ea;
+  color: #d43076;
+}
+
+.solution-icon {
+  background-color: #e6fff2;
+  color: #2ecc71;
+}
+
+
+.project-outcomes-section .portfolio-description {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.outcomes-column, .lessons-column {
+  flex: 1;
+  min-width: 280px;
+}
+
+.outcomes-column h2,
+.lessons-column h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.outcomes-column ul,
+.lessons-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.outcomes-column li,
+.lessons-column li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.outcome-icon, .lessons-icon {
+  flex-shrink: 0;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.outcome-icon {
+  color: #274dae; 
+}
+
+.lessons-icon {
+  color: #d43076;
+}
+
+
+
+</style>
+<body>
+
+
+  <!-- ======= Header ======= -->
+    
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">Sheyla Perez</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="https://docs.google.com/document/d/1zp18QChkY56p6wauaLAGm-lhelFWdxildtoISNtxIEw/edit?usp=sharing" target="_blank">Resume</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+
+    <!-- Portfolio Details Section -->
+<section id="sazon-villa" class="portfolio-hero" style="background-image: url('assets/img/portfolio/brainpopfigma/brainpop-header.png'); ">
+  <div class="overlay"></div>
+  <div class="hero-content container">
+    
+    <!-- Tags -->
+    <div class="project-tags mb-3">
+      <span>UX/UI Design</span>
+      <span>User Research</span>
+      <span>Edtech</span>
+    </div>
+
+    <!-- Title & Subtitle -->
+    <h1 class="project-title">Making Lesson Planning More Efficient</h1>
+    <p class="project-subtitle">
+     Introduced a redesigned Topic Page that 65% of participants preferred, featuring a teacher-centered layout with clear standards and activity guidance. 
+    </p>
+
+    <!-- Meta Info -->
+    <div class="project-meta mt-4">
+      <div>
+        <h2>Company</h2>
+        <p>BrainPOP</p>
+      </div>
+      <div>
+        <h2>Timeline</h2>
+        <p>3 Months</p>
+      </div>
+      <div>
+        <h2>Role</h2>
+        <p>User Research/ UX Designer</p>
+      </div>
+      <div>
+        <h2>Year</h2>
+        <p>2025</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="project-overview">
+  <div class="container">
+    <div class="overview-content">
+      <h2>Project Overview</h2>
+      <p>An independent poll of district admins gave BrainPOP an average NPS score of -36. When districts like Baltimore decide to not renew BrainPOP, they cite reasons such as a “lack of instructional rigor” and “misalignment with classroom best practices.” We need to make the instructional intention and value more apparent in key areas of the BrainPOP experience.
+The topic page is an integral part of the teacher and admin flow, so it presents a good opportunity to:</p>
+
+<ol>
+    <li>Indicate how BrainPOP supports classroom instruction</li>
+    <li>Make it easy for teachers to incorporate BrainPOP in the classroom</li>
+</ol>
+
+<p>
+I’ll be implementing changes to the topic page in two phases, but will use this study to validate changes beyond the first iteration so we’re set up for the future.
+</p>
+     
+    </div>
+
+    <div class="metrics">
+      <div class="metric">
+        <h3>43%</h3>
+        <p>Increase in Sales</p>
+      </div>
+      <div class="metric">
+        <h3>65%</h3>
+        <p>Clicked “Standards Covered”</p>
+      </div>
+      <div class="metric">
+        <h3>2x</h3>
+        <p>More admin activity</p>
+      </div>
+      <div class="metric">
+        <h3>4.8/5</h3>
+        <p>User Satisfaction</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio-details" class="portfolio-details py-5">
+  <div class="container mt-5">
+    <div class="portfolio-description">
+      <div class="challenge-column">
+        <h2>The Challenge</h2>
+        <ul>
+          <li><div class="challenge-icon">✕</div> Low perceived instructional rigor by admins</li>
+          <li><div class="challenge-icon">✕</div> Difficulty for teachers/admins to quickly assess standards and activity fit</li>
+          <li><div class="challenge-icon">✕</div> Resistance due to familiarity with the old design</li>
+          <li><div class="challenge-icon">✕</div> Lack of onboarding/support for transitioning to the new page</li>
+         
+        </ul>
+      </div>
+      <div class="solution-column">
+        <h2>The Solution</h2>
+        <ul>
+          <li><div class="solution-icon">✓</div> Redesigned topic page focused on instructional rigor and teacher needs</li>
+          <li><div class="solution-icon">✓</div> Prominent Teacher Guide with clear standards and connected topics</li>
+          <li><div class="solution-icon">✓</div> Onboarding and in-product guidance to ease the transition</li>
+          <li><div class="solution-icon">✓</div> Simplify copy and reduce cognitive load for better usability</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="process-section">
+  <h2 class="section-title">The Process</h2>
+  <div class="process-grid">
+    <div class="process-card">
+      <img src="assets/img/portfolio/brainpopfigma/original-design.png" alt="Step 1" class="process-image">
+      <div class="process-title">Research</div>
+      <div class="process-description">I conducted user testing and feedback analysis to understand user needs and challenges with the current Topic Page.</div>
+      <ul class="process-list">
+        <li>User testing with 17 participants (teachers and admins)</li>
+        <li>Click and interaction heatmaps on Topic Page elements</li>
+        <li>Feedback on instructional rigor and planning support</li>
+      </ul>
+    </div>
+
+    <div class="process-card">
+      <img src="assets/img/portfolio/brainpopfigma/Document.png" alt="Step 2" class="process-image">
+      <div class="process-title">Strategy</div>
+      <div class="process-description">Using research insights, I developed a phased redesign strategy focused on improving instructional clarity and teacher usability.</div>
+      <ul class="process-list">
+        <li><a href="https://docs.google.com/document/d/1frkP4LCuNC9ujsIqsaLf7ewHana5WmbOpxIUfKPq-i8/edit?usp=sharing">Resarch Plan</a></li>
+        <li>Prioritize standards and instructional metadata</li>
+        <li>Create teacher-centered layout with guides and activity sets</li>
+        <li>Plan onboarding to ease transition for existing users</li>
+      </ul>
+    </div>
+
+    <div class="process-card">
+      <img src="assets/img/portfolio/brainpopfigma/new-design.png" alt="Step 3" class="process-image">
+      <div class="process-title">Design</div>
+      <div class="process-description">Designed and iterated prototypes emphasizing clarity, ease of planning, and better decision-making for teachers and admins..</div>
+      <ul class="process-list">
+        <li>Teacher Guide and activity metadata front and center</li>
+        <li>Activity cards grouped by classroom routines (e.g., Class Discussion, Reading Focus)</li>
+        <li>Simplified layout reducing cognitive load</li>
+      </ul>
+    </div>
+
+
+
+    
+
+
+      <div class="process-card">
+      <img src="assets/img/portfolio/brainpopfigma/interview.png" alt="Step 1" class="process-image">
+      <div class="process-title">Implementation</div>
+      <div class="process-description">Roll out changes in two phases while continuously gathering user feedback to refine features and onboarding.</div>
+      <ul class="process-list">
+        <li>Phase 1: Launch new Topic Page with teacher guides and metadata</li>
+        <li>Phase 2: Introduce Activity Sets and concise teacher advice</li>
+        <li>Provide early notification and onboarding resources</li>
+      </ul>
+    </div>
+
+      <div class="process-card">
+      <img src="assets/img/portfolio/brainpopfigma/heatmap.png" alt="Step 1" class="process-image">
+      <div class="process-title">Evaluation & Iteration</div>
+      <div class="process-description">Monitor usage and user feedback to refine features, optimize filters, and improve user experience over time.</div>
+      <ul class="process-list">
+        <li>Track clicks and engagement with standards and activity sets</li>
+        <li>Conduct follow-up research to finalize filters and simplify copy</li>
+        <li>Support users to adapt with clear guidance and training</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<section id="portfolio-details" class="portfolio-details py-5">
+
+  <h2 class="gallery-title">Project Gallery</h2>
+
+  <div class="gallery-process">
+    <!-- Project Step 1 -->
+    <div class="gallery-block">
+      <img src="assets/img/portfolio/brainpopfigma/layout.png" alt="Project 1">
+      <p class="gallery-caption">
+        <ul>
+        <li>Aligned with curriculum standards and organized key concepts into clear activity types.</li>
+
+<li>Designed a sidebar for context and a grid with filters for quick access.</li>
+
+<li>Used icons, colors, and time estimates to keep activities clear and accessible.</li>
+      </ul>  
+
+      </p>
+    </div>
+
+    <!-- Arrow -->
+    <div class="gallery-arrow">
+      ➜
+    </div>
+
+    <!-- Project Step 2 -->
+    <div class="gallery-block">
+      <img src="assets/img/portfolio/brainpopfigma/reading-focus.png" alt="Project 2">
+      <p class="gallery-caption">
+
+      <ul>
+        <li>Organizes activities under “Reading Focus” with clear, numbered steps.</li>
+
+<li>Provides actionable guidance for each step, making it easier to follow.</li>
+
+<li>Creates a more intuitive and focused experience, helping teachers scan and implement activities.</li>
+      </ul>   
+      </p>
+</div>
+  </div>
+</div>
+</section>
+
+<section class="gallery-section">
+  <div class="container">
+    <h2 class="gallery-title">Before & After</h2>
+
+    <div class="gallery-process">
+      <!-- Before Block -->
+      <div class="gallery-block">
+        <img class="before-after-img" src="assets/img/portfolio/brainpopfigma/before.png" alt="Before Design">
+        <ul class="comparison-list">
+          <li><div class="challenge-icon">✕</div> Limited visual hierarchy</li>
+          <li><div class="challenge-icon">✕</div> Overwhelming UI with bright, inconsistent colors</li>
+          <li><div class="challenge-icon">✕</div> Lack of teacher guidance</li>
+          <li><div class="challenge-icon">✕</div> No categorization of activities</li>
+        </ul>
+      </div>
+
+      <!-- Arrow -->
+      <div class="gallery-arrow">→</div>
+
+      <!-- After Block -->
+      <div class="gallery-block">
+        <img class="before-after-img" src="assets/img/portfolio/brainpopfigma/after.png" alt="After Design">
+        <ul class="comparison-list">
+         <li><div class="solution-icon">✓</div>Clear visual hierarchy with focused layout</li>
+         <li><div class="solution-icon">✓</div>Teacher Guide with learning context</li>
+         <li><div class="solution-icon">✓</div> Organized activity categories</li>
+ <li><div class="solution-icon">✓</div> Modern, professional design</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio-details" class="portfolio-details py-5">
+  <div class="container mt-5">
+    <h2 class="gallery-title">Result</h2>
+    <div class="portfolio-description">
+      
+      <!-- Left Column: Project Outcomes -->
+      <div class="outcomes-column">
+        <h2>Project Outcomes</h2>
+        <ul>
+          <li><div class="outcome-icon">★</div> 43% Increase in Sales – Admins’ improved perception of instructional rigor and alignment influenced purchasing and renewal decisions.</li>
+          <li><div class="outcome-icon">★</div> 65% Clicked “Standards Covered” – Participants actively engaged with the standards to assess instructional fit.</li>
+            <li><div class="outcome-icon">★</div> 2x More Admin Activity – Admins interacted with Activity Sets twice as often as teachers, showing higher engagement with key planning tools.</li>
+              <li><div class="outcome-icon">★</div> 4.8 / 5 Average Rating – Participants rated the redesigned Topic Page highly for intuitiveness and support in instruction.</li>
+        </ul>
+      </div>
+
+      <!-- Right Column: Lessons Learned -->
+      <div class="lessons-column">
+        <h2>Lessons Learned</h2>
+        <ul>
+          <li><div class="lessons-icon">✦</div> Early user testing is crucial. Small feedback loops save redesign time later.</li>
+          <li><div class="lessons-icon">✦</div> Clear navigation improves both engagement and efficiency.</li>
+          <li><div class="lessons-icon">✦</div> Collaboration between designers and educators helps align design with classroom needs.</li>
+          <li><div class="lessons-icon">✦</div> Data from usability testing should always guide final design decisions.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+    
+      
+  </main><!-- End #main -->
+
+  <!-- Button Before Footer -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container mt-5">
+    </div>
+  </footer><!-- End Footer -->
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
